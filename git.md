@@ -23,3 +23,5 @@ At the bottom of the file, add an `includeIf` condition for a specific path, e.g
 [includeIf "gitdir:~/Developer/work"]
   path = .gitconfig-work
 ```
+
+Please note that this feature is only available starting on Git [2.13](https://github.com/git/git/blob/v2.13.0/Documentation/RelNotes/2.13.0.txt)
