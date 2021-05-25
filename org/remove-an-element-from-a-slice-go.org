@@ -1,0 +1,26 @@
+#+TITLE: Remove an element from a slice in Go
+
+- source :: https://stackoverflow.com/questions/37334119/how-to-delete-an-element-from-a-slice-in-golang
+- tags :: [[file:golang.org][Golang]]
+
+* Order matters
+If you need to retain the order, use this logic:
+
+#+BEGIN_SRC go
+func remove(slice []int, s int) []int {
+	return append(slice[:s], slice[s+1:]...)
+}
+#+END_SRC
+
+This is inefficient because you may end up moving all elements, so only do this if you need to keep the order.
+
+* Order is not important
+If you don't care about the order it is much faster to swap the last element with the one to delete and return a slice without the last element.
+
+#+BEGIN_SRC go
+func remove(s []int, i int) []int {
+	s[i] = s[len(s)-1]
+	return s[:len(s)-1]
+}
+#+END_SRC
+
