@@ -1,0 +1,38 @@
+#+TITLE: Luks
+
+- tags :: [[file:linux.org][Linux]]
+
+LUKS (Linux Unified Key Setup) is a full disk encryption specification. It allows you to easily create an encrypted volume.
+
+* Install
+On Ubuntu/Debian, run: ~apt-get install cryptsetup~.
+
+** Set up
+Run the following to create an encrypted volume on ~/dev/sdb~:
+
+#+BEGIN_SRC sh
+$ cryptsetup luksFormat /dev/sdb
+#+END_SRC
+
+Please note that this delete the contents of ~/dev/sdb~.
+
+After that, open the volume and create a file system:
+
+#+BEGIN_SRC sh
+$ cryptsetup open /dev/sdb encrypted
+$ mkfs.ext4 /dev/mapper/encrypted
+#+END_SRC
+
+** Open and mount
+Open the volume and then mount it (in this case to ~/mnt/data~):
+
+#+BEGIN_SRC sh
+$ cryptsetup --type luks open /dev/sdb encrypted
+$ mount -t ext4 /dev/mapper/encrypted /mmt/data
+#+END_SRC
+
+**  Unmount and close
+#+BEGIN_SRC sh
+$ umount /mnt/data
+$ cryptsetup close encrypted
+#+END_SRC

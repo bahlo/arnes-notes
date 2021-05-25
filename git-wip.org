@@ -1,0 +1,13 @@
+#+TITLE: git wip
+
+ source :: https://carolynvanslyck.com/blog/2020/12/git-wip/
+- tags :: [[file:git.org][Git]]
+
+#+BEGIN_QUOTE
+Have you ever run git branch and still wasn’t sure what each one is for and if it’s recent? Here’s a git alias, git wip, that displays your branches and when you last changed them. It’s really useful for remembering which one you were just working on, and which branches probably should be deleted.
+#+END_QUOTE
+
+#+BEGIN_SRC ini
+[alias]
+  wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+#+END_SRC

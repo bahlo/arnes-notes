@@ -1,0 +1,3 @@
+#+title: Linux
+
+Linux is a family of open-source Unix-like operating systems based on the Linux kernel. Created by Linus Torwalds, initial release on September 17, 1991.

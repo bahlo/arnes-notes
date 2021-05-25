@@ -1,0 +1,50 @@
+#+TITLE: go get <meta> tag
+
+- tags :: [[file:golang.org][Golang]]
+
+* How it works
+Go documents the functionality here: [[https://golang.org/cmd/go/#hdr-Remote_import_paths][Remote import paths]].
+
+This is the short version:
+
+When running ~go get git.domain.com/foo/bar~, go does the following:
+
+1. Fetch ~https://git.domain.com/foo/bar?go-get=1~
+2. Check if that page contains a meta tag like this (could also be a https url):
+#+BEGIN_SRC html
+<meta name="go-import" content="git.domain.com git git@git.domain.com:foo/bar.git">
+#+END_SRC
+3. Verify that ~git.domain.com~ contains the same meta tag
+4. Git clone ~git@git.domain.com:foo/bar.git~ into ~$GOPATH/src/git.domain.com/foo~
+
+* The Problem
+If you're using packages hosted on an internal git instance (e.g. GitLab), you are going to be in trouble.
+GitLab for example shows the https url in the meta-tag, so ~go get~ will prompt for authentication.
+
+* Solutions
+The best solution would be to be able to configure GitLab to show the ssh url instead of https.
+Until then, here are a few approaches, choose the one that fit's your flow.
+
+** Customize it in the ~~/.ssh/config~
+In my opinion this is the best solution:
+
+#+NAME:~/.ssh/config
+#+BEGIN_SRC ini
+[url "git@git.domain.com:"]
+  insteadOf = "https://git.domain.com"
+#+END_SRC
+
+=Drawback:= You have to configure this on every host.
+
+** Build your own discovery service
+You could add your own service on some domain (e.g. ~go.domain.com~ or even
+add it to your company website) which contains the correct meta tag with the ssh
+url.
+
+=Drawback:= You have an additional service which can break.
+
+** Use `.git` in your import paths
+If you run ~go get git.domain.com/foo/bar.git~ and import it this way, i
+it will fetch the git URL without checking the <meta> tag.
+
+=Drawback:= You have to remember adding ~.git~ and it's not really common.
