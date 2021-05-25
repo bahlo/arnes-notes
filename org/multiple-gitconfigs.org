@@ -1,0 +1,11 @@
+#+TITLE: Multiple Gitconfigs
+
+- tags :: [[file:git.org][Git]]
+
+You can have multiple ~.gitconfig~ files that override each other based on the directory you're in.
+This is especially useful if you use a different Email for work commits.
+
+#+BEGIN_SRC ini
+[includeIf "gitdir:~/Developer/work/"]
+  path = .gitconfig-work
+#+END_SRC

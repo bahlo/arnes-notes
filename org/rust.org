@@ -1,0 +1,3 @@
+#+TITLE: Rust
+
+A programming language developed by Mozilla with a focus on performance and safety.
