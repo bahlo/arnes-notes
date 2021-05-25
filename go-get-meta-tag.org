@@ -34,17 +34,17 @@ In my opinion this is the best solution:
   insteadOf = "https://git.domain.com"
 #+END_SRC
 
-=Drawback:= You have to configure this on every host.
+/Drawback:/ You have to configure this on every host.
 
 ** Build your own discovery service
 You could add your own service on some domain (e.g. ~go.domain.com~ or even
 add it to your company website) which contains the correct meta tag with the ssh
 url.
 
-=Drawback:= You have an additional service which can break.
+/Drawback:/ You have an additional service which can break.
 
 ** Use `.git` in your import paths
 If you run ~go get git.domain.com/foo/bar.git~ and import it this way, i
 it will fetch the git URL without checking the <meta> tag.
 
-=Drawback:= You have to remember adding ~.git~ and it's not really common.
+/Drawback:/ You have to remember adding ~.git~ and it's not really common.
