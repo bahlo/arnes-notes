@@ -1,3 +1,5 @@
 #+TITLE: HomeKit
 
+- tags :: [[file:smart-home.org][Smart Home]]
+
 The home automation framework by Apple.
