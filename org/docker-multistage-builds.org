@@ -1,0 +1,21 @@
+#+TITLE: Docker multi-stage builds
+
+- url :: https://docs.docker.com/develop/develop-images/multistage-build
+- tags :: [[file:docker.org][Docker]]
+
+You probably don't need the whole language toolchain in your Docker container.
+If you still want to use Docker to build you can use so-called multi-stage builds.
+
+* Example
+This is an example for a [[file:golang.org][Golang]] application:
+#+BEGIN_SRC Dockerfile
+FROM golang:1 AS builder
+COPY /app /
+WORKDIR /app
+RUN go build -o /bin/app ./app
+
+FROM alpine:latest
+RUN apk --no-cache add ca-certificates
+COPY --from=builder /bin/app .
+CMD ["./app"]
+#+END_SRC
