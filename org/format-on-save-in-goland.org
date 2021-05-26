@@ -1,0 +1,8 @@
+#+TITLE: Format on save in Goland
+
+- tags :: [[file:goland.org][Goland]]
+
+1. Open Settings and go to Tools -> Filewatchers
+2. Click =+= and choose either =gofmt= or =goimports= (whatever you prefer)
+
+That's it! This should be the default in my opinion.
