@@ -1,0 +1,24 @@
+name: CI
+on: [push]
+
+env:
+  HUGO_VERSION: 0.74.3
+  EMACS_VERSION: 27.1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Install org-roam dependencies
+        run: |
+          sudo apt-get install sqlite3
+      - name: Install emacs
+        uses: purcell/setup-emacs@master
+        with:
+          version: ${{ env.EMACS_VERSION }}
+      - name: Build
+        run: make org2hugo
