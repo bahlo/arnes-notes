@@ -1,4 +1,6 @@
-#+TITLE: Hey
+#+TITLE: Arnes Knowledge
 
-You've found my knowledge base!
+* Hey,
+
+you've found my knowledge base!
 Check out the [[/posts][full index]] to get started.
