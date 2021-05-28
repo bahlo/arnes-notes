@@ -1,0 +1,40 @@
+#+TITLE: How to start a podcast
+
+This is an opinionated guide on how to start a podcast.
+
+* Domain
+This is the most important thing. So important it has its own section.
+Get your own domain for your podcast. People subscribe to a feed URL, if that URL belongs to a provider you won't be able to switch easily in the future.
+
+~.fm~  domains are cool for podcasts, but also expensive.
+
+* Recording
+** Microphone
+Okay obviously you need a microphone. Marco Arment has a great [[https://marco.org/podcasting-microphones][Podcasting Microphones Mega-Review]] that he keeps updating so this is the place to start.
+** Software
+If you want to record your podcast with another person you have a few options:
+*** Local recording
+Everyone does local recording and you chat via any software (Skype, Discord, FaceTime even).
+
+This has the drawback that you have to send around the files and sync up all voices in the post-production.
+*** Special software
+There is also software that solves this for you. [[https://studio-link.de][StudioLink]], for example will let you talk to each other and record multiple tracks on one computer.
+
+* Production
+** Editing software
+There is lot's of audio editing tools, use what you know/like.
+*** Ultraschall
+I can recommend [[https://ultraschall.fm][Ultraschall]], a plugin for [[https://www.reaper.fm][Reaper]] ($ 60) that is hyper-optimized for podcasting.
+Ultraschall has an integration for StudioLink so if you use those two the workflow will get way easier.
+*** Other options
+You can also use free tools like [[https://www.apple.com/mac/garageband/][Garageband]] (macOS) or [[https://www.audacityteam.org][Audacity]], but know that they aren't specialized to podcast editing.
+
+** Post-production
+For post-production I cannot recommend [[https://auphonic.com][Auphonic]] enough. It will take your tracks and normalize the loudness, reduce noise and hum, filter out unwanted low frequencies, intelligent leveler – it's fire and forget.
+Plus it allows to upload the final audiofile to a service which is super convenient.
+
+* Hosting
+** Self-hosted
+[[https://publisher.podlove.org][Podlove Podcast Publisher]] is a WordPress plugin that is specialized for Podcast hosting. You get a perfect feed, support for many file-types and good analytics for free.
+** Hosted
+[[https://www.podigee.com/en/][Podigee]] is a service that does all the hosting for you. Don't forget to set up a domain!
