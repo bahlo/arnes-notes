@@ -1,6 +1,6 @@
 #+TITLE: git wip
 
- source :: https://carolynvanslyck.com/blog/2020/12/git-wip/
+- source :: https://carolynvanslyck.com/blog/2020/12/git-wip/
 - tags :: [[file:git.org][Git]]
 
 #+BEGIN_QUOTE
