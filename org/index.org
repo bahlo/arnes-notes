@@ -1,0 +1,4 @@
+#+TITLE: Hey
+
+You've found my knowledge base!
+Check out the [[/posts][Index]] to get started.
