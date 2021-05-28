@@ -2,7 +2,7 @@ BASE_DIR=$(shell pwd)
 SOURCE_ORG_FILES=$(BASE_DIR)/org
 EMACS_BUILD_DIR=/tmp/knowledge-base-home-build
 
-all: org2hugo
+all: org2hugo hugo
 
 .PHONY: org2hugo
 org2hugo:
@@ -12,3 +12,7 @@ org2hugo:
 	HOME=$(EMACS_BUILD_DIR) KNOWLEDGE_BASE_ORG_SRC=$(SOURCE_ORG_FILES) HUGO_BASE_DIR=$(BASE_DIR) emacs -Q --batch --load $(EMACS_BUILD_DIR)/init.el --execute "(build/export-all)" --kill
 	# Move index page
 	mv $(BASE_DIR)/content/posts/index.md $(BASE_DIR)/content/_index.md
+
+.PHONY: hugo
+hugo:
+	hugo

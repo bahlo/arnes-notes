@@ -1,5 +1,9 @@
 name: Build
-on: [push]
+
+on:
+  push:
+    branches:
+      - main
 
 env:
   HUGO_VERSION: 0.74.3
@@ -20,5 +24,19 @@ jobs:
         uses: purcell/setup-emacs@master
         with:
           version: ${{ env.EMACS_VERSION }}
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+      - name: Create static folder
+        run: mkdir static
       - name: Build
-        run: make org2hugo
+        run: make
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+
