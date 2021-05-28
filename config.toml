@@ -1,6 +1,7 @@
 baseURL = "https://knowledge.arne.me/"
 languageCode = "en-us"
 title = "Arnes Knowledge"
+theme = "cortex"
 
 [params]
 email = "hallo@arne.me"
