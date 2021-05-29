@@ -30,8 +30,6 @@ jobs:
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
-      - name: Create static folder
-        run: mkdir static
       - name: Build
         run: make
       - name: Create CNAME file
