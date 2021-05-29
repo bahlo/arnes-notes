@@ -2,3 +2,7 @@
 
 This is my personal knowledge base.
 
+## Inspiration
+* [Jethro's Braindump](https://braindump.jethro.dev) (this site's theme is based on theirs).
+* [Bruno Henriques' knowledge base](https://bphenriques.github.io/knowledge-base/) ([GitHub](https://github.com/bphenriques/knowledge-base))
+* [Tim Webers knowledge](https://github.com/scy/knowledge)
