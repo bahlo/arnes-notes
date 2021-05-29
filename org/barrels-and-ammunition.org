@@ -1,0 +1,31 @@
+#+TITLE: Barrels and Ammunition
+
+- source :: https://www.conordewey.com/blog/barrels-and-ammunition, https://youtu.be/6fQHLK1aIBs
+
+Conor Dewey summarizes a talk by Keith Rabois. The quotes in this document are from the talk, the points mostly from the article.
+
+* The idea
+#+BEGIN_QUOTE
+If you think about people, there are two categories of high-quality people: there is the ammunition, and then there are the barrels. You can add all the ammunition you want, but if you have only five barrels in your company, you can literally do only five things simultaneously. If you add one more barrel, you can now do six things simultaneously. If you add another one, you can do seven, and so on.
+#+END_QUOTE
+
+An organization can only do as many things in parallel as it has barrels, aka people that can own projects and see them through to the end.
+
+#+BEGIN_QUOTE
+Finding those barrels that you can shoot through — someone who can take an idea from conception to live and it’s almost perfect — are incredibly difficult to find. This kind of person can pull people with them. They can charge up the hill. They can motivate their team, and they can edit themselves autonomously.
+#+END_QUOTE
+
+* How to identify barrels
+Copied from Conor Deweys article:
+
+- *Barrels take initiative.* They don't wait for approval or consensus.
+- *Barrels ship high-quality work.* They constantly looking for ways to improve.
+_ *Barrels value speed.* They get the proof of concept out the door quickly and iterate on it.
+- *Barrels take accountability.* They are not only willing but excited to own the plan and the outcome.
+- *Barrels are seen as a resource.* Teammates frequently seek them out for help and advice.
+- *Barrels work well with others.* They know how to motivate teams and individuals alike.
+- *Barrels can handle adversity.* They push through friction and obstacles.
+
+  #+BEGIN_QUOTE
+  Whenever you find a barrel, you should hire them instantly, regardless of whether you have money for them or whether you have a role for them. Just close them.
+  #+END_QUOTE
