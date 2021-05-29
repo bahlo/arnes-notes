@@ -1,3 +1,5 @@
 #+TITLE: Rust
 
+- tags :: [[file:software_engineering.org][Software Engineering]]
+
 A programming language developed by Mozilla with a focus on performance and safety.

@@ -1,3 +1,5 @@
 #+TITLE: Golang
 
+- tags :: [[file:software_engineering.org][Software Engineering]]
+
 A programming language designed at Google. First released November 10, 2009.
