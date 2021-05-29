@@ -6,6 +6,7 @@ on:
       - main
 
 env:
+  DOMAIN: knowledge.arne.me
   HUGO_VERSION: 0.74.3
   EMACS_VERSION: 27.1
 
@@ -33,6 +34,8 @@ jobs:
         run: mkdir static
       - name: Build
         run: make
+      - name: Create CNAME file
+        run: echo "$DOMAIN" > public/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
