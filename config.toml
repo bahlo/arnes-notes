@@ -6,6 +6,7 @@ theme = "cortex"
 [params]
 email = "hallo@arne.me"
 footer = "Built with ♥ with Org-mode and Hugo."
+repo = "https://github.com/bahlo/knowledge"
 
 [markup]
   [markup.goldmark]
