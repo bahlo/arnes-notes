@@ -1,0 +1,5 @@
+#+TITLE: Hugo
+
+- url :: https://gohugo.io
+
+Hugo is a static site generator written in [[file:golang.org][Golang]].

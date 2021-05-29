@@ -1,0 +1,16 @@
+#+TITLE: Anchored headings in Hugo
+
+- source :: https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/24
+- tags :: [[file:hugo.org][Hugo]], [[file:golang.org][Golang]]
+
+If you want to have anchored headings in Hugo (i.e. having a ~#~ before each headings that links to the heading directly), this is how you do it:
+
+Create a ~layouts/_default/_markup/render-heading.html~ and put the following code in it:
+#+BEGIN_SRC html
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+    <a class="heading-anchor" href="#{{ .Anchor | safeURL }}">
+        {{ strings.Repeat .Level "#" }}
+    </a>
+    {{ .Text | safeHTML }}
+</h{{ .Level }}>
+#+END_SRC
