@@ -1,0 +1,12 @@
+#+TITLE: Mark external links in Hugo
+
+- tags :: [[file:hugo.org][Hugo]]
+
+If you use the [[https://github.com/yuin/goldmark/][Goldmark renderer]] in Hugo you can use so-called [[https://gohugo.io/getting-started/configuration-markup/#markdown-render-hooks][Markdown Render Hooks]] to customize the render of some elements (as of May 2021 only images, links and headings are supported). See [[file:anchored-headings-in-hugo.org][Anchored headings in Hugo]] to see how to use the same principle to customize your headings.
+
+To mark external links in Hugo, create the following file: ~layouts/_default/_markup/render-link.html~ and fill with with a template, for example:
+#+BEGIN_SRC html
+<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>{{ .Text }}{{ end }}</a>
+#+END_SRC
+
+The code above will open all external links (i.e. links that start with ~http~ as internal links are relative) in a new tab. It might make sense to indicate that to viewers, I'm using the ~external-link~ item from the [[https://feathericons.com/][Feather]] iconset.
