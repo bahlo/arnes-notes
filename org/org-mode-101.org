@@ -1,0 +1,69 @@
+#+title: Org Mode 101
+#+date: 2021-05-30
+
+- source :: https://orgmode.org/quickstart.html
+- tags :: [[file:org-mode.org][Org Mode]]
+
+* Metadata
+At the top of each file is so-called metadata. Most files will at least have ~#+title~. Example:
+#+begin_src org
+#+title:  Org Mode 101
+#+author: Arne Bahlo
+#+date:   2021-05-30
+#+end_src
+
+* Outlining
+You create headlines by prefixing a line with a number of stars (~*~):
+#+begin_src org
+,* heading 1
+,** heading 2
+,*** heading 3
+#+end_src
+
+* Text formatting
+- ~/italics/~
+- ~*bold*~
+- ~\~code\~~
+- ~=literal=~
+- ~_underline_~
+- ~+strikethrough+~
+
+* Links
+~[[destination][title]]~ or ~[[destinaton]]~
+
+* Lists
+** Unordered
+Unordered lists can start with ~-~  or ~+~:
+#+begin_src org
+- foo
+- bar
+#+end_src
+** Ordered
+Orderes lists can start with ~1.~, ~1)~, ~A~ or ~A)~:
+#+begin_src org
+1. foo
+2. bar
+#+end_src
+
+* Images
+You can embed images by linking to them.
+
+* Blocks
+Blocks can be code, quotes or anything else.
+** Quotes
+#+begin_src org
+,#+begin_quote
+There is nothing permanent except change.
+-- Heraclitus
+,#+end_quote
+#+end_src
+
+* Tables
+Org mode has a full table editor including cell references and formulars.
+
+Simple example:
+#+begin_src org
+| name | age |
+|------+-----|
+| foo  | 42  |
+#+end_src
