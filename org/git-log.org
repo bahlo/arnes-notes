@@ -1,0 +1,23 @@
+#+title: git log
+
+- tags :: [[file:git.org][Git]]
+
+* The problem
+Running ~git log~ on your terminal is pretty verbose and can make getting and overview pretty hard.
+
+* The solution
+Add the following to your ~.gitconfig~:
+#+begin_src ini
+[alias]
+  l = log --graph --format='%C(yellow)%h%Creset - %s %Cgreen(%cr) %C(blue)%an %Creset'
+#+end_src
+
+Running ~git l~ will present the commits, one per line and even visualize merges.
+
+* Example
+(The real thing is more colorful.)
+#+begin_src
+,* 09a50b0 - Only preload code font on pages with code (25 hours ago) Arne Bahlo
+,* 5473803 - Make titles point to permalink (25 hours ago) Arne Bahlo
+,* bc3c745 - Use Iosevka for code blocks (25 hours ago) Arne Bahlo
+#+end_src
