@@ -1,6 +1,6 @@
 #+TITLE: Mark external links in Hugo
 
-- tags :: [[file:hugo.org][Hugo]]
+- tags :: [[file:hugo.org][Hugo]], [[file:golang.org][Golang]]
 
 If you use the [[https://github.com/yuin/goldmark/][Goldmark renderer]] in Hugo you can use so-called [[https://gohugo.io/getting-started/configuration-markup/#markdown-render-hooks][Markdown Render Hooks]] to customize the render of some elements (as of May 2021 only images, links and headings are supported). See [[file:anchored-headings-in-hugo.org][Anchored headings in Hugo]] to see how to use the same principle to customize your headings.
 
