@@ -2,7 +2,7 @@
 
 - url :: https://orgmode.org
 
-A mode for [[file:gnu_emacs.org][GNU Emacs]]. Quoting the homepage:
+A mode for [[file:gnu-emacs.org][GNU Emacs]]. Quoting the homepage:
 
 #+BEGIN_QUOTE
 Org mode is for keeping notes, maintaining to-do lists, planning projects, authoring documents, computational notebooks, literate programming and more — in a fast and effective plain text system.

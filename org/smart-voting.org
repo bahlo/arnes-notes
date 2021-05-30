@@ -1,0 +1,5 @@
+#+title: Smart Voting
+
+- tags :: [[file:voting.org][Voting]], [[file:politics.org][Politics]]
+
+Smart Voting is a tactical voting strategy put forward by the team of Alexej Navalny. The goal is to consolidate the votes to prevent the vote for a party/candidate.
