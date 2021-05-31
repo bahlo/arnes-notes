@@ -53,7 +53,8 @@ jobs:
           echo $! > /tmp/hugo-pid
 
           # Generate subset fonts
-          glyphhanger http://localhost:1313 --spider --family="Inter" --formats=woff2,woff --subset="./fonts/Inter-*.otf"
+          glyphhanger http://localhost:1313/posts --spider --family="Inter" --formats=woff2,woff --subset="./fonts/Inter-*.otf"
+          glyphhanger http://localhost:1313/posts --spider --family="iosevka web" --formats=woff2,woff --subset="./fonts/iosevka-*.ttf"
 
           # Kill hugo
           kill -9 "$(cat /tmp/hugo-pid)"
@@ -62,6 +63,8 @@ jobs:
           mkdir -p static/fonts
           mv ./fonts/Inter-*-subset.* ./static/fonts/
           for file in ./static/fonts/Inter-*-subset.*; do mv "$file" ${file/-subset/}; done
+          mv ./fonts/iosevka-*-subset.* ./static/fonts/
+          for file in ./static/fonts/iosevka-*-subset.*; do mv "$file" ${file/-subset/}; done
       - name: Genereate site
         run: make hugo
       - name: Create CNAME file
