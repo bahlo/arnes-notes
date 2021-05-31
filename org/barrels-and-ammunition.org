@@ -20,7 +20,7 @@ Copied from Conor Deweys article:
 
 - *Barrels take initiative.* They don't wait for approval or consensus.
 - *Barrels ship high-quality work.* They constantly looking for ways to improve.
-_ *Barrels value speed.* They get the proof of concept out the door quickly and iterate on it.
+- *Barrels value speed.* They get the proof of concept out the door quickly and iterate on it.
 - *Barrels take accountability.* They are not only willing but excited to own the plan and the outcome.
 - *Barrels are seen as a resource.* Teammates frequently seek them out for help and advice.
 - *Barrels work well with others.* They know how to motivate teams and individuals alike.
