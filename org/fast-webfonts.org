@@ -1,0 +1,42 @@
+#+title: Fast Webfonts
+#+date: 2021-05-31
+
+- source :: https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/
+- tags :: [[file:software_engineering.org][Software Engineering]]
+
+* Use the most modern file formats
+   =Web Open Font Format 2.0= (WOFF2) is the smallest and most efficient file format for web fonts as of May 2021.
+   Make sure it appears before older file formats as a browser will use the first font it understands.
+   If you care about IE11 you'll need WOFF as well. If you care about IE8 as well you'll need TTF (or some other old format).
+   You can use [[https://onlinefontconverter.com][Online Font Converter]] to convert fonts (make sure to check the license first).
+
+* Use the ~font-display~ descriptor
+- Flash of Invisible Text (FOIT) :: Text will be invisible until the font is downloaded.
+- Flash of Unstyled Text (FOUT) :: Text will be rendered in a fallback font until the font is downloaded.
+
+Use ~font-display: swap;~ so browsers will use a fallback font until the webfont is loaded.
+
+* Preload your font files
+Add the following tag to your ~head~:
+#+begin_src html
+<link rel="preload" href="/some-font.woff2" as="font" type="font/woff2" crossorigin="">
+#+end_src
+
+This forces the browser to start downloading the font before it knows it needs it. Otherwise the browser parses the CSS first, checks if the font is needed on the page and only then loads it.
+
+* Subset your font files
+Tools like [[https://www.zachleat.com/web/glyphhanger/][Glyphhanger]] can look at a list of pages and determine the Unicode character ranges that are used and will create a new version with only those characters included.
+
+* Self-host your fonts
+** Reasons /not/ to self-host your fonts
+1. You often have no choice with a certain typefaces.
+2. It's convenient, copy and paste a line of HTML and you're done
+** Reasons to use self-host your fonts
+*** Performance
+Domain lookups take time. Even Google's own sites (e.g. [[https://web.dev][web.dev]]) use self-hosted fonts instead of Google Fonts.
+*** Privacy
+Paid-for web font services like Adobe Fonts collect data (thy need page views for billing, but they might collect more). If you have the choice, choose including [[file:css.org][CSS]] over [[file:javascript.org][JavaScript]] .
+*** Control
+With self-hosted fonts you can customize your fonts (i.e. subsetting, define ~font-display~ settings or specifying how long a font is cached).
+*** Reliability
+Third party services can suffer slowdowns or outages or even shut down. If you self-host, your fonts will work as long as your website works.
