@@ -1,0 +1,28 @@
+#+title: CSS Custom Properties
+
+- tags :: [[file:css.org][CSS]], [[file:web-development.org][Web Development]]
+
+CSS Custom Properties (sometimes referred to as CSS Variables) allow you to define variables that can be used throughout a document.
+
+* Basic usage
+Seting a variable on ~:root~ defines it globally:
+#+begin_src css
+:root {
+  --title-font-size: 1em;
+}
+#+end_src
+
+You can also limit the scope of variables by defining them on any element, like this:
+#+begin_src css
+header {
+  --fg: red;
+}
+#+end_src
+
+Use the ~var~ function to lookup a variable:
+#ibegin_src css
+header .title {
+  font-size: var(--title-font-size);
+  color: var(--fg);
+}
+#+end_src

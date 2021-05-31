@@ -2,7 +2,7 @@
 #+date: 2021-05-31
 
 - source :: https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/
-- tags :: [[file:software_engineering.org][Software Engineering]]
+- tags :: [[file:web-development.org][Web Development]]
 
 * Use the most modern file formats
    =Web Open Font Format 2.0= (WOFF2) is the smallest and most efficient file format for web fonts as of May 2021.

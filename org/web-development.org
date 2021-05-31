@@ -1,0 +1,5 @@
+#+title: Web Development
+
+- tags :: [[file:software_engineering.org][Software Engineering]]
+
+Web development is the work involved in developing a web site.

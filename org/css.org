@@ -1,3 +1,5 @@
-#+TITLE: CSS
+#+title: CSS
+
+- tags :: [[file:web-development.org][Web Development]]
 
 Cascading Style Sheets is a style-sheet language used to style webpages.

@@ -1,3 +1,5 @@
 #+title: JavaScript
 
+- tags :: [[file:web-development.org][Web Development]]
+
 JavaScript is a dynamic, just-in-time compiled and multi-paradigm programming language that conforms to the [[https://tc39.es/ecma262/#sec-overview][ECMAScript]] specification.
