@@ -20,7 +20,7 @@ header {
 #+end_src
 
 Use the ~var~ function to lookup a variable:
-#ibegin_src css
+#+begin_src css
 header .title {
   font-size: var(--title-font-size);
   color: var(--fg);
