@@ -1,0 +1,24 @@
+#+title: Subset Webfonts
+
+- tags :: [[file:web-development.org][Web Development]], [[file:fast-webfonts.org][Fast Webfonts]]
+
+* The problem
+Webfonts can have relatively large sizes. [[https://typeof.net/Iosevka/][Iosevka]] for example (the typeface that I use for code on this website) is 660kb for one font.
+
+* The solution
+You can subset your fonts, i.e. generate a font with /only/ the glyphs you need. With font subsetting I was able to reduce the size of Iosevka from 660kb to 12kb.
+
+* How to
+1. Install [[https://github.com/zachleat/glyphhanger][glyphhanger]] with npm
+2. Install ~fonttools~, ~brotli~ and ~zopfli~ with pip
+3. Start your local server (you can skip this if you want to use a remote target)
+4. Call glyphhanger with the remote target and your base font.
+
+Glyphhanger will start a headless Chrome, load your page and follow up to 10 links (you can override this), determining the glyphs you need.
+
+For my blog I'm using this command to subset Iosevka:
+#+begin_src sh
+glyphhanger http://localhost:1313/posts --spider --family="iosevka web" --formats=woff2,woff --subset="./fonts/iosevka-*.ttf"
+#+end_src
+
+Check out my [[https://github.com/bahlo/knowledge/blob/main/.github/workflows/build.yml][GitHub Actions workflow]] for a real-world example with [[https://rsms.me/inter/][Inter]], Iosevka and [[file:hugo.org][Hugo]].
