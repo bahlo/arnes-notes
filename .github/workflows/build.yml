@@ -32,8 +32,38 @@ jobs:
           extended: true
       - name: Create static folder
         run: mkdir -p static
-      - name: Build
-        run: make
+      - name: Convert org files to hugo
+        run: make org2hugo
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install subset dependencies
+        run: |
+          npm install -g glyphhanger
+          pip3 install fonttools brotli zopfli
+      - name: Subset fonts
+        run: |
+          # Start hugo and note pid
+          hugo serve --port 1313 &
+          echo $! > /tmp/hugo-pid
+
+          # Generate subset fonts
+          glyphhanger http://localhost:1313 --spider --family="Inter" --formats=woff2,woff --subset="./fonts/Inter-*.otf"
+
+          # Kill hugo
+          kill -9 "$(cat /tmp/hugo-pid)"
+
+          # Move subset fonts to static/fonts to override theme
+          mkdir -p static/fonts
+          mv ./fonts/Inter-*-subset.* ./static/fonts/
+          for file in ./static/fonts/Inter-*-subset.*; do mv "$file" ${file/-subset/}; done
+      - name: Genereate site
+        run: make hugo
       - name: Create CNAME file
         run: echo "$DOMAIN" > public/CNAME
       - name: Deploy
