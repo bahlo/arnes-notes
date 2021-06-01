@@ -53,8 +53,9 @@ jobs:
           echo $! > /tmp/hugo-pid
 
           # Generate subset fonts
-          glyphhanger http://localhost:1313/posts --spider --family="Inter" --formats=woff2,woff --subset="./fonts/Inter-*.otf"
-          glyphhanger http://localhost:1313/posts --spider --family="iosevka web" --formats=woff2,woff --subset="./fonts/iosevka-*.ttf"
+          # We do a pretty wonky parsing of sitemap.xml
+          glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<loc>//' | sed 's/<\/loc>//' | tr '\n' ' ') --family="Inter" --formats=woff2,woff --subset="./fonts/Inter-*.otf"
+          glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<loc>//' | sed 's/<\/loc>//' | tr '\n' ' ') --family="iosevka web" --formats=woff2,woff --subset="./fonts/iosevka-*.ttf"
 
           # Kill hugo
           kill -9 "$(cat /tmp/hugo-pid)"
