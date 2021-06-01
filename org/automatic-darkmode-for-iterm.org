@@ -1,0 +1,55 @@
+#+title: Automatic darkmode for iTerm
+
+- tags :: [[file:automatic-darkmode-in-vim.org][Automatic Darkmode with Vim]]
+
+[[https://iterm2.com][iTerm 2]] is a terminal emulator for macOS. It supports dark and light mode, but it won't change the colors automatically.
+
+But we're lucky! iTerm has great scripting support. See the [[https://iterm2.com/documentation-scripting.html][Scripting Documentation]]. We can use that to automatically switch profiles based on the system appearance.
+
+Here's how:
+
+1. Create two profiles and name them =Light= and =Dark=. It probably makes sense to create one profile to your liking with a light theme, duplicate it and set the dark theme on the duplicate.
+2. Copy the script below into ~$HOME/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/~:
+
+#+begin_src python
+#!/usr/bin/env python3.7
+
+import asyncio
+import time
+import subprocess
+import iterm2
+
+def is_dark_mode():
+    cmd = 'defaults read -g AppleInterfaceStyle'
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE,
+                         stderr=subprocess.PIPE, shell=True)
+    return bool(p.communicate()[0])
+
+async def set_profile(connection):
+    app = await iterm2.async_get_app(connection)
+
+    profile = "Light"
+    if is_dark_mode():
+        profile = "Dark"
+
+    partialProfiles = await iterm2.PartialProfile.async_query(connection)
+    for partial in partialProfiles:
+        if partial.name == profile:
+            full = await partial.async_get_full_profile()
+            # Set profile in _all_ sessions
+            for window in app.terminal_windows:
+                for tab in window.tabs:
+                    for session in tab.sessions:
+                        await session.async_set_profile(full)
+            return
+
+async def main(connection):
+    await set_profile(connection)
+    while True:
+        time.sleep(2)
+        await set_profile(connection)
+
+iterm2.run_forever(main)
+#+end_src
+
+Similar to [[file:automatic-darkmode-in-vim.org][Automatic Darkmode with Vim]], this will check the system appearance every two seconds and set the profile accordingly.
