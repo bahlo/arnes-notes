@@ -1,0 +1,14 @@
+#+title: Vim
+
+Vim is a texeditor. The name comes from Vi IMproved as it is a clone (with additions) of vi, a text editor program for Unix. It was release to the public in 1991.
+
+* Modes
+Vim has 6 basic modes:
+
+- Normal mode :: the default mode, used for editor commands
+- Visual mode :: like normal mode, but can highligh areas of text and editor commands will run on that highlighted text
+- Select mode :: like visual mode but if you enter a printable character, carriage return, new line or line feed Vim will insert the character and start insert mode
+- Insert mode :: similar to editing in most editors
+- Cmdline mode :: supports a single line at the bottom of the window for commands
+- Ex mode :: similar to Cmdline mode but on completion it prompts for another Ex command (you almost never want this mode)
+

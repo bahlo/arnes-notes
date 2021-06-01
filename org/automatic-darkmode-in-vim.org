@@ -1,0 +1,34 @@
+#+title: Automatic Darkmode with Vim
+
+- tags :: [[file:vim.org][Vim]]
+
+* macOS
+On macOS you can add the following lines to your ~.vimrc~ to check the system appearance every 2s and change the theme accordingly:
+
+#+begin_src vimscript
+" Automatically switch light/dark background + theme
+function! SetAppearance(...)
+  try
+    let s:mode = systemlist("defaults read -g AppleInterfaceStyle")[0]
+    let s:new_bg = ""
+    let s:new_theme = ""
+    if s:mode ==? "Dark"
+      let s:new_bg = "dark"
+      let s:new_theme = "base16-unikitty-dark"
+    else
+      let s:new_bg = "light"
+      let s:new_theme = "base16-unikitty-light"
+    endif
+    if &background !=? s:new_bg
+      let &background = s:new_bg
+      execute 'colorscheme '.s:new_theme
+    endif
+  catch
+    " Ignore errors
+  endtry
+endfunction
+call SetAppearance()
+call timer_start(2000, "SetAppearance", {"repeat": -1})
+#+end_src
+
+You probably want to replace ~base16-unikitty-{dark,light}~ with your theme. If two seconds is a too long delay for you, change the 2000 in the last line to something else (a low number might impact performance).
