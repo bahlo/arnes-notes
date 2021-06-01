@@ -1,4 +1,4 @@
-#+title: Automatic Darkmode with Vim
+#+title: Automatic darkmode for Vim
 
 - tags :: [[file:vim.org][Vim]]
 

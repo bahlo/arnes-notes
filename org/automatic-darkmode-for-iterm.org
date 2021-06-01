@@ -1,6 +1,6 @@
 #+title: Automatic darkmode for iTerm
 
-- tags :: [[file:automatic-darkmode-in-vim.org][Automatic Darkmode with Vim]]
+- tags :: [[file:automatic-darkmode-for-vim.org][Automatic darkmode for Vim]]
 
 [[https://iterm2.com][iTerm 2]] is a terminal emulator for macOS. It supports dark and light mode, but it won't change the colors automatically.
 
@@ -52,4 +52,4 @@ async def main(connection):
 iterm2.run_forever(main)
 #+end_src
 
-Similar to [[file:automatic-darkmode-in-vim.org][Automatic Darkmode with Vim]], this will check the system appearance every two seconds and set the profile accordingly.
+Similar to [[file:automatic-darkmode-for-vim.org][Automatic darkmode for Vim]], this will check the system appearance every two seconds and set the profile accordingly.
