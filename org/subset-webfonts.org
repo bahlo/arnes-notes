@@ -14,11 +14,15 @@ You can subset your fonts, i.e. generate a font with /only/ the glyphs you need.
 3. Start your local server (you can skip this if you want to use a remote target)
 4. Call glyphhanger with the remote target and your base font.
 
-Glyphhanger will start a headless Chrome, load your page and follow up to 10 links (you can override this), determining the glyphs you need.
+Glyphhanger will start a headless Chrome, load your page(s), determining the glyphs you need.
 
-For my blog I'm using this command to subset Iosevka:
+I cannot recommend using the ~--spyder~ argument as it didn't seem to work for me, but that would be the easiest solution as it follows links from the inital page up to 10x.
+
+Instead for my website I'm using the command to subset Iosevka (~http://localhost:1313~  is the address of the local [[file:hugo.org][Hugo]] server):
 #+begin_src sh
-glyphhanger http://localhost:1313/posts --spider --family="iosevka web" --formats=woff2,woff --subset="./fonts/iosevka-*.ttf"
+glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<loc>//' | sed 's/<\/loc>//' | tr '\n' ' ') --family="iosevka web" --formats=woff2,woff --subset="./fonts/iosevka-*.ttf"
 #+end_src
+
+It's a bit hacky ngl, maybe I will propose a change to the tool to parse the sitemap itself.
 
 Check out my [[https://github.com/bahlo/knowledge/blob/main/.github/workflows/build.yml][GitHub Actions workflow]] for a real-world example with [[https://rsms.me/inter/][Inter]], Iosevka and [[file:hugo.org][Hugo]].
