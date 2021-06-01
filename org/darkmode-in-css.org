@@ -1,0 +1,17 @@
+#+title: Darkmode in CSS
+
+- tags :: [[file:css.org][CSS]], [[file:web-development.org][Web Development]] 
+
+You can use the following ~@media~ query to detect system dark mode.
+In this example we use a dark background for dark mode:
+#+begin_src css
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+  }
+}
+#+end_src
+
+I personally like to combine this with [[file:css-custom-properties.org][CSS Custom Properties]] to make the switch as seamless as possible.
+
+Note that as of the writing of this post Internet Explorer (and some other minor browsers) did not support this query. Check yourself: [[https://caniuse.com/prefers-color-scheme][Can I use prefers-color-scheme media query]].
