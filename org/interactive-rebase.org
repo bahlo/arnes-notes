@@ -1,0 +1,77 @@
+#+title: Interactive Rebase
+
+- tags :: [[file:git.org][Git]]
+
+Interactive rebase is a Git command that supports manipulating your Git history.
+Please note that this requires some understanding of how Git works.
+
+* The problem
+Let's say we have the following Git history (the last 5 commits at the time of tihs writing):
+#+begin_src
+e5b6bb7 - Add Darkmode in CSS
+b956b7b - Fix formatting on Subset Webfonts
+a0c2551 - Add Eucalyptus Gunii
+21909d5 - Update Subset Webfonts
+4a5dc2e - Parse sitemap.xml for font subsetting
+#+end_src
+
+You see that commit ~b956b7b~ (Fix formatting on Subset) fixes an issue introduced in ~21909d5~ (Update Subset Webfonts). This might be fine in lot's of cases, but let's say we want to clean this up.
+Our preferred outcome would look the same as above, but without ~b956b7b~ (Fix formatting on Subset) .
+
+* How to solve this.
+Running ~git rebase -i 4a5dc2e~ will start the interactive rebase and open the following text in your editor:
+#+begin_src
+pick 21909d5 Update Subset Webfonts
+pick a0c2551 Add Eucalyptus Gunii
+pick b956b7b Fix formatting on Subset Webfonts
+pick e5b6bb7 Add Darkmode in CSS
+
+# Rebase 4a5dc2e..e5b6bb7 onto 4a5dc2e (4 commands)
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified). Use -c <commit> to reword the commit message.
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+#+end_src
+
+One thing you might notice is that the commits are in reverse order and the commit we're rebasing /onto/ is missing. You will get used to that.
+
+So now we have a bunch of commands, read the explanation above, I won't repeat it. The commands I personally use most often are ~reword~, ~fixup~ and ~squash~.
+
+What we want is squashing ~b956b7b~ (Fix formatting on Subset Webfonts) into ~21909d5~ (Update Subset Webfonts) but discarding it's message.
+So we first move the whole line 3 up so it's below the first line. Then we change ~pick~ of that line to ~f~ (or ~fixup~). If we now save and close the file, Git will do the rebase and you will be left with the following history:
+
+#+begin_src
+e5b6bb7 - Add Darkmode in CSS
+a0c2551 - Add Eucalyptus Gunii
+b401354 - Update Subset Webfonts
+4a5dc2e - Parse sitemap.xml for font subsetting
+#+end_src
+
+Success! =Fix formatting on Subset Webfonts= is gone and squased into =Update Subset Webfonts= (which now has a new sha).
+
+You can read [[https://git-scm.com/docs/git-rebase][the official documentation on git rebase]] if you want to know more.
+
+* Tips
+I use this most often when I want to clean up a branch that I created from ~main~, so instead of writing the commit sha I'd write ~git rebase -i main~ and it will bring up all commits of my current branch.
+
+* Drawbacks
+Rewriting your Git history will require you to force-push if you have some commits on a remote branch. This is fine for branches that only you work on but will bring trouble if you do this on a shared branch or even ~main~.
