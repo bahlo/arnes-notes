@@ -1,13 +1,13 @@
-baseURL = "https://knowledge.arne.me/"
+baseURL = "https://notes.arne.me/"
 languageCode = "en-us"
-title = "Arnes Knowledge"
+title = "Arnes notes"
 theme = "cortex"
 pygmentsUseClasses = true
 
 [params]
 email = "hallo@arne.me"
 footer = "Built with ♥ with Org-mode and Hugo."
-repo = "https://github.com/bahlo/knowledge"
+repo = "https://github.com/bahlo/arnes-notes"
 
 [markup]
   [markup.goldmark]

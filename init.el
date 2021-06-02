@@ -2,7 +2,7 @@
 ;; Based on the one from Bruno Henirques: https://github.com/bphenriques/knowledge-base/blob/8fb31838fd3f682d602eeb269ee7d92eecbbb8dc/tools/init.el
 ;;
 ;;; Commentary:
-;;; - Requires KNOWLEDGE_BASE_ORG_SOURCE environment variable
+;;; - Requires NOTES_BASE_ORG_SOURCE environment variable
 ;;; Code:
 
 (require 'subr-x)
@@ -10,8 +10,8 @@
 (toggle-debug-on-error)      ;; Show debug informaton as soon as error occurs.
 (setq make-backup-files nil) ;; Disable "<file>~" backups.
 
-(defconst knowledge-base-org-files
-  (let* ((env-key "KNOWLEDGE_BASE_ORG_SRC")
+(defconst notes-org-files
+  (let* ((env-key "NOTES_ORG_SRC")
          (env-value (getenv env-key)))
     (if (and env-value (file-directory-p env-value))
         env-value
@@ -39,7 +39,7 @@
 
 ;;; Public functions
 (defun build/export-all ()
-  "Export all org-files (including nested) under knowledge-base-org-files."
+  "Export all org-files (including nested) under notes-org-files."
 
   (setq org-hugo-base-dir
     (let* ((env-key "HUGO_BASE_DIR")
@@ -48,7 +48,9 @@
           env-value
         (error (format "%s is not set or is not an existing directory (%s)" env-key env-value)))))
 
-  (dolist (org-file (directory-files-recursively knowledge-base-org-files "\.org$"))
+  (setq org-hugo-default-section-directory "notes")
+
+  (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
     (with-current-buffer (find-file org-file)
       (message (format "[build] Exporting %s" org-file))
       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))

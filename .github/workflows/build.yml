@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DOMAIN: knowledge.arne.me
+  DOMAIN: notes.arne.me
   HUGO_VERSION: 0.74.3
   EMACS_VERSION: 27.1
 

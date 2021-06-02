@@ -1,8 +1,8 @@
-#+TITLE: Index
+#+title: Index
 
 * Hey,
 
-you've found my knowledge base!
+you've found my notes!
 
 Here are some topics to get you started:
 
@@ -10,6 +10,6 @@ Here are some topics to get you started:
 - [[file:sysops.org][SysOps]]
 - [[file:smart-home.org][Smart Home]]
 
-Check out the [[/posts][full index]] for an overview.
+Check out the [[/notes][full index]] for an overview.
 
-This whole page is on GitHub: [[https://github.com/bahlo/knowledge][bahlo/knowledge]].
+This whole page is on GitHub: [[https://github.com/bahlo/arnes-notes][bahlo/arnes-notes]].
