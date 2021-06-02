@@ -6,7 +6,7 @@ This is an opinionated guide on how to start a podcast.
 This is the most important thing. So important it has its own section.
 Get your own domain for your podcast. People subscribe to a feed URL, if that URL belongs to a provider you won't be able to switch easily in the future.
 
-~.fm~  domains are cool for podcasts, but also expensive.
+~.fm~ domains are cool for podcasts, but also expensive.
 
 * Recording
 ** Microphone
