@@ -1,5 +1,7 @@
 #+title: cron
 
+- tags :: [[file:linux.org][Linux]], [[file:sysops.org][SysOps]]
+
 The software utility cron (or cron job) is a time-based job scheduler in Unix-like operating systems.
 
 * Crontab
