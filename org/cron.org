@@ -1,0 +1,21 @@
+#+title: cron
+
+The software utility cron (or cron job) is a time-based job scheduler in Unix-like operating systems.
+
+* Crontab
+A crontab file defines the cron jobs of a user or system. You can edit it by running ~crontab -e~.
+
+Each line of a crontab represents a job. This is the schema:
+#+begin_src
+# ┌───────────── minute (0 - 59)
+# │ ┌───────────── hour (0 - 23)
+# │ │ ┌───────────── day of the month (1 - 31)
+# │ │ │ ┌───────────── month (1 - 12)
+# │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday)
+# │ │ │ │ │
+# * * * * * <command to execute>
+#+end_src
+
+If a ~*~ is at one position, it is unrestricted. If minute is ~*~, it will run every minute (but not necessarily every hour or day).
+
+You can also specify ~*/n~ to run every n-th interval. Setting hour to ~*/5~ it will run every five hours.

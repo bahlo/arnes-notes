@@ -30,7 +30,7 @@ You can run the following to run a backup right now:
 $ rclone sync /local/path my-remote-secret:
 #+end_src
 
-If you want to run the backup regulary you can create a cronjob. The ~flock~ command makes sure only one backup can run at the time.
+If you want to run the backup regulary you can create a [[file:cron.org][cron]] job. The ~flock~ command makes sure only one backup can run at the time.
 
 #+begin_src cronjob
 ,* 2 * * * flock --no-fork --exclusive --nonblock /var/lock/rclone-media.lock -c 'rclone sync /local/path my-remote-secret: > /var/log/rclone-media.log'
