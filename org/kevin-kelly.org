@@ -1,0 +1,8 @@
+#+title: Kevin Kelly
+#+date: 2021-06-02
+
+- url :: https://kk.org
+
+#+begin_quote
+Kevin Kelly is Senior Maverick at Wired magazine. He co-founded Wired in 1993, and served as its Executive Editor for its first 7 years. His most recent book is The Inevitable, which is a New York Times and Wall Street Journal bestseller. His other books include the best-selling New Rules for the New Economy, the classic Out of Control, and his summary theory of technology in What Technology Wants. From 1984-1990 Kelly was publisher and editor of the Whole Earth Catalogs. He co-founded the Hackers’ Conference, and was involved with the launch of the WELL, a pioneering online service started in 1985. He also founded the popular Cool Tools website in 2003.
+#+end_quote

@@ -1,6 +1,8 @@
 #+title: 99 Additional Bits of Unsolicited Advice
+#+date: 2021-06-02
 
 - source :: https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/
+- author :: [[file:kevin-kelly.org][Kevin Kelly]]
 
 #+begin_quote
 I have another birthday, and another bunch of unsolicited advice.
