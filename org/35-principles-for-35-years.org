@@ -1,0 +1,110 @@
+#+title: 35 Principles for 35 Years
+
+- source :: https://www.swyx.io/35-principles/
+- tags :: [[file:wisdom.org][Wisdom]]
+
+#+begin_quote
+I turn 35 today. Here are 35 principles I have accumulated and try to live by [...].
+#+end_quote
+
+Here are the things from that post which resonated with me:
+
+* Life is too Short for Short Term Games
+Copied from the [https://twitter.com/swyx/status/1281424520100737025][Tweets]:
+
+#+begin_quote
+Systems > Goals
+Discipline > Motivation
+Trust > Distrust
+Principles > Tactics
+Writing > Reading
+Vulnerability > Confidence
+North Stars > Low Hanging Fruit
+Trends > News
+Habits > Sprints
+Questions > Answers
+Problems > Solutions
+People > Projects
+Listening > Arguing
+Empathy > Enmity
+Values > Metrics
+Actions > Reactions
+Health > Wealth
+Forgiveness > Revenge
+Automation > Decision
+Delegation > Control
+Growth > Fixed mindset
+"Yes, and" > "Well, actually"
+Community > Solo effort
+Identity > Outcomes
+Science > Social Science
+Integrity > Capability
+Designing > Forecasting
+History > Geography
+Micro > Macro econ.
+Resilience > Perfection
+Redundancy > Efficiency
+Lasting > Winning
+Wisdom > Intelligence
+Drive > Inspiration
+Investing > Spending
+Proactive > Reactive
+Data Structures > Algorithms
+Audiobooks > Podcasts
+Movies > TV
+Boardgames > Computer games
+Wearables > VR
+Email > Slack
+DM > Subtweet
+Textbooks > Google
+Courses > YouTube
+Threads > Memes
+Magazines > Newspapers
+Theme songs > Soundtracks
+Slogans > Billboards
+Wikis > Q&A
+Personal Blog > Medium
+Reviews > Silence
+#+end_quote
+
+* Writing is Stupendously High Leverage
+- Helps to organize thoughts and learn
+- Share ideas and knowledge why you sleep
+
+* Good enough is Better than Best
+#+begin_quote
+A good plan, violently executed now, is better than a perfect plan next week.
+— General George Patton
+#+end_quote
+
+* Less is more
+[[https://www.nature.com/articles/d41586-021-00592-0][Adding is favoured over subtracting in problem solving]]
+
+* Create Clarity
+#+begin_quote
+You can’t call yourself a leader by coming into a situation that is by nature uncertain, ambiguous — and create confusion. You have to create clarity where none exists.
+— Satya Nadella
+#+end_quote
+
+See also [[https://css-tricks.com/the-importance-of-career-laddering][The Importance of Career Laddering]].
+
+* Optimize for change
+Optimizing for anything else tends to make systems /more/ fragile. See [[https://overreacted.io/optimized-for-change/][Optimized for Change]].
+
+* Praise in Public, Criticize in Private
+Exception for companies and people that are actively harming or misleading the vulnerable.
+
+* Log Your Wins
+When you ship something big or small, or when someone says nice things about you.
+
+* Optimize for Retention, not Consumption
+We are the sum total of still-relevant knowledge we still remember, not the total of the volume of content we consume.
+
+* Systems > Goals
+#+begin_quote
+You don't rise to the level of your goals. You fall to the level of your systems.
+— James Clear
+#+end_quote
+
+* Earn White Collar, Spend Blue Collar
+Don't let your expenses rise as fast as your income.
