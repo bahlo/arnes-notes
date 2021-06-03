@@ -1,5 +1,7 @@
 # Redirect index to About these notes
 / /about-these-notes/
+https://trusting-clarke-ff475e.netlify.app/ /about-these-notes/
+https://notes.arne.me/ /about-these-notes/
 
 # Redirect from when we notes lived in /notes/
 /notes/* /:splat
