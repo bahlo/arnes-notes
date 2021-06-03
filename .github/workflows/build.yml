@@ -6,7 +6,6 @@ on:
       - main
 
 env:
-  DOMAIN: notes.arne.me
   HUGO_VERSION: 0.74.3
   EMACS_VERSION: 27.1
 
@@ -68,8 +67,6 @@ jobs:
           for file in ./static/fonts/iosevka-*-subset.*; do mv "$file" ${file/-subset/}; done
       - name: Genereate site
         run: make hugo
-      - name: Create CNAME file
-        run: echo "$DOMAIN" > public/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
