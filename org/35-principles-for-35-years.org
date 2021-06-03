@@ -10,60 +10,60 @@ I turn 35 today. Here are 35 principles I have accumulated and try to live by [.
 Here are the things from that post which resonated with me:
 
 * Life is too Short for Short Term Games
-Copied from the [https://twitter.com/swyx/status/1281424520100737025][Tweets]:
+Copied from these [[https://twitter.com/swyx/status/1281424520100737025][Tweets]]:
 
 #+begin_quote
-Systems > Goals
-Discipline > Motivation
-Trust > Distrust
-Principles > Tactics
-Writing > Reading
-Vulnerability > Confidence
-North Stars > Low Hanging Fruit
-Trends > News
-Habits > Sprints
-Questions > Answers
-Problems > Solutions
-People > Projects
-Listening > Arguing
-Empathy > Enmity
-Values > Metrics
-Actions > Reactions
-Health > Wealth
-Forgiveness > Revenge
-Automation > Decision
-Delegation > Control
-Growth > Fixed mindset
-"Yes, and" > "Well, actually"
-Community > Solo effort
-Identity > Outcomes
-Science > Social Science
-Integrity > Capability
-Designing > Forecasting
-History > Geography
-Micro > Macro econ.
-Resilience > Perfection
-Redundancy > Efficiency
-Lasting > Winning
-Wisdom > Intelligence
-Drive > Inspiration
-Investing > Spending
-Proactive > Reactive
-Data Structures > Algorithms
-Audiobooks > Podcasts
-Movies > TV
-Boardgames > Computer games
-Wearables > VR
-Email > Slack
-DM > Subtweet
-Textbooks > Google
-Courses > YouTube
-Threads > Memes
-Magazines > Newspapers
-Theme songs > Soundtracks
-Slogans > Billboards
-Wikis > Q&A
-Personal Blog > Medium
+Systems > Goals,
+Discipline > Motivation,
+Trust > Distrust,
+Principles > Tactics,
+Writing > Reading,
+Vulnerability > Confidence,
+North Stars > Low Hanging Fruit,
+Trends > News,
+Habits > Sprints,
+Questions > Answers,
+Problems > Solutions,
+People > Projects,
+Listening > Arguing,
+Empathy > Enmity,
+Values > Metrics,
+Actions > Reactions,
+Health > Wealth,
+Forgiveness > Revenge,
+Automation > Decision,
+Delegation > Control,
+Growth > Fixed mindset,
+"Yes, and" > "Well, actually",
+Community > Solo effort,
+Identity > Outcomes,
+Science > Social Science,
+Integrity > Capability,
+Designing > Forecasting,
+History > Geography,
+Micro > Macro econ.,
+Resilience > Perfection,
+Redundancy > Efficiency,
+Lasting > Winning,
+Wisdom > Intelligence,
+Drive > Inspiration,
+Investing > Spending,
+Proactive > Reactive,
+Data Structures > Algorithms,
+Audiobooks > Podcasts,
+Movies > TV,
+Boardgames > Computer games,
+Wearables > VR,
+Email > Slack,
+DM > Subtweet,
+Textbooks > Google,
+Courses > YouTube,
+Threads > Memes,
+Magazines > Newspapers,
+Theme songs > Soundtracks,
+Slogans > Billboards,
+Wikis > Q&A,
+Personal Blog > Medium,
 Reviews > Silence
 #+end_quote
 
