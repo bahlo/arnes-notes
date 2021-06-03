@@ -1,0 +1,15 @@
+#+title: About these notes
+
+Hey, you've found my notes!
+
+Here are some topics to get started:
+
+- [[file:software_engineering.org][Software Engineering]]
+- [[file:sysops.org][SysOps]]
+- [[file:smart-home.org][Smart Home]]
+- [[file:gardening.org][Gardening]]
+- [[file:cognitive-biases.org][Cognitive Biases]]
+- [[file:politics.org][Politics]]
+- [[file:wisdom.org][Wisdom]]
+
+This whole page is on GitHub: [[https://github.com/bahlo/arnes-notes][bahlo/arnes-notes]].

@@ -8,6 +8,7 @@ pygmentsUseClasses = true
 email = "hallo@arne.me"
 footer = "Built with ♥ with Org-mode and Hugo."
 repo = "https://github.com/bahlo/arnes-notes"
+entrypoint = "/about-these-notes/"
 
 [markup]
   [markup.goldmark]

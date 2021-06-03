@@ -1,1 +1,2 @@
-#+TITLE: Smart Home
+#+title: Smart Home
+
