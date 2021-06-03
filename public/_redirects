@@ -1,0 +1,8 @@
+# Redirect index to About these notes
+/ /about-these-notes/
+
+# Redirect from when we notes lived in /notes/
+/notes/* /:splat
+
+# Redirect from when notes lived in /posts/
+/posts/* /:splat
