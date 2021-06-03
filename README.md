@@ -1,4 +1,5 @@
-# arnes-notes [![Build](https://github.com/bahlo/arnes-notes/actions/workflows/build.yml/badge.svg)](https://github.com/bahlo/arnes-notes/actions/workflows/build.yml)
+# arnes-notes [![Build](https://github.com/bahlo/arnes-notes/actions/workflows/build.yml/badge.svg)](https://github.com/bahlo/arnes-notes/actions/workflows/build.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/83ce689d-105f-475b-8262-15a25d43920a/deploy-status)](https://app.netlify.com/sites/trusting-clarke-ff475e/deploys)
+
 
 This is my personal collection of notes.
 
