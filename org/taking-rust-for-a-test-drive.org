@@ -1,0 +1,29 @@
+#+title: How to find a good first Rust project
+
+- source :: [[https://ferrous-systems.com/blog/rust-test-drive/][ferrous-systems.com]]
+- tags :: [[file:rust.org][Rust]]
+
+Aim to answer three questions
+1. How can we /minimize/ cost or risk to projects and timelines?
+2. How can we /maximize/ rewards (reliability, efficiency, developer happiness)
+3. How can we /maximize/ learnings from the first trial?
+
+* Qualitites of a good first challenge
+- *Pick a problem domain you already know.* If you rewrite a service, don't change its behaviour or API, instead only change one variable at a time.
+- *Avoid the "critical path".* Try Rust on projects that doesn't have tight deadlines.
+- *Pick components that are well documented and well isolated.* Well documented/good rqeuirements or well isolated, architecturally.
+- *Solve a problem you have.* Might be slow-to-start CLI tools, tools that aren't portable between Windows, macOS and Linux.
+
+** Tooling: Our Favourite "First Challenge"
+Implement support tooling for your development process are a great candidate for a first challenge, because:
+- Developers always appreciate cleaning up little "paper cuts"
+- Your team is alraedy working without these tools
+- These tools are not typically part of your "main product"
+- Often relatively small and have a specific scope
+
+* Strengths of Rust to lean on
+- Portability/cross compiling
+- CLI tools ([[https://github.com/clap-rs/clap][clap]], multiple platforms)
+- Serialization/deserialization ([[https://serde.rs][serde]])
+- Data parsing/number crunching
+- Multithreaded code
