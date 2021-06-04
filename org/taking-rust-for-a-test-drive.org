@@ -10,7 +10,7 @@ Aim to answer three questions
 
 * Qualitites of a good first challenge
 - *Pick a problem domain you already know.* If you rewrite a service, don't change its behaviour or API, instead only change one variable at a time.
-- *Avoid the "critical path".* Try Rust on projects that doesn't have tight deadlines.
+- *Avoid the "critical path".* Try Rust on projects that don't have tight deadlines.
 - *Pick components that are well documented and well isolated.* Well documented/good rqeuirements or well isolated, architecturally.
 - *Solve a problem you have.* Might be slow-to-start CLI tools, tools that aren't portable between Windows, macOS and Linux.
 
