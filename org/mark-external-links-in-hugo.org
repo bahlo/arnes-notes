@@ -1,4 +1,4 @@
-#+TITLE: Mark external links in Hugo
+#+title: Mark external links in Hugo
 
 - tags :: [[file:hugo.org][Hugo]], [[file:golang.org][Golang]]
 

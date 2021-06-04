@@ -1,6 +1,6 @@
-#+TITLE: Shelly
+#+title: Shelly
 
-- url :: https://shelly.cloud
+- url :: [[https://shelly.cloud][shelly.cloud]]
 - tags :: [[file:home-assistant.org][Home Assistant]], [[file:smart-home.org][Smart Home]]
 
 Shelly provides relatively cheap in-wall devices that can control sockets, light switches, garage

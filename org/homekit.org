@@ -1,4 +1,4 @@
-#+TITLE: HomeKit
+#+title: HomeKit
 
 - tags :: [[file:smart-home.org][Smart Home]]
 

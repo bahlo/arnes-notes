@@ -1,6 +1,6 @@
 #+title: SASS
 
-- url :: https://sass-lang.com
+- url :: [[https://sass-lang.com][sass-lang.com]]
 - tags :: [[file:css.org][CSS]], [[file:web-development.org][Web Development]]
 
 SASS (or SCSS) is a preprocessor for [[file:css.org][CSS]].

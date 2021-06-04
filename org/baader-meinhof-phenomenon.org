@@ -1,6 +1,6 @@
 #+TITLE: Baader-Meinhof Phenomenon
 
-- source ::  https://science.howstuffworks.com/life/inside-the-mind/human-brain/baader-meinhof-phenomenon.htm
+- source :: [[https://science.howstuffworks.com/life/inside-the-mind/human-brain/baader-meinhof-phenomenon.htm][science.howstuffworks.com]]
 - tags :: [[file:cognitive-biases.org][Cognitive Biases]]
 
 * What does Baader-Meinhof mean?

@@ -1,6 +1,6 @@
 #+title: Hugo
 
-- url :: https://gohugo.io
+- url :: [[https://gohugo.io][gohugo.io]]
 - tags :: [[file:web-development.org][Web Development]]
 
 Hugo is a static site generator written in [[file:golang.org][Golang]].

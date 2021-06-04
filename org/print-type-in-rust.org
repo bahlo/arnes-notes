@@ -1,4 +1,4 @@
-#+TITLE: Print Type in Rust
+#+title: Print Type in Rust
 
 - tags :: [[file:rust.org][Rust]]
 

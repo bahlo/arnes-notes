@@ -1,4 +1,4 @@
-#+TITLE: go get <meta> tag
+#+title: go get <meta> tag
 
 - tags :: [[file:golang.org][Golang]]
 

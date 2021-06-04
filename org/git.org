@@ -1,4 +1,4 @@
-#+TITLE: Git
+#+title: Git
 
 - tags :: [[file:software_engineering.org][Software Engineering]]
 

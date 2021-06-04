@@ -1,6 +1,6 @@
-#+TITLE: Sticky Header ScrollTo
+#+title: Sticky Header ScrollTo
 
-- source :: https://mobile.twitter.com/joshwcomeau/status/1332015868725891076
+- source :: [[https://twitter.com/joshwcomeau/status/1332015868725891076][twitter.com]]
 - tags :: [[file:css.org][CSS]]
 
 #+BEGIN_QUOTE

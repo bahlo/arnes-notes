@@ -1,6 +1,6 @@
 #+TITLE: Docker multi-stage builds
 
-- url :: https://docs.docker.com/develop/develop-images/multistage-build
+- url :: [[https://docs.docker.com/develop/develop-images/multistage-build][docs.docker.com]]
 - tags :: [[file:docker.org][Docker]]
 
 You probably don't need the whole language toolchain in your Docker container.

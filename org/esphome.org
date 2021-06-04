@@ -1,6 +1,6 @@
-#+TITLE: ESPHome
+#+title: ESPHome
 
-- url :: https://esphome.io
+- url :: [[https://esphome.io][esphome.io]]
 - tags :: [[file:smart-home.org][Smart Home]], [[file:diy.org][DIY]], [[file:home-assistant.org][Home Assistant]]
 
 #+BEGIN_QUOTE

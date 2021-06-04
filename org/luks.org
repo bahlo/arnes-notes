@@ -1,4 +1,4 @@
-#+TITLE: Luks
+#+title: Luks
 
 - tags :: [[file:linux.org][Linux]]
 

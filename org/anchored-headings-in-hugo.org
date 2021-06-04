@@ -1,6 +1,6 @@
-#+TITLE: Anchored headings in Hugo
+#+title: Anchored headings in Hugo
 
-- source :: https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/24
+- source :: [[https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/24][discourse.gohugo.io]]
 - tags :: [[file:hugo.org][Hugo]], [[file:golang.org][Golang]]
 
 If you want to have anchored headings in Hugo (i.e. having a ~#~ before each headings that links to the heading directly), this is how you do it:

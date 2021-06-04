@@ -1,6 +1,6 @@
-#+TITLE: Docker
+#+title: Docker
 
-- url :: https://www.docker.com
+- url :: [[https://www.docker.com][docker.com]]
 - tags :: [[file:software_engineering.org][Software Engineering]], [[file:sysops.org][SysOps]]
 
 Docker is a container virtualization software.

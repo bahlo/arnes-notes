@@ -1,6 +1,6 @@
-#+TITLE: Org Mode
+#+title: Org Mode
 
-- url :: https://orgmode.org
+- url :: [[https://orgmode.org][orgmode.org]]
 
 A mode for [[file:gnu-emacs.org][GNU Emacs]]. Quoting the homepage:
 

@@ -1,7 +1,7 @@
 #+title: Fast Webfonts
 #+date: 2021-05-31
 
-- source :: https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/
+- source :: [[https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/][iainbean.com]]
 - tags :: [[file:web-development.org][Web Development]]
 
 * Use the most modern file formats

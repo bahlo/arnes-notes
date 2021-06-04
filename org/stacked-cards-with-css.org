@@ -1,6 +1,6 @@
 #+title: Stacked Cards with CSS
 
-- source :: [[https://css-tricks.com/stacked-cards-with-sticky-positioning-and-a-dash-of-sass/][Stacked Cards with Sticky Positioning and a Dash of Sass]]
+- source :: [[https://css-tricks.com/stacked-cards-with-sticky-positioning-and-a-dash-of-sass/][css-tricks.com]]
 - tags :: [[file:css.org][CSS]], [[file:sass.org][SASS]]
 
 We want to be able to stack cards when scrolling down. Check out the website of [[https://corey.ginnivan.net][Corey Ginnivan]] for an example.

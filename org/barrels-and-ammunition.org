@@ -1,6 +1,6 @@
-#+TITLE: Barrels and Ammunition
+#+title: Barrels and Ammunition
 
-- source :: https://www.conordewey.com/blog/barrels-and-ammunition, https://youtu.be/6fQHLK1aIBs
+- source :: [[https://www.conordewey.com/blog/barrels-and-ammunition][conordewey.com]]
 
 Conor Dewey summarizes a talk by Keith Rabois. The quotes in this document are from the talk, the points mostly from the article.
 

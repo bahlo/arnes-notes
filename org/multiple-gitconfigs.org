@@ -1,4 +1,4 @@
-#+TITLE: Multiple Gitconfigs
+#+title: Multiple Gitconfigs
 
 - tags :: [[file:git.org][Git]]
 

@@ -1,6 +1,6 @@
-#+TITLE: Remove an element from a slice in Go
+#+title: Remove an element from a slice in Go
 
-- source :: https://stackoverflow.com/questions/37334119/how-to-delete-an-element-from-a-slice-in-golang
+- source :: [[https://stackoverflow.com/questions/37334119/how-to-delete-an-element-from-a-slice-in-golang][stackoverflow.com]]
 - tags :: [[file:golang.org][Golang]]
 
 * Order matters

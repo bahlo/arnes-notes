@@ -1,6 +1,6 @@
-#+TITLE: System Font Stack
+#+title: System Font Stack
 
-- source :: https://css-tricks.com/snippets/css/system-font-stack/
+- source :: [[https://css-tricks.com/snippets/css/system-font-stack/][css-tricks.com]]
 - tags :: [[file:css.org][CSS]]
 
 #+BEGIN_SRC css
