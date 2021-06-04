@@ -1,0 +1,44 @@
+#+title: Stacked Cards with CSS
+
+- source :: [[https://css-tricks.com/stacked-cards-with-sticky-positioning-and-a-dash-of-sass/][Stacked Cards with Sticky Positioning and a Dash of Sass]]
+- tags :: [[file:css.org][CSS]], [[file:sass.org][SASS]]
+
+We want to be able to stack cards when scrolling down. Check out the website of [[https://corey.ginnivan.net][Corey Ginnivan]] for an example.
+
+Create your cards in CSS as you would otherwise.
+
+Then add the following CSS:
+#+begin_src css
+.card {
+  position: sticky;
+  top: 10px;
+}
+#+end_src
+
+This will lead to cards stopping at 10px from the top and the following cards to float over them.
+
+For the offset you want to change ~top~ for each card. You can either do that manually like this:
+#+begin_src css
+.card:nth-child(1) {
+  top: 10px;
+}
+
+.card:nth-child(2) {
+  top: 20px;
+}
+
+.card:nth-child(3) {
+  top: 30px;
+}
+
+/* and so on */
+#+end_src
+
+If you use [[file:sass.org][SASS]], you can create a for loop like this to simplify things:
+#+begin_src scss
+@for $i from 1 through 10 {
+  .card:nth-child(#{$i}) {
+    top: $i * 10px;
+  }
+}
+#+end_src

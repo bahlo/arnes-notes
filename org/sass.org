@@ -1,0 +1,41 @@
+#+title: SASS
+
+- url :: https://sass-lang.com
+- tags :: [[file:css.org][CSS]], [[file:web-development.org][Web Development]]
+
+SASS (or SCSS) is a preprocessor for [[file:css.org][CSS]].
+
+* SASS vs. SCSS
+** SCSS
+SCSS uses the file extension ~.scss~ and is a superset of CSS (with a few exceptions), which means *all valid CSS is valid SCSS as well*.
+** SASS (The Indented Syntax)
+This was the original syntax and uses ~.sass.~. It doesn't use curly braces but instead relies on intentation.
+
+* Advantages over CSS
+** Nesting
+Instead of writing this in CSS:
+#+begin_src css
+header a {
+  color: red;
+}
+
+header h1 {
+  color: blue;
+}
+#+end_src
+
+you can write the following:
+#+begin_src scss
+header {
+  a {
+    color: red;
+  }
+  h1 {
+    color: blue;
+  }
+}
+#+end_src
+
+This vastly improves the readability of CSS files.
+** And more
+There's a /lot/ of features that make SASS super powerful, check out [[https://sass-lang.com/documentation][the documentation]] for more information.
