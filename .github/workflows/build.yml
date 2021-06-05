@@ -53,7 +53,7 @@ jobs:
 
           # Generate subset fonts
           # We do a pretty wonky parsing of sitemap.xml
-          glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<loc>//' | sed 's/<\/loc>//' | tr '\n' ' ') --family="Inter" --formats=woff2,woff --subset="./fonts/inter/*.otf"
+          glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<loc>//' | sed 's/<\/loc>//' | tr '\n' ' ') --family="Inter" --formats=woff2,woff --subset="./fonts/inter/*.woff2"
           glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<loc>//' | sed 's/<\/loc>//' | tr '\n' ' ') --family="iosevka web" --formats=woff2,woff --subset="./fonts/iosevka/*.ttf"
 
           # Kill hugo
