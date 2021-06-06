@@ -6,3 +6,7 @@
 
 # Redirect from when notes lived in /posts/
 /posts/* /:splat
+
+# plausible.io
+/js/script.js https://plausible.io/js/plausible.js 200
+/api/event https://plausible.io/api/event 202
