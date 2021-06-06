@@ -4,7 +4,7 @@ Hey, you've found my notes!
 
 Here are some topics to get started:
 
-- [[file:software_engineering.org][Software Engineering]]
+- [[file:software-engineering.org][Software Engineering]]
 - [[file:sysops.org][SysOps]]
 - [[file:smart-home.org][Smart Home]]
 - [[file:gardening.org][Gardening]]
