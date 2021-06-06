@@ -1,0 +1,3 @@
+#+title: Signal Processing
+
+An electrical engineering subfield, focussed on analysing, modifying and synthesizing signals.

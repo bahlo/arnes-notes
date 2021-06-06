@@ -1,0 +1,23 @@
+#+title: NRZ (Non-return-to-zero)
+
+- tags :: [[file:signal-processing.org][Signal Processing]]
+
+NRZ line code is a binary code in which ones an zeros are represented by a significant condition and no netural or rest condition.
+
+* Variants
+| Code name | Complete name               | Description                                                                             |
+|-----------+-----------------------------+-----------------------------------------------------------------------------------------|
+| NRZ(L)    | Non-return-to-zero level    | Raw binary bits without any coding. Typically binary 1 maps to high and binary 0 to low |
+| NRU(I)    | Non-return-to-zero inverted | Either NRZ(M) or NRZ(S)                                                                 |
+| NRZ(M)    | Non-return-to-zero mark     | 0 maps to constant, 1 maps to toggle                                                    |
+| NRZ(I)    | Non-return-to-zero space    | 0 maps to toggle, 1 maps to constant                                                    |
+| NRZ(C)    | Non-return-to-zero change   | ?                                                                                       |
+
+* Advantages
+NRZI is used because is easier to detect a transition at high speeds than measure exact voltage.
+
+* Example
+You can see how the NRZI signal is translated to binary. A change in the signal results in a 1, no change results in a 0:
+
+#+CAPTION: From  [[https://en.wikipedia.org/wiki/Non-return-to-zero#/media/File:NRZI_example.png][wikipedia.org]], licensed by CC BY-SA 3.0
+[[./nrzi_example.png]]
