@@ -11,5 +11,6 @@ Here are some topics to get started:
 - [[file:cognitive-biases.org][Cognitive Biases]]
 - [[file:politics.org][Politics]]
 - [[file:wisdom.org][Wisdom]]
+- [[file:electrical-engineering.org][Electrical Engineering]]
 
 This whole page is on GitHub: [[https://github.com/bahlo/arnes-notes][bahlo/arnes-notes]].

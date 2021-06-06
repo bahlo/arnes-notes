@@ -1,3 +1,5 @@
 #+title: Signal Processing
 
+- tags :: [[file:electrical-engineering.org][Electrical Engineering]]
+
 An electrical engineering subfield, focussed on analysing, modifying and synthesizing signals.
