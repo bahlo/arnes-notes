@@ -5,8 +5,6 @@ tmp/
 /content
 
 /public/*
-!/public/_redirects
-!/public/_headers
 !/public/.htaccess
 /resources/_gen
 
