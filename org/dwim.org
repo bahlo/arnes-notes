@@ -1,0 +1,43 @@
+#+title: DWIM (Do what I mean)
+
+- tags :: [[file:software-engineering.org][Software Engineering]]
+
+Emacs has a concept called =DWIM=. Here's an excerpt from the [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Comment-Commands.html][comment-dwim]] command:
+
+#+begin_quote
+The word “dwim” is an acronym for “Do What I Mean”; it indicates that this command can be used for many different jobs relating to comments, depending on the situation where you use it.
+#+end_quote
+
+* Example
+Álvaro Ramírez wrote about this and provided a concrete example in his blogpost [[https://xenodium.com/emacs-dwim-do-what-i-mean/][Emacs DWIM: do what I mean]]. [[https://orgmode.org/manual/Handling-Links.html][org-insert-link]] is handy for inserting [[file:org-mode.org][Org Mode]] links. Things you can do to make it /do what you mean/:
+
+- If I have a region selected and there is a URL in the clipboard, link the selection to the clipboard URL
+- Automatically fetch titles if there is a URL in the clipboard but no selection
+- If there is no URL in the clipboard, fall back to =org-insert-link=
+
+#+begin_src lisp
+(defun ar/org-insert-link-dwim ()
+  "Like `org-insert-link' but with personal dwim preferences."
+  (interactive)
+  (let* ((point-in-link (org-in-regexp org-link-any-re 1))
+         (clipboard-url (when (string-match-p "^http" (current-kill 0))
+                          (current-kill 0)))
+         (region-content (when (region-active-p)
+                           (buffer-substring-no-properties (region-beginning)
+                                                           (region-end)))))
+    (cond ((and region-content clipboard-url (not point-in-link))
+           (delete-region (region-beginning) (region-end))
+           (insert (org-make-link-string clipboard-url region-content)))
+          ((and clipboard-url (not point-in-link))
+           (insert (org-make-link-string
+                    clipboard-url
+                    (read-string "title: "
+                                 (with-current-buffer (url-retrieve-synchronously clipboard-url)
+                                   (dom-text (car
+                                              (dom-by-tag (libxml-parse-html-region
+                                                           (point-min)
+                                                           (point-max))
+                                                          'title))))))))
+          (t
+           (call-interactively 'org-insert-link)))))
+#+end_src
