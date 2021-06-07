@@ -53,7 +53,6 @@ jobs:
 
           # Generate subset fonts
           # We do a pretty wonky parsing of sitemap.xml
-          glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<loc>//' | sed 's/<\/loc>//' | tr '\n' ' ') --family="Inter" --formats=woff2 --subset="./fonts/inter/*.woff2"
           glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<loc>//' | sed 's/<\/loc>//' | tr '\n' ' ') --family="iosevka web" --formats=woff2 --subset="./fonts/iosevka/*.woff2"
 
           # Kill hugo
@@ -61,8 +60,6 @@ jobs:
 
           # Move subset fonts to static/fonts to override theme
           mkdir -p static/fonts
-          mv ./fonts/inter/*-subset.* ./static/fonts/
-          for file in ./static/fonts/Inter-*-subset.*; do mv "$file" ${file/-subset/}; done
           mv ./fonts/iosevka/*-subset.* ./static/fonts/
           for file in ./static/fonts/iosevka-*-subset.*; do mv "$file" ${file/-subset/}; done
       - name: Generate site
