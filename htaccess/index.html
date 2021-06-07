@@ -47,6 +47,8 @@
 <pre><code class="language-htacces" data-lang="htacces">Redirect /index.html /some-other-page/
 </code></pre><h3 id="redirecting-an-old-directory-to-a-new-directory">Redirecting an old directory to a new directory</h3>
 <pre><code class="language-htacces" data-lang="htacces">RedirectRule ^old/(.*)$ /$1 [R=301,NC,L]
+</code></pre><h3 id="hiding-a-folder">Hiding a folder</h3>
+<pre><code class="language-htaccess" data-lang="htaccess">RedirectMatch 404 /\.git
 </code></pre>
       
       

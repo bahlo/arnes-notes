@@ -59,7 +59,7 @@
       
       <guid>https://notes.arne.me/htaccess/</guid>
       <description> tags SysOps   A directory-level configuration file, used for URL redirection, access control, and more.
-Examples Redirecting a single URL: Redirect /index.html /some-other-page/ Redirecting an old directory to a new directory RedirectRule ^old/(.*)$ /$1 [R=301,NC,L] </description>
+Examples Redirecting a single URL: Redirect /index.html /some-other-page/ Redirecting an old directory to a new directory RedirectRule ^old/(.*)$ /$1 [R=301,NC,L] Hiding a folder RedirectMatch 404 /\.git </description>
     </item>
     
     <item>
