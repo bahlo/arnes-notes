@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head><title>DWIM (Do what I mean) – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.64663fe2af439e50dfd3bae784466ceaf64529ed5499168975da73c8a2ee0484.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">DWIM (Do what I mean)</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/dwim/" alt="DWIM (Do what I mean)" class="permalink"><h1>DWIM (Do what I mean)</h1></a>
+      <dl>
+<dt>tags</dt>
+<dd><a href="/software-engineering/">Software Engineering</a>
+</dd>
+</dl>
+<p>Emacs has a concept called <code>DWIM</code>. Here&rsquo;s an excerpt from the <a href="https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Comment-Commands.html" target="_blank">comment-dwim
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ command:</p>
+<blockquote>
+<p>The word “dwim” is an acronym for “Do What I Mean”; it indicates that this command can be used for many different jobs relating to comments, depending on the situation where you use it.</p>
+</blockquote>
+<h2 id="example">Example</h2>
+<p>Álvaro Ramírez wrote about this and provided a concrete example in his blogpost <a href="https://xenodium.com/emacs-dwim-do-what-i-mean/" target="_blank">Emacs DWIM: do what I mean
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+. <a href="https://orgmode.org/manual/Handling-Links.html" target="_blank">org-insert-link
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ is handy for inserting <a href="/org-mode/">Org Mode</a>
+ links. Things you can do to make it <em>do what you mean</em>:</p>
+<ul>
+<li>If I have a region selected and there is a URL in the clipboard, link the selection to the clipboard URL</li>
+<li>Automatically fetch titles if there is a URL in the clipboard but no selection</li>
+<li>If there is no URL in the clipboard, fall back to <code>org-insert-link</code></li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">ar/org-insert-link-dwim</span> <span class="p">()</span>
+  <span class="s">&#34;Like `org-insert-link&#39; but with personal dwim preferences.&#34;</span>
+  <span class="p">(</span><span class="nv">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="k">let*</span> <span class="p">((</span><span class="nv">point-in-link</span> <span class="p">(</span><span class="nv">org-in-regexp</span> <span class="nv">org-link-any-re</span> <span class="mi">1</span><span class="p">))</span>
+	 <span class="p">(</span><span class="nv">clipboard-url</span> <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">string-match-p</span> <span class="s">&#34;^http&#34;</span> <span class="p">(</span><span class="nv">current-kill</span> <span class="mi">0</span><span class="p">))</span>
+			  <span class="p">(</span><span class="nv">current-kill</span> <span class="mi">0</span><span class="p">)))</span>
+	 <span class="p">(</span><span class="nv">region-content</span> <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">region-active-p</span><span class="p">)</span>
+			   <span class="p">(</span><span class="nv">buffer-substring-no-properties</span> <span class="p">(</span><span class="nv">region-beginning</span><span class="p">)</span>
+							   <span class="p">(</span><span class="nv">region-end</span><span class="p">)))))</span>
+    <span class="p">(</span><span class="nb">cond</span> <span class="p">((</span><span class="nb">and</span> <span class="nv">region-content</span> <span class="nv">clipboard-url</span> <span class="p">(</span><span class="nf">not</span> <span class="nv">point-in-link</span><span class="p">))</span>
+	   <span class="p">(</span><span class="nv">delete-region</span> <span class="p">(</span><span class="nv">region-beginning</span><span class="p">)</span> <span class="p">(</span><span class="nv">region-end</span><span class="p">))</span>
+	   <span class="p">(</span><span class="nv">insert</span> <span class="p">(</span><span class="nv">org-make-link-string</span> <span class="nv">clipboard-url</span> <span class="nv">region-content</span><span class="p">)))</span>
+	  <span class="p">((</span><span class="nb">and</span> <span class="nv">clipboard-url</span> <span class="p">(</span><span class="nf">not</span> <span class="nv">point-in-link</span><span class="p">))</span>
+	   <span class="p">(</span><span class="nv">insert</span> <span class="p">(</span><span class="nv">org-make-link-string</span>
+		    <span class="nv">clipboard-url</span>
+		    <span class="p">(</span><span class="nv">read-string</span> <span class="s">&#34;title: &#34;</span>
+				 <span class="p">(</span><span class="nv">with-current-buffer</span> <span class="p">(</span><span class="nv">url-retrieve-synchronously</span> <span class="nv">clipboard-url</span><span class="p">)</span>
+				   <span class="p">(</span><span class="nv">dom-text</span> <span class="p">(</span><span class="nf">car</span>
+					      <span class="p">(</span><span class="nv">dom-by-tag</span> <span class="p">(</span><span class="nv">libxml-parse-html-region</span>
+							   <span class="p">(</span><span class="nv">point-min</span><span class="p">)</span>
+							   <span class="p">(</span><span class="nv">point-max</span><span class="p">))</span>
+							  <span class="ss">&#39;title</span><span class="p">))))))))</span>
+	  <span class="p">(</span><span class="no">t</span>
+	   <span class="p">(</span><span class="nv">call-interactively</span> <span class="ss">&#39;org-insert-link</span><span class="p">)))))</span>
+</code></pre></div>
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//dwim.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>

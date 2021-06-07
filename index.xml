@@ -232,6 +232,17 @@ FROMgolang:1 AS builderCOPY /app /WORKDIR/appRUN go build -o /bin/app ./appFROMa
     </item>
     
     <item>
+      <title>DWIM (Do what I mean)</title>
+      <link>https://notes.arne.me/dwim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/dwim/</guid>
+      <description>tags Software Engineering   Emacs has a concept called DWIM. Here&amp;rsquo;s an excerpt from the comment-dwim   command:
+ The word “dwim” is an acronym for “Do What I Mean”; it indicates that this command can be used for many different jobs relating to comments, depending on the situation where you use it.
+ Example Álvaro Ramírez wrote about this and provided a concrete example in his blogpost Emacs DWIM: do what I mean   .</description>
+    </item>
+    
+    <item>
       <title>Electrical Engineering</title>
       <link>https://notes.arne.me/electrical-engineering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
