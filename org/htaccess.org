@@ -14,3 +14,8 @@ Redirect /index.html /some-other-page/
 #+begin_src htacces
 RedirectRule ^old/(.*)$ /$1 [R=301,NC,L]
 #+end_src
+
+** Hiding a folder
+#+begin_src htaccess
+RedirectMatch 404 /\.git
+#+end_src

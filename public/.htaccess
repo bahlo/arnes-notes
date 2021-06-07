@@ -11,3 +11,6 @@ RewriteRule ^posts/(.*)$ /$1 [R=301,NC,L]
 
 # Renames
 Redirect /software_engineering /software-engineering
+
+# Hide .git*
+RedirectMatch 404 /\.git
