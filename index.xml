@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arnes notes</title>
+    <link>https://notes.arne.me/</link>
+    <description>Recent content on Arnes notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://notes.arne.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>68 Bits of Unsolicited Advice</title>
+      <link>https://notes.arne.me/68-bits-of-unsolicited-advice/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/68-bits-of-unsolicited-advice/</guid>
+      <description>source kk.org    tags Wisdom    It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.
+ These are the things that resonated with me at the time of writing this:
+ Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it.</description>
+    </item>
+    
+    <item>
+      <title>99 Additional Bits of Unsolicited Advice</title>
+      <link>https://notes.arne.me/99-additional-bits-of-unsolicited-advice/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/99-additional-bits-of-unsolicited-advice/</guid>
+      <description>source kk.org    tags Wisdom    I have another birthday, and another bunch of unsolicited advice.
+ These are the things that resonated with me at the time of writing this:
+ That thing that made you weird as a kid could make you great as an adult — if you don’t lose it. If you have any doubt at all about being able to carry a load in one trip, do yourself a huge favor and make two trips.</description>
+    </item>
+    
+    <item>
+      <title>Fast Webfonts</title>
+      <link>https://notes.arne.me/fast-webfonts/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/fast-webfonts/</guid>
+      <description>source iainbean.com    tags Web Development   Use the most modern file formats Web Open Font Format 2.0 (WOFF2) is the smallest and most efficient file format for web fonts as of May 2021. Make sure it appears before older file formats as a browser will use the first font it understands. If you care about IE11 you&amp;rsquo;ll need WOFF as well. If you care about IE8 as well you&amp;rsquo;ll need TTF (or some other old format).</description>
+    </item>
+    
+    <item>
+      <title>Org Mode 101</title>
+      <link>https://notes.arne.me/org-mode-101/</link>
+      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/org-mode-101/</guid>
+      <description>source orgmode.org    tags Org Mode   Metadata At the top of each file is so-called metadata. Most files will at least have #+title. Example:
+#+title: Org Mode 101 #+author: Arne Bahlo #+date: 2021-05-30 Outlining You create headlines by prefixing a line with a number of stars (*):
+*heading 1 ** heading 2 *** heading 3 Text formatting  /italics/ *bold* \~code\~ =literal= _underline_ +strikethrough+  Links [[destination][title]] or [[destinaton]]</description>
+    </item>
+    
+    <item>
+      <title>.htaccess</title>
+      <link>https://notes.arne.me/htaccess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/htaccess/</guid>
+      <description> tags SysOps   A directory-level configuration file, used for URL redirection, access control, and more.
+Examples Redirecting a single URL: Redirect /index.html /some-other-page/ Redirecting an old directory to a new directory RedirectRule ^old/(.*)$ /$1 [R=301,NC,L] </description>
+    </item>
+    
+    <item>
+      <title>35 Principles for 35 Years</title>
+      <link>https://notes.arne.me/35-principles-for-35-years/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/35-principles-for-35-years/</guid>
+      <description>source swyx.io    tags Wisdom    I turn 35 today. Here are 35 principles I have accumulated and try to live by [&amp;hellip;].
+ Here are the things from that post which resonated with me:
+Life is too Short for Short Term Games Copied from these Tweets   :
+ Systems &amp;gt; Goals, Discipline &amp;gt; Motivation, Trust &amp;gt; Distrust, Principles &amp;gt; Tactics, Writing &amp;gt; Reading, Vulnerability &amp;gt; Confidence, North Stars &amp;gt; Low Hanging Fruit, Trends &amp;gt; News, Habits &amp;gt; Sprints, Questions &amp;gt; Answers, Problems &amp;gt; Solutions, People &amp;gt; Projects, Listening &amp;gt; Arguing, Empathy &amp;gt; Enmity, Values &amp;gt; Metrics, Actions &amp;gt; Reactions, Health &amp;gt; Wealth, Forgiveness &amp;gt; Revenge, Automation &amp;gt; Decision, Delegation &amp;gt; Control, Growth &amp;gt; Fixed mindset, &amp;ldquo;Yes, and&amp;rdquo; &amp;gt; &amp;ldquo;Well, actually&amp;rdquo;, Community &amp;gt; Solo effort, Identity &amp;gt; Outcomes, Science &amp;gt; Social Science, Integrity &amp;gt; Capability, Designing &amp;gt; Forecasting, History &amp;gt; Geography, Micro &amp;gt; Macro econ.</description>
+    </item>
+    
+    <item>
+      <title>About these notes</title>
+      <link>https://notes.arne.me/about-these-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/about-these-notes/</guid>
+      <description>Hey, you&amp;rsquo;ve found my notes!
+Here are some topics to get started:
+ Software Engineering  SysOps  Smart Home  Gardening  Cognitive Biases  Politics  Wisdom  Electrical Engineering   This whole page is on GitHub: bahlo/arnes-notes   .</description>
+    </item>
+    
+    <item>
+      <title>Anchored headings in Hugo</title>
+      <link>https://notes.arne.me/anchored-headings-in-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/anchored-headings-in-hugo/</guid>
+      <description>source discourse.gohugo.io    tags Hugo , Golang   If you want to have anchored headings in Hugo (i.e. having a # before each headings that links to the heading directly), this is how you do it:
+Create a layouts/_default/_markup/render-heading.html and put the following code in it:
+&amp;lt;h{{ .Level }} id=&amp;#34;{{ .Anchor | safeURL }}&amp;#34;&amp;gt; &amp;lt;a class=&amp;#34;heading-anchor&amp;#34; href=&amp;#34;#{{ .Anchor | safeURL }}&amp;#34;&amp;gt; {{ strings.Repeat .Level &amp;#34;#&amp;#34; }} &amp;lt;/a&amp;gt; {{ .</description>
+    </item>
+    
+    <item>
+      <title>Automatic darkmode for iTerm</title>
+      <link>https://notes.arne.me/automatic-darkmode-for-iterm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/automatic-darkmode-for-iterm/</guid>
+      <description>tags Automatic darkmode for Vim   iTerm 2   is a terminal emulator for macOS. It supports dark and light mode, but it won&amp;rsquo;t change the colors automatically.
+But we&amp;rsquo;re lucky! iTerm has great scripting support. See the Scripting Documentation   . We can use that to automatically switch profiles based on the system appearance.
+Here&amp;rsquo;s how:
+ Create two profiles and name them Light and Dark.</description>
+    </item>
+    
+    <item>
+      <title>Automatic darkmode for Vim</title>
+      <link>https://notes.arne.me/automatic-darkmode-for-vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/automatic-darkmode-for-vim/</guid>
+      <description>tags Vim   macOS On macOS you can add the following lines to your .vimrc to check the system appearance every 2s and change the theme accordingly:
+&amp;quot; Automatically switch light/dark background + theme function! SetAppearance(...) try let s:mode = systemlist(&amp;quot;defaults read -g AppleInterfaceStyle&amp;quot;)[0] let s:new_bg = &amp;quot;&amp;quot; let s:new_theme = &amp;quot;&amp;quot; if s:mode ==? &amp;quot;Dark&amp;quot; let s:new_bg = &amp;quot;dark&amp;quot; let s:new_theme = &amp;quot;base16-unikitty-dark&amp;quot; else let s:new_bg = &amp;quot;light&amp;quot; let s:new_theme = &amp;quot;base16-unikitty-light&amp;quot; endif if &amp;amp;background !</description>
+    </item>
+    
+    <item>
+      <title>Baader-Meinhof Phenomenon</title>
+      <link>https://notes.arne.me/baader-meinhof-phenomenon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/baader-meinhof-phenomenon/</guid>
+      <description>source science.howstuffworks.com    tags Cognitive Biases   What does Baader-Meinhof mean?  The Baader Meinhof phenomenon is a cognitive bias in which people tend to see a particular thing everywhere after noticing it for the first time.
+ Why is it called the Baader-Meinhof Phenomenon?  It all started in the comments section of a newspaper called the Minnesota St. Pauls Pioneer Press. During the 90s, one commenter talked about the Baader-Meinhof group, which was a West German terrorist organization, and within hours, he saw another reference to the group 70 years after the organization was disbanded.</description>
+    </item>
+    
+    <item>
+      <title>Barrels and Ammunition</title>
+      <link>https://notes.arne.me/barrels-and-ammunition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/barrels-and-ammunition/</guid>
+      <description>source conordewey.com     Conor Dewey summarizes a talk by Keith Rabois. The quotes in this document are from the talk, the points mostly from the article.
+The idea  If you think about people, there are two categories of high-quality people: there is the ammunition, and then there are the barrels. You can add all the ammunition you want, but if you have only five barrels in your company, you can literally do only five things simultaneously.</description>
+    </item>
+    
+    <item>
+      <title>Cognitive Biases</title>
+      <link>https://notes.arne.me/cognitive-biases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/cognitive-biases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cron</title>
+      <link>https://notes.arne.me/cron/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/cron/</guid>
+      <description>tags Linux , SysOps   The software utility cron (or cron job) is a time-based job scheduler in Unix-like operating systems.
+Crontab A crontab file defines the cron jobs of a user or system. You can edit it by running crontab -e.
+Each line of a crontab represents a job. This is the schema:
+# ┌───────────── minute (0 - 59) # │ ┌───────────── hour (0 - 23) # │ │ ┌───────────── day of the month (1 - 31) # │ │ │ ┌───────────── month (1 - 12) # │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday) # │ │ │ │ │ # * * * * * &amp;lt;command to execute&amp;gt; If a * is at one position, it is unrestricted.</description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>https://notes.arne.me/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/css/</guid>
+      <description>tags Web Development , Software Engineering   Cascading Style Sheets is a style-sheet language used to style webpages.</description>
+    </item>
+    
+    <item>
+      <title>CSS Custom Properties</title>
+      <link>https://notes.arne.me/css-custom-properties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/css-custom-properties/</guid>
+      <description>tags CSS , Web Development   CSS Custom Properties (sometimes referred to as CSS Variables) allow you to define variables that can be used throughout a document.
+Basic usage Seting a variable on :root defines it globally:
+:root { --title-font-size: 1em; } You can also limit the scope of variables by defining them on any element, like this:
+header { --fg: red; } Use the var function to lookup a variable:</description>
+    </item>
+    
+    <item>
+      <title>Cyclic redundancy check</title>
+      <link>https://notes.arne.me/crc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/crc/</guid>
+      <description>tags Signal Processing   An error-detecting code commonly used in networks and storage devices to detect accidental changed to raw data. The check value is based on the remainder of a polynomial division of the data.
+They are called CRCs because the check value is a redundancy and the algorithm is based on cyclic codes.
+CRCs are popular because they are simple to implement in hardware, easy to analyze and good at detecting common errors cause by noise in transmission channels.</description>
+    </item>
+    
+    <item>
+      <title>Darkmode in CSS</title>
+      <link>https://notes.arne.me/darkmode-in-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/darkmode-in-css/</guid>
+      <description>tags CSS , Web Development   You can use the following @media query to detect system dark mode. In this example we use a dark background for dark mode:
+@media (prefers-color-scheme: dark) { body { background: #000; } } I personally like to combine this with CSS Custom Properties to make the switch as seamless as possible.
+Note that as of the writing of this post Internet Explorer (and some other minor browsers) did not support this query.</description>
+    </item>
+    
+    <item>
+      <title>DIY</title>
+      <link>https://notes.arne.me/diy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/diy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://notes.arne.me/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/docker/</guid>
+      <description>url docker.com    tags Software Engineering , SysOps   Docker is a container virtualization software.</description>
+    </item>
+    
+    <item>
+      <title>Docker multi-stage builds</title>
+      <link>https://notes.arne.me/docker-multistage-builds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/docker-multistage-builds/</guid>
+      <description>url docs.docker.com    tags Docker   You probably don&amp;rsquo;t need the whole language toolchain in your Docker container. If you still want to use Docker to build you can use so-called multi-stage builds.
+Example This is an example for a Golang application:
+FROMgolang:1 AS builderCOPY /app /WORKDIR/appRUN go build -o /bin/app ./appFROMalpine:latestRUN apk --no-cache add ca-certificatesCOPY --from=builder /bin/app .CMD [&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Electrical Engineering</title>
+      <link>https://notes.arne.me/electrical-engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/electrical-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ESPHome</title>
+      <link>https://notes.arne.me/esphome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/esphome/</guid>
+      <description>url esphome.io    tags Smart Home , DIY , Home Assistant    ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
+ Supports tons of sensors and integrates with Home Assistant .</description>
+    </item>
+    
+    <item>
+      <title>Eucalyptus Gunnii</title>
+      <link>https://notes.arne.me/eucalyptus-gunnii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/eucalyptus-gunnii/</guid>
+      <description>tags Gardening   Eucalyptus gunii (Cider Gum) is an evergreen small to medium-sized tree, native to Tasmania. It has a smooth bark and egg-shaped leaves and it can grow up to 9-21 meters tall (30-70 ft.) and 5-12 meters wide (18-40 ft.).
+Handling  Easy to grow, easy to care for (beginner friendly) Moderate resistance to cold (can take a short -10°C freeze). Performs best in a sunny spot with little wind.</description>
+    </item>
+    
+    <item>
+      <title>Expiring vs. Permanent Skills</title>
+      <link>https://notes.arne.me/expiring-vs-permanent-skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/expiring-vs-permanent-skills/</guid>
+      <description>url collaborativefund.com    tags Wisdom   Every field has two kinds of skills: expiring and permanent.
+Expiring skills Expiring skills are vital at a given time but prone to disminishing as technology improves and a field evolves
+They tend to get more attention, are more likely to be the &amp;ldquo;cool thing&amp;rdquo;.
+Permanent skills Permanent were as essential 100 years ago as they are today, and will still be 100 years from now.</description>
+    </item>
+    
+    <item>
+      <title>Format on save in Goland</title>
+      <link>https://notes.arne.me/format-on-save-in-goland/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/format-on-save-in-goland/</guid>
+      <description>tags Goland   Open Settings and go to Tools -&amp;gt; Filewatchers
+Click + and choose either gofmt or goimports (whatever you prefer)
+That&amp;rsquo;s it! This should be the default in my opinion.</description>
+    </item>
+    
+    <item>
+      <title>French press</title>
+      <link>https://notes.arne.me/french-press/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/french-press/</guid>
+      <description>A French press is a coffee brewing device, developed in 1923 by Ugo Paolini.
+Perfect coffee/water ratio The best ratio is 65g to 1L (2.3oz to 34 US fl oz for my imperial friends).</description>
+    </item>
+    
+    <item>
+      <title>Gardening</title>
+      <link>https://notes.arne.me/gardening/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/gardening/</guid>
+      <description>Gardening is the practice of growing and cultivating plants.</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://notes.arne.me/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/git/</guid>
+      <description>tags Software Engineering   Git is a version-control software, created by Linus Torvalds in 2005.</description>
+    </item>
+    
+    <item>
+      <title>git log</title>
+      <link>https://notes.arne.me/git-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/git-log/</guid>
+      <description> tags Git   The problem Running git log on your terminal is pretty verbose and can make getting and overview pretty hard.
+The solution Add the following to your .gitconfig:
+[alias] l = log --graph --format=&amp;#39;%C(yellow)%h%Creset - %s %Cgreen(%cr) %C(blue)%an %Creset&amp;#39; Running ~git l~ will present the commits, one per line and even visualize merges.
+Example (The real thing is more colorful.)
+* 09a50b0 - Only preload code font on pages with code (25 hours ago) Arne Bahlo * 5473803 - Make titles point to permalink (25 hours ago) Arne Bahlo * bc3c745 - Use Iosevka for code blocks (25 hours ago) Arne Bahlo </description>
+    </item>
+    
+    <item>
+      <title>git wip</title>
+      <link>https://notes.arne.me/git-wip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/git-wip/</guid>
+      <description> source carolynvanslyck.com    tags Git    Have you ever run git branch and still wasn’t sure what each one is for and if it’s recent? Here’s a git alias, git wip, that displays your branches and when you last changed them. It’s really useful for remembering which one you were just working on, and which branches probably should be deleted.
+ [alias] wip = for-each-ref --sort=&amp;#39;authordate:iso8601&amp;#39; --format=&amp;#39; %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)&amp;#39; refs/heads </description>
+    </item>
+    
+    <item>
+      <title>GNU Emacs</title>
+      <link>https://notes.arne.me/gnu-emacs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/gnu-emacs/</guid>
+      <description>url gnu.org     A free/libre text editor.</description>
+    </item>
+    
+    <item>
+      <title>go get &lt;meta&gt; tag</title>
+      <link>https://notes.arne.me/go-get-meta-tag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/go-get-meta-tag/</guid>
+      <description>tags Golang   How it works Go documents the functionality here: Remote import paths   .
+This is the short version:
+When running go get git.domain.com/foo/bar, go does the following:
+ Fetch https://git.domain.com/foo/bar?go-get=1 Check if that page contains a meta tag like this (could also be a https url):   &amp;lt;meta name=&amp;#34;go-import&amp;#34; content=&amp;#34;git.domain.com git git@git.domain.com:foo/bar.git&amp;#34;&amp;gt;  Verify that git.domain.com contains the same meta tag Git clone git@git.</description>
+    </item>
+    
+    <item>
+      <title>Goland</title>
+      <link>https://notes.arne.me/goland/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/goland/</guid>
+      <description>url jetbrains.com    tags Golang   An IDE for Go, by Jetbrains.</description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://notes.arne.me/golang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/golang/</guid>
+      <description>tags Software Engineering   A programming language designed at Google. First released November 10, 2009.</description>
+    </item>
+    
+    <item>
+      <title>Home Assistant</title>
+      <link>https://notes.arne.me/home-assistant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/home-assistant/</guid>
+      <description>url home-assistant.io    tags Smart Home , DIY   Open source home automation system with a lot of integrations, can run on a Raspberry Pi. Has integrations for HomeKit .</description>
+    </item>
+    
+    <item>
+      <title>HomeKit</title>
+      <link>https://notes.arne.me/homekit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/homekit/</guid>
+      <description>tags Smart Home   The home automation framework by Apple.</description>
+    </item>
+    
+    <item>
+      <title>How to find a good first Rust project</title>
+      <link>https://notes.arne.me/taking-rust-for-a-test-drive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/taking-rust-for-a-test-drive/</guid>
+      <description>source ferrous-systems.com    tags Rust   Aim to answer three questions
+ How can we minimize cost or risk to projects and timelines? How can we maximize rewards (reliability, efficiency, developer happiness) How can we maximize learnings from the first trial?  Qualitites of a good first challenge  Pick a problem domain you already know. If you rewrite a service, don&amp;rsquo;t change its behaviour or API, instead only change one variable at a time.</description>
+    </item>
+    
+    <item>
+      <title>How to start a podcast</title>
+      <link>https://notes.arne.me/how-to-start-a-podcast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/how-to-start-a-podcast/</guid>
+      <description>This is an opinionated guide on how to start a podcast.
+Domain This is the most important thing. So important it has its own section. Get your own domain for your podcast. People subscribe to a feed URL, if that URL belongs to a provider you won&amp;rsquo;t be able to switch easily in the future.
+.fm domains are cool for podcasts, but also expensive.
+Recording Microphone Okay obviously you need a microphone.</description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://notes.arne.me/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/hugo/</guid>
+      <description>url gohugo.io    tags Web Development   Hugo is a static site generator written in Golang .</description>
+    </item>
+    
+    <item>
+      <title>Interactive Rebase</title>
+      <link>https://notes.arne.me/interactive-rebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/interactive-rebase/</guid>
+      <description>tags Git   Interactive rebase is a Git command that supports manipulating your Git history. Please note that this requires some understanding of how Git works.
+The problem Let&amp;rsquo;s say we have the following Git history (the last 5 commits at the time of tihs writing):
+e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c2551 - Add Eucalyptus Gunii 21909d5 - Update Subset Webfonts 4a5dc2e - Parse sitemap.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://notes.arne.me/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/javascript/</guid>
+      <description>tags Web Development , Software Engineering   JavaScript is a dynamic, just-in-time compiled and multi-paradigm programming language that conforms to the ECMAScript   specification.</description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://notes.arne.me/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/linux/</guid>
+      <description>Linux is a family of open-source Unix-like operating systems based on the Linux kernel. Created by Linus Torwalds, initial release on September 17, 1991.</description>
+    </item>
+    
+    <item>
+      <title>Luks</title>
+      <link>https://notes.arne.me/luks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/luks/</guid>
+      <description>tags Linux   LUKS (Linux Unified Key Setup) is a full disk encryption specification. It allows you to easily create an encrypted volume.
+Install On Ubuntu/Debian, run: apt-get install cryptsetup.
+Set up Run the following to create an encrypted volume on /dev/sdb:
+$ cryptsetup luksFormat /dev/sdb Please note that this delete the contents of /dev/sdb.
+After that, open the volume and create a file system:
+$ cryptsetup open /dev/sdb encrypted $ mkfs.</description>
+    </item>
+    
+    <item>
+      <title>Mark external links in Hugo</title>
+      <link>https://notes.arne.me/mark-external-links-in-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/mark-external-links-in-hugo/</guid>
+      <description>tags Hugo , Golang   If you use the Goldmark renderer   in Hugo you can use so-called Markdown Render Hooks   to customize the render of some elements (as of May 2021 only images, links and headings are supported). See Anchored headings in Hugo to see how to use the same principle to customize your headings.
+To mark external links in Hugo, create the following file: layouts/_default/_markup/render-link.</description>
+    </item>
+    
+    <item>
+      <title>Multiple Gitconfigs</title>
+      <link>https://notes.arne.me/multiple-gitconfigs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/multiple-gitconfigs/</guid>
+      <description> tags Git   You can have multiple .gitconfig files that override each other based on the directory you&amp;rsquo;re in. This is especially useful if you use a different Email for work commits.
+[includeIf &amp;#34;gitdir:~/Developer/work/&amp;#34;] path = .gitconfig-work </description>
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>https://notes.arne.me/node-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/node-js/</guid>
+      <description>tags Software Engineering   Node.js is an open-source backend JavaScript runtime environment built on the V8 engine.</description>
+    </item>
+    
+    <item>
+      <title>Node.js Intl and ICU</title>
+      <link>https://notes.arne.me/node-js-intl-and-icu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/node-js-intl-and-icu/</guid>
+      <description>tags Node.js   If you use i18n features like Intl   , you need ICU (International Components for Unicode). Your local node installation will most likely have the full ICU installed, but it&amp;rsquo;s often missing on servers or containers.
+Node will fall back to the locale it has installed, so consider writing a test to make sure your locale is available. Below are two options on how to get full ICU data.</description>
+    </item>
+    
+    <item>
+      <title>NRZ (Non-return-to-zero)</title>
+      <link>https://notes.arne.me/nrz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/nrz/</guid>
+      <description>tags Signal Processing   NRZ line code is a binary code in which ones an zeros are represented by a significant condition and no netural or rest condition.
+Variants    Code name Complete name Description     NRZ(L) Non-return-to-zero level Raw binary bits without any coding. Typically binary 1 maps to high and binary 0 to low   NRU(I) Non-return-to-zero inverted Either NRZ(M) or NRZ(S)   NRZ(M) Non-return-to-zero mark 0 maps to constant, 1 maps to toggle   NRZ(I) Non-return-to-zero space 0 maps to toggle, 1 maps to constant   NRZ(C) Non-return-to-zero change ?</description>
+    </item>
+    
+    <item>
+      <title>Org Mode</title>
+      <link>https://notes.arne.me/org-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/org-mode/</guid>
+      <description> url orgmode.org     A mode for GNU Emacs . Quoting the homepage:
+ Org mode is for keeping notes, maintaining to-do lists, planning projects, authoring documents, computational notebooks, literate programming and more — in a fast and effective plain text system.
+ </description>
+    </item>
+    
+    <item>
+      <title>Politics</title>
+      <link>https://notes.arne.me/politics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/politics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Print Type in Rust</title>
+      <link>https://notes.arne.me/print-type-in-rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/print-type-in-rust/</guid>
+      <description>tags Rust    fn type_of&amp;lt;T&amp;gt;(_: &amp;amp;T)-&amp;gt; String {format!</description>
+    </item>
+    
+    <item>
+      <title>Rclone</title>
+      <link>https://notes.arne.me/rclone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/rclone/</guid>
+      <description>url rclone.org    tags SysOps   The Swiss army knife of cloud storage.
+Rclone is a command line program to manage files on cloud storage. It supports lots of cloud providers and encryption.
+Use cases There is a lot you can do with rclone so this is just a list of things that might be useful to you.
+Encrypted backup Create remote The first thing you want to do is set up a remote (storage), run the following:</description>
+    </item>
+    
+    <item>
+      <title>Remove an element from a slice in Go</title>
+      <link>https://notes.arne.me/remove-an-element-from-a-slice-go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/remove-an-element-from-a-slice-go/</guid>
+      <description>source stackoverflow.com    tags Golang   Order matters If you need to retain the order, use this logic:
+func remove(slice []int, s int) []int { return append(slice[:s], slice[s+1:]...) } This is inefficient because you may end up moving all elements, so only do this if you need to keep the order.
+Order is not important If you don&amp;rsquo;t care about the order it is much faster to swap the last element with the one to delete and return a slice without the last element.</description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://notes.arne.me/rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/rust/</guid>
+      <description>url rust-lang.org    tags Software Engineering   A programming language developed by Mozilla with a focus on performance and safety.</description>
+    </item>
+    
+    <item>
+      <title>SASS</title>
+      <link>https://notes.arne.me/sass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/sass/</guid>
+      <description>url sass-lang.com    tags CSS , Web Development   SASS (or SCSS) is a preprocessor for CSS .
+SASS vs. SCSS SCSS SCSS uses the file extension .scss and is a superset of CSS (with a few exceptions), which means all valid CSS is valid SCSS as well.
+SASS (The Indented Syntax) This was the original syntax and uses .sass.. It doesn&amp;rsquo;t use curly braces but instead relies on intentation.</description>
+    </item>
+    
+    <item>
+      <title>Shelly</title>
+      <link>https://notes.arne.me/shelly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/shelly/</guid>
+      <description>url shelly.cloud    tags Home Assistant , Smart Home   Shelly provides relatively cheap in-wall devices that can control sockets, light switches, garage doors, blinds, etc. Integrates with Home Assistant .</description>
+    </item>
+    
+    <item>
+      <title>Signal Processing</title>
+      <link>https://notes.arne.me/signal-processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/signal-processing/</guid>
+      <description>tags Electrical Engineering   An electrical engineering subfield, focussed on analysing, modifying and synthesizing signals.</description>
+    </item>
+    
+    <item>
+      <title>Smart Home</title>
+      <link>https://notes.arne.me/smart-home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/smart-home/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smart Voting</title>
+      <link>https://notes.arne.me/smart-voting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/smart-voting/</guid>
+      <description>tags Voting , Politics   Smart Voting is a tactical voting strategy put forward by the team of Alexej Navalny. The goal is to consolidate the votes to prevent the vote for a party/candidate.</description>
+    </item>
+    
+    <item>
+      <title>Software Engineering</title>
+      <link>https://notes.arne.me/software-engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/software-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stacked Cards with CSS</title>
+      <link>https://notes.arne.me/stacked-cards-with-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/stacked-cards-with-css/</guid>
+      <description>source css-tricks.com    tags CSS , SASS   We want to be able to stack cards when scrolling down. Check out the website of Corey Ginnivan   for an example.
+Create your cards in CSS as you would otherwise.
+Then add the following CSS:
+.card { position: sticky; top: 10px; } This will lead to cards stopping at 10px from the top and the following cards to float over them.</description>
+    </item>
+    
+    <item>
+      <title>Sticky Header ScrollTo</title>
+      <link>https://notes.arne.me/sticky-header-scrollto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/sticky-header-scrollto/</guid>
+      <description>source twitter.com    tags CSS    You know that annoying thing when you&amp;rsquo;re scrolled to an anchor and the site&amp;rsquo;s sticky header covers it up? That&amp;rsquo;s fixable in 1 CSS declaration now 🎉
+ .heading { scroll-margin-top: 72px; } On November 26, 2020 (when the Tweet was written) this was supported by Chrome, Firefox, Edge and Opera. Safari needs ~scroll-snap-margin-top~ .</description>
+    </item>
+    
+    <item>
+      <title>Subset Webfonts</title>
+      <link>https://notes.arne.me/subset-webfonts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/subset-webfonts/</guid>
+      <description>tags Web Development , Fast Webfonts   The problem Webfonts can have relatively large sizes. Iosevka   for example (the typeface that I use for code on this website) is 660kb for one font.
+The solution You can subset your fonts, i.e. generate a font with only the glyphs you need. With font subsetting I was able to reduce the size of Iosevka from 660kb to 12kb.</description>
+    </item>
+    
+    <item>
+      <title>SysOps</title>
+      <link>https://notes.arne.me/sysops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/sysops/</guid>
+      <description>System operators are administrators of computer systems.</description>
+    </item>
+    
+    <item>
+      <title>System Font Stack</title>
+      <link>https://notes.arne.me/system-font-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/system-font-stack/</guid>
+      <description> source css-tricks.com    tags CSS    body { font-family: -apple-system, BlinkMacSystemFont, &amp;#34;Segoe UI&amp;#34;, Roboto, Helvetica, Arial, sans-serif, &amp;#34;Apple Color Emoji&amp;#34;, &amp;#34;Segoe UI Emoji&amp;#34;, &amp;#34;Segoe UI Symbol&amp;#34;; } </description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://notes.arne.me/vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/vim/</guid>
+      <description>Vim is a texeditor. The name comes from Vi IMproved as it is a clone (with additions) of vi, a text editor program for Unix. It was release to the public in 1991.
+Modes Vim has 6 basic modes:
+ Normal mode the default mode, used for editor commands Visual mode like normal mode, but can highligh areas of text and editor commands will run on that highlighted text Select mode like visual mode but if you enter a printable character, carriage return, new line or line feed Vim will insert the character and start insert mode Insert mode similar to editing in most editors Cmdline mode supports a single line at the bottom of the window for commands Ex mode similar to Cmdline mode but on completion it prompts for another Ex command (you almost never want this mode)  </description>
+    </item>
+    
+    <item>
+      <title>Voting</title>
+      <link>https://notes.arne.me/voting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/voting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Development</title>
+      <link>https://notes.arne.me/web-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/web-development/</guid>
+      <description>tags Software Engineering   Web development is the work involved in developing a web site.</description>
+    </item>
+    
+    <item>
+      <title>Wisdom</title>
+      <link>https://notes.arne.me/wisdom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/wisdom/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

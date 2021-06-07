@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head><title>cron – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="preload" href="/fonts/Inter-Regular.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.036a3210a25ef1debee7c8a0473bd57f7923f9ac6b876f1cc2df30fe0971e492.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">cron</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/cron/" alt="cron" class="permalink"><h1>cron</h1></a>
+      <dl>
+<dt>tags</dt>
+<dd><a href="/linux/">Linux</a>
+, <a href="/sysops/">SysOps</a>
+</dd>
+</dl>
+<p>The software utility cron (or cron job) is a time-based job scheduler in Unix-like operating systems.</p>
+<h2 id="crontab">Crontab</h2>
+<p>A crontab file defines the cron jobs of a user or system. You can edit it by running <code>crontab -e</code>.</p>
+<p>Each line of a crontab represents a job. This is the schema:</p>
+<pre><code class="language-nil" data-lang="nil"># ┌───────────── minute (0 - 59)
+# │ ┌───────────── hour (0 - 23)
+# │ │ ┌───────────── day of the month (1 - 31)
+# │ │ │ ┌───────────── month (1 - 12)
+# │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday)
+# │ │ │ │ │
+# * * * * * &lt;command to execute&gt;
+</code></pre><p>If a <code>*</code> is at one position, it is unrestricted. If minute is <code>*</code>, it will run every minute (but not necessarily every hour or day).</p>
+<p>You can also specify <code>*/n</code> to run every n-th interval. Setting hour to <code>*/5</code> it will run every five hours.</p>
+
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//cron.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  <div class="bl-section">
+    <h4>Links to this note</h4>
+    <div class="backlinks">
+       <ul>
+       
+         <li><a href="/rclone/">Rclone</a></li>
+       
+      </ul>
+    </div>
+  </div>
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>

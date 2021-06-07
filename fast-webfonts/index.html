@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Fast Webfonts – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="preload" href="/fonts/Inter-Regular.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.036a3210a25ef1debee7c8a0473bd57f7923f9ac6b876f1cc2df30fe0971e492.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">Fast Webfonts</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/fast-webfonts/" alt="Fast Webfonts" class="permalink"><h1>Fast Webfonts</h1></a>
+      <dl>
+<dt>source</dt>
+<dd><a href="https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/" target="_blank">iainbean.com
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+</dd>
+<dt>tags</dt>
+<dd><a href="/web-development/">Web Development</a>
+</dd>
+</dl>
+<h2 id="use-the-most-modern-file-formats">Use the most modern file formats</h2>
+<p><code>Web Open Font Format 2.0</code> (WOFF2) is the smallest and most efficient file format for web fonts as of May 2021.
+Make sure it appears before older file formats as a browser will use the first font it understands.
+If you care about IE11 you&rsquo;ll need WOFF as well. If you care about IE8 as well you&rsquo;ll need TTF (or some other old format).
+You can use <a href="https://onlinefontconverter.com" target="_blank">Online Font Converter
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ to convert fonts (make sure to check the license first).</p>
+<h2 id="use-the-font-display-descriptor">Use the <code>font-display</code> descriptor</h2>
+<dl>
+<dt>Flash of Invisible Text (FOIT)</dt>
+<dd>Text will be invisible until the font is downloaded.</dd>
+<dt>Flash of Unstyled Text (FOUT)</dt>
+<dd>Text will be rendered in a fallback font until the font is downloaded.</dd>
+</dl>
+<p>Use <code>font-display: swap;</code> so browsers will use a fallback font until the webfont is loaded.</p>
+<h2 id="preload-your-font-files">Preload your font files</h2>
+<p>Add the following tag to your <code>head</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;preload&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/some-font.woff2&#34;</span> <span class="na">as</span><span class="o">=</span><span class="s">&#34;font&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;font/woff2&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
+</code></pre></div><p>This forces the browser to start downloading the font before it knows it needs it. Otherwise the browser parses the CSS first, checks if the font is needed on the page and only then loads it.</p>
+<h2 id="subset-your-font-files">Subset your font files</h2>
+<p>Tools like <a href="https://www.zachleat.com/web/glyphhanger/" target="_blank">Glyphhanger
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ can look at a list of pages and determine the Unicode character ranges that are used and will create a new version with only those characters included.</p>
+<h2 id="self-host-your-fonts">Self-host your fonts</h2>
+<h3 id="reasons-not-to-self-host-your-fonts">Reasons <em>not</em> to self-host your fonts</h3>
+<ol>
+<li>You often have no choice with a certain typefaces.</li>
+<li>It&rsquo;s convenient, copy and paste a line of HTML and you&rsquo;re done</li>
+</ol>
+<h3 id="reasons-to-use-self-host-your-fonts">Reasons to use self-host your fonts</h3>
+<h4 id="performance">Performance</h4>
+<p>Domain lookups take time. Even Google&rsquo;s own sites (e.g. <a href="https://web.dev" target="_blank">web.dev
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+) use self-hosted fonts instead of Google Fonts.</p>
+<h4 id="privacy">Privacy</h4>
+<p>Paid-for web font services like Adobe Fonts collect data (thy need page views for billing, but they might collect more). If you have the choice, choose including <a href="/css/">CSS</a>
+ over <a href="/javascript/">JavaScript</a>
+ .</p>
+<h4 id="control">Control</h4>
+<p>With self-hosted fonts you can customize your fonts (i.e. subsetting, define <code>font-display</code> settings or specifying how long a font is cached).</p>
+<h4 id="reliability">Reliability</h4>
+<p>Third party services can suffer slowdowns or outages or even shut down. If you self-host, your fonts will work as long as your website works.</p>
+
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//fast-webfonts.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  <div class="bl-section">
+    <h4>Links to this note</h4>
+    <div class="backlinks">
+       <ul>
+       
+         <li><a href="/subset-webfonts/">Subset Webfonts</a></li>
+       
+      </ul>
+    </div>
+  </div>
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Darkmode in CSS – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="preload" href="/fonts/Inter-Regular.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.036a3210a25ef1debee7c8a0473bd57f7923f9ac6b876f1cc2df30fe0971e492.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">Darkmode in CSS</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/darkmode-in-css/" alt="Darkmode in CSS" class="permalink"><h1>Darkmode in CSS</h1></a>
+      <dl>
+<dt>tags</dt>
+<dd><a href="/css/">CSS</a>
+, <a href="/web-development/">Web Development</a>
+</dd>
+</dl>
+<p>You can use the following <code>@media</code> query to detect system dark mode.
+In this example we use a dark background for dark mode:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">prefers-color-scheme</span><span class="o">:</span> <span class="nt">dark</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="k">background</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>I personally like to combine this with <a href="/css-custom-properties/">CSS Custom Properties</a>
+ to make the switch as seamless as possible.</p>
+<p>Note that as of the writing of this post Internet Explorer (and some other minor browsers) did not support this query. Check yourself: <a href="https://caniuse.com/prefers-color-scheme" target="_blank">Can I use prefers-color-scheme media query
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+.</p>
+
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//darkmode-in-css.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>

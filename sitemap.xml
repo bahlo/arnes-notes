@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://notes.arne.me/68-bits-of-unsolicited-advice/</loc>
+    <lastmod>2021-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/99-additional-bits-of-unsolicited-advice/</loc>
+    <lastmod>2021-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/fast-webfonts/</loc>
+    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/org-mode-101/</loc>
+    <lastmod>2021-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/htaccess/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/35-principles-for-35-years/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/about-these-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/anchored-headings-in-hugo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/automatic-darkmode-for-iterm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/automatic-darkmode-for-vim/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/baader-meinhof-phenomenon/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/barrels-and-ammunition/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/cognitive-biases/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/cron/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/css-custom-properties/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/crc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/darkmode-in-css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/diy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/docker/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/docker-multistage-builds/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/electrical-engineering/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/esphome/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/eucalyptus-gunnii/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/expiring-vs-permanent-skills/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/format-on-save-in-goland/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/french-press/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/gardening/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/git-log/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/git-wip/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/gnu-emacs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/go-get-meta-tag/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/goland/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/golang/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/home-assistant/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/homekit/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/taking-rust-for-a-test-drive/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/how-to-start-a-podcast/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/hugo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/interactive-rebase/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/luks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/mark-external-links-in-hugo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/multiple-gitconfigs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/node-js/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/node-js-intl-and-icu/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/nrz/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/org-mode/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/politics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/print-type-in-rust/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/rclone/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/remove-an-element-from-a-slice-go/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/rust/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/sass/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/shelly/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/signal-processing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/smart-home/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/smart-voting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/software-engineering/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/stacked-cards-with-css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/sticky-header-scrollto/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/subset-webfonts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/sysops/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/system-font-stack/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/vim/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/voting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/web-development/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/wisdom/</loc>
+  </url>
+  
+</urlset>

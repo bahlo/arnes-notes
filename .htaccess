@@ -1,0 +1,13 @@
+RewriteEngine on
+
+# Redirect to /about-these-notes to skip HTML redirect
+Redirect /index.html /about-these-notes/
+
+# Redirect from when notes lived in /notes/
+RewriteRule ^notes/(.*)$ /$1 [R=301,NC,L]
+
+# Redirect from when notes lived in /posts/
+RewriteRule ^posts/(.*)$ /$1 [R=301,NC,L]
+
+# Renames
+Redirect /software_engineering /software-engineering

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Automatic darkmode for iTerm – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="preload" href="/fonts/Inter-Regular.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.036a3210a25ef1debee7c8a0473bd57f7923f9ac6b876f1cc2df30fe0971e492.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">Automatic darkmode for iTerm</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/automatic-darkmode-for-iterm/" alt="Automatic darkmode for iTerm" class="permalink"><h1>Automatic darkmode for iTerm</h1></a>
+      <dl>
+<dt>tags</dt>
+<dd><a href="/automatic-darkmode-for-vim/">Automatic darkmode for Vim</a>
+</dd>
+</dl>
+<p><a href="https://iterm2.com" target="_blank">iTerm 2
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ is a terminal emulator for macOS. It supports dark and light mode, but it won&rsquo;t change the colors automatically.</p>
+<p>But we&rsquo;re lucky! iTerm has great scripting support. See the <a href="https://iterm2.com/documentation-scripting.html" target="_blank">Scripting Documentation
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+. We can use that to automatically switch profiles based on the system appearance.</p>
+<p>Here&rsquo;s how:</p>
+<ol>
+<li>Create two profiles and name them <code>Light</code> and <code>Dark</code>. It probably makes sense to create one profile to your liking with a light theme, duplicate it and set the dark theme on the duplicate.</li>
+<li>Copy the script below into <code>$HOME/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/</code>:</li>
+</ol>
+<!--listend-->
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/usr/bin/env python3.7</span>
+
+<span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="kn">import</span> <span class="nn">iterm2</span>
+
+<span class="k">def</span> <span class="nf">is_dark_mode</span><span class="p">():</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="s1">&#39;defaults read -g AppleInterfaceStyle&#39;</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span>
+			 <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">communicate</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">async</span> <span class="k">def</span> <span class="nf">set_profile</span><span class="p">(</span><span class="n">connection</span><span class="p">):</span>
+    <span class="n">app</span> <span class="o">=</span> <span class="n">await</span> <span class="n">iterm2</span><span class="o">.</span><span class="n">async_get_app</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+
+    <span class="n">profile</span> <span class="o">=</span> <span class="s2">&#34;Light&#34;</span>
+    <span class="k">if</span> <span class="n">is_dark_mode</span><span class="p">():</span>
+	<span class="n">profile</span> <span class="o">=</span> <span class="s2">&#34;Dark&#34;</span>
+
+    <span class="n">partialProfiles</span> <span class="o">=</span> <span class="n">await</span> <span class="n">iterm2</span><span class="o">.</span><span class="n">PartialProfile</span><span class="o">.</span><span class="n">async_query</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">partial</span> <span class="ow">in</span> <span class="n">partialProfiles</span><span class="p">:</span>
+	<span class="k">if</span> <span class="n">partial</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">profile</span><span class="p">:</span>
+	    <span class="n">full</span> <span class="o">=</span> <span class="n">await</span> <span class="n">partial</span><span class="o">.</span><span class="n">async_get_full_profile</span><span class="p">()</span>
+	    <span class="c1"># Set profile in _all_ sessions</span>
+	    <span class="k">for</span> <span class="n">window</span> <span class="ow">in</span> <span class="n">app</span><span class="o">.</span><span class="n">terminal_windows</span><span class="p">:</span>
+		<span class="k">for</span> <span class="n">tab</span> <span class="ow">in</span> <span class="n">window</span><span class="o">.</span><span class="n">tabs</span><span class="p">:</span>
+		    <span class="k">for</span> <span class="n">session</span> <span class="ow">in</span> <span class="n">tab</span><span class="o">.</span><span class="n">sessions</span><span class="p">:</span>
+			<span class="n">await</span> <span class="n">session</span><span class="o">.</span><span class="n">async_set_profile</span><span class="p">(</span><span class="n">full</span><span class="p">)</span>
+	    <span class="k">return</span>
+
+<span class="n">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">connection</span><span class="p">):</span>
+    <span class="n">await</span> <span class="n">set_profile</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+	<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+	<span class="n">await</span> <span class="n">set_profile</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+
+<span class="n">iterm2</span><span class="o">.</span><span class="n">run_forever</span><span class="p">(</span><span class="n">main</span><span class="p">)</span>
+</code></pre></div><p>Similar to <a href="/automatic-darkmode-for-vim/">Automatic darkmode for Vim</a>
+, this will check the system appearance every two seconds and set the profile accordingly.</p>
+
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//automatic-darkmode-for-iterm.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>

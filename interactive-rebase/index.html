@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Interactive Rebase – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="preload" href="/fonts/Inter-Regular.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.036a3210a25ef1debee7c8a0473bd57f7923f9ac6b876f1cc2df30fe0971e492.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">Interactive Rebase</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/interactive-rebase/" alt="Interactive Rebase" class="permalink"><h1>Interactive Rebase</h1></a>
+      <dl>
+<dt>tags</dt>
+<dd><a href="/git/">Git</a>
+</dd>
+</dl>
+<p>Interactive rebase is a Git command that supports manipulating your Git history.
+Please note that this requires some understanding of how Git works.</p>
+<h2 id="the-problem">The problem</h2>
+<p>Let&rsquo;s say we have the following Git history (the last 5 commits at the time of tihs writing):</p>
+<pre><code class="language-nil" data-lang="nil">e5b6bb7 - Add Darkmode in CSS
+b956b7b - Fix formatting on Subset Webfonts
+a0c2551 - Add Eucalyptus Gunii
+21909d5 - Update Subset Webfonts
+4a5dc2e - Parse sitemap.xml for font subsetting
+</code></pre><p>You see that commit <code>b956b7b</code> (Fix formatting on Subset) fixes an issue introduced in <code>21909d5</code> (Update Subset Webfonts). This might be fine in lot&rsquo;s of cases, but let&rsquo;s say we want to clean this up.
+Our preferred outcome would look the same as above, but without <code>b956b7b</code> (Fix formatting on Subset) .</p>
+<h2 id="how-to-solve-this-dot">How to solve this.</h2>
+<p>Running <code>git rebase -i 4a5dc2e</code> will start the interactive rebase and open the following text in your editor:</p>
+<pre><code class="language-nil" data-lang="nil">pick 21909d5 Update Subset Webfonts
+pick a0c2551 Add Eucalyptus Gunii
+pick b956b7b Fix formatting on Subset Webfonts
+pick e5b6bb7 Add Darkmode in CSS
+
+# Rebase 4a5dc2e..e5b6bb7 onto 4a5dc2e (4 commands)
+#
+# Commands:
+# p, pick &lt;commit&gt; = use commit
+# r, reword &lt;commit&gt; = use commit, but edit the commit message
+# e, edit &lt;commit&gt; = use commit, but stop for amending
+# s, squash &lt;commit&gt; = use commit, but meld into previous commit
+# f, fixup &lt;commit&gt; = like &quot;squash&quot;, but discard this commit's log message
+# x, exec &lt;command&gt; = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop &lt;commit&gt; = remove commit
+# l, label &lt;label&gt; = label current HEAD with a name
+# t, reset &lt;label&gt; = reset HEAD to a label
+# m, merge [-C &lt;commit&gt; | -c &lt;commit&gt;] &lt;label&gt; [# &lt;oneline&gt;]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified). Use -c &lt;commit&gt; to reword the commit message.
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+</code></pre><p>One thing you might notice is that the commits are in reverse order and the commit we&rsquo;re rebasing <em>onto</em> is missing. You will get used to that.</p>
+<p>So now we have a bunch of commands, read the explanation above, I won&rsquo;t repeat it. The commands I personally use most often are <code>reword</code>, <code>fixup</code> and <code>squash</code>.</p>
+<p>What we want is squashing <code>b956b7b</code> (Fix formatting on Subset Webfonts) into <code>21909d5</code> (Update Subset Webfonts) but discarding it&rsquo;s message.
+So we first move the whole line 3 up so it&rsquo;s below the first line. Then we change <code>pick</code> of that line to <code>f</code> (or <code>fixup</code>). If we now save and close the file, Git will do the rebase and you will be left with the following history:</p>
+<pre><code class="language-nil" data-lang="nil">e5b6bb7 - Add Darkmode in CSS
+a0c2551 - Add Eucalyptus Gunii
+b401354 - Update Subset Webfonts
+4a5dc2e - Parse sitemap.xml for font subsetting
+</code></pre><p>Success! <code>Fix formatting on Subset Webfonts</code> is gone and squased into <code>Update Subset Webfonts</code> (which now has a new sha).</p>
+<p>You can read <a href="https://git-scm.com/docs/git-rebase" target="_blank">the official documentation on git rebase
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ if you want to know more.</p>
+<h2 id="tips">Tips</h2>
+<p>I use this most often when I want to clean up a branch that I created from <code>main</code>, so instead of writing the commit sha I&rsquo;d write <code>git rebase -i main</code> and it will bring up all commits of my current branch.</p>
+<h2 id="drawbacks">Drawbacks</h2>
+<p>Rewriting your Git history will require you to force-push if you have some commits on a remote branch. This is fine for branches that only you work on but will bring trouble if you do this on a shared branch or even <code>main</code>.</p>
+
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//interactive-rebase.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>

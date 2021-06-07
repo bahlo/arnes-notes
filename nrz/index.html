@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head><title>NRZ (Non-return-to-zero) – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="preload" href="/fonts/Inter-Regular.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.036a3210a25ef1debee7c8a0473bd57f7923f9ac6b876f1cc2df30fe0971e492.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">NRZ (Non-return-to-zero)</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/nrz/" alt="NRZ (Non-return-to-zero)" class="permalink"><h1>NRZ (Non-return-to-zero)</h1></a>
+      <dl>
+<dt>tags</dt>
+<dd><a href="/signal-processing/">Signal Processing</a>
+</dd>
+</dl>
+<p>NRZ line code is a binary code in which ones an zeros are represented by a significant condition and no netural or rest condition.</p>
+<h2 id="variants">Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Code name</th>
+<th>Complete name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NRZ(L)</td>
+<td>Non-return-to-zero level</td>
+<td>Raw binary bits without any coding. Typically binary 1 maps to high and binary 0 to low</td>
+</tr>
+<tr>
+<td>NRU(I)</td>
+<td>Non-return-to-zero inverted</td>
+<td>Either NRZ(M) or NRZ(S)</td>
+</tr>
+<tr>
+<td>NRZ(M)</td>
+<td>Non-return-to-zero mark</td>
+<td>0 maps to constant, 1 maps to toggle</td>
+</tr>
+<tr>
+<td>NRZ(I)</td>
+<td>Non-return-to-zero space</td>
+<td>0 maps to toggle, 1 maps to constant</td>
+</tr>
+<tr>
+<td>NRZ(C)</td>
+<td>Non-return-to-zero change</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advantages">Advantages</h2>
+<p>NRZI is used because is easier to detect a transition at high speeds than measure exact voltage.</p>
+<h2 id="example">Example</h2>
+<p>You can see how the NRZI signal is translated to binary. A change in the signal results in a 1, no change results in a 0:</p>
+<figure>
+    <img src="/ox-hugo/nrzi_example.png"
+         alt="Figure 1: From wikipedia.org, licensed by CC BY-SA 3.0"/> <figcaption>
+            <p>Figure 1: From  <a href="https://en.wikipedia.org/wiki/Non-return-to-zero#/media/File:NRZI%5Fexample.png">wikipedia.org</a>, licensed by CC BY-SA 3.0</p>
+        </figcaption>
+</figure>
+
+
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//nrz.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>

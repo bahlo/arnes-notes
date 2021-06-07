@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Automatic darkmode for Vim – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="preload" href="/fonts/Inter-Regular.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.036a3210a25ef1debee7c8a0473bd57f7923f9ac6b876f1cc2df30fe0971e492.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">Automatic darkmode for Vim</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/automatic-darkmode-for-vim/" alt="Automatic darkmode for Vim" class="permalink"><h1>Automatic darkmode for Vim</h1></a>
+      <dl>
+<dt>tags</dt>
+<dd><a href="/vim/">Vim</a>
+</dd>
+</dl>
+<h2 id="macos">macOS</h2>
+<p>On macOS you can add the following lines to your <code>.vimrc</code> to check the system appearance every 2s and change the theme accordingly:</p>
+<pre><code class="language-vimscript" data-lang="vimscript">&quot; Automatically switch light/dark background + theme
+function! SetAppearance(...)
+  try
+    let s:mode = systemlist(&quot;defaults read -g AppleInterfaceStyle&quot;)[0]
+    let s:new_bg = &quot;&quot;
+    let s:new_theme = &quot;&quot;
+    if s:mode ==? &quot;Dark&quot;
+      let s:new_bg = &quot;dark&quot;
+      let s:new_theme = &quot;base16-unikitty-dark&quot;
+    else
+      let s:new_bg = &quot;light&quot;
+      let s:new_theme = &quot;base16-unikitty-light&quot;
+    endif
+    if &amp;background !=? s:new_bg
+      let &amp;background = s:new_bg
+      execute 'colorscheme '.s:new_theme
+    endif
+  catch
+    &quot; Ignore errors
+  endtry
+endfunction
+call SetAppearance()
+call timer_start(2000, &quot;SetAppearance&quot;, {&quot;repeat&quot;: -1})
+</code></pre><p>You probably want to replace <code>base16-unikitty-{dark,light}</code> with your theme. If two seconds is a too long delay for you, change the 2000 in the last line to something else (a low number might impact performance).</p>
+
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//automatic-darkmode-for-vim.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  <div class="bl-section">
+    <h4>Links to this note</h4>
+    <div class="backlinks">
+       <ul>
+       
+         <li><a href="/automatic-darkmode-for-iterm/">Automatic darkmode for iTerm</a></li>
+       
+      </ul>
+    </div>
+  </div>
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>

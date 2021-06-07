@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head><title>How to find a good first Rust project – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="preload" href="/fonts/Inter-Regular.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2?v=3.18" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.036a3210a25ef1debee7c8a0473bd57f7923f9ac6b876f1cc2df30fe0971e492.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">How to find a good first Rust project</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/taking-rust-for-a-test-drive/" alt="How to find a good first Rust project" class="permalink"><h1>How to find a good first Rust project</h1></a>
+      <dl>
+<dt>source</dt>
+<dd><a href="https://ferrous-systems.com/blog/rust-test-drive/" target="_blank">ferrous-systems.com
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+</dd>
+<dt>tags</dt>
+<dd><a href="/rust/">Rust</a>
+</dd>
+</dl>
+<p>Aim to answer three questions</p>
+<ol>
+<li>How can we <em>minimize</em> cost or risk to projects and timelines?</li>
+<li>How can we <em>maximize</em> rewards (reliability, efficiency, developer happiness)</li>
+<li>How can we <em>maximize</em> learnings from the first trial?</li>
+</ol>
+<h2 id="qualitites-of-a-good-first-challenge">Qualitites of a good first challenge</h2>
+<ul>
+<li><strong>Pick a problem domain you already know.</strong> If you rewrite a service, don&rsquo;t change its behaviour or API, instead only change one variable at a time.</li>
+<li><strong>Avoid the &ldquo;critical path&rdquo;.</strong> Try Rust on projects that don&rsquo;t have tight deadlines.</li>
+<li><strong>Pick components that are well documented and well isolated.</strong> Well documented/good rqeuirements or well isolated, architecturally.</li>
+<li><strong>Solve a problem you have.</strong> Might be slow-to-start CLI tools, tools that aren&rsquo;t portable between Windows, macOS and Linux.</li>
+</ul>
+<h3 id="tooling-our-favourite-first-challenge">Tooling: Our Favourite &ldquo;First Challenge&rdquo;</h3>
+<p>Implement support tooling for your development process are a great candidate for a first challenge, because:</p>
+<ul>
+<li>Developers always appreciate cleaning up little &ldquo;paper cuts&rdquo;</li>
+<li>Your team is alraedy working without these tools</li>
+<li>These tools are not typically part of your &ldquo;main product&rdquo;</li>
+<li>Often relatively small and have a specific scope</li>
+</ul>
+<h2 id="strengths-of-rust-to-lean-on">Strengths of Rust to lean on</h2>
+<ul>
+<li>Portability/cross compiling</li>
+<li>CLI tools (<a href="https://github.com/clap-rs/clap" target="_blank">clap
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+, multiple platforms)</li>
+<li>Serialization/deserialization (<a href="https://serde.rs" target="_blank">serde
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+)</li>
+<li>Data parsing/number crunching</li>
+<li>Multithreaded code</li>
+</ul>
+
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//taking-rust-for-a-test-drive.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>
