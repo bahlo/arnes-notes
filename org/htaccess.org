@@ -1,0 +1,16 @@
+#+title: .htaccess
+
+- tags :: [[file:sysops.org][SysOps]]
+
+A directory-level configuration file, used for URL redirection, access control, and more.
+
+* Examples
+** Redirecting a single URL:
+#+begin_src htacces
+Redirect /index.html /some-other-page/
+#+end_src
+
+** Redirecting an old directory to a new directory
+#+begin_src htacces
+RedirectRule ^old/(.*)$ /$1 [R=301,NC,L]
+#+end_src
