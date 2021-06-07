@@ -14,5 +14,5 @@ The [org](org/) folder contains [Org mode](https://orgmode.org) files that use
 [Org-roam](https://www.orgroam.com) to link to each other. I edit them locally
 using Emacs. On push I install Emacs on CI, use 
 [ox-hugo](https://ox-hugo.scripter.co) to generate hugo pages from the org 
-files. I then push to the `site` branch, from where it gets picked up by
+files. I then pushes to the `site` branch, from where it gets picked up by
 my webhost.
