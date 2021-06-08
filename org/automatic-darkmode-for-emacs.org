@@ -1,6 +1,6 @@
 #+title: Automatic darkmode for Emacs
 
-- tags :: [[file:gnu-emacs.org][GNU Emacs]]
+- tags :: [[file:gnu-emacs.org][GNU Emacs]], [[file:../macos.org][macOS]]
 
 * macOS
 
