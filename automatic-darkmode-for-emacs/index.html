@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Automatic darkmode for Emacs – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.64663fe2af439e50dfd3bae784466ceaf64529ed5499168975da73c8a2ee0484.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png" srcset="https://notes.arne.me/img/logo@2x.png 2x, https://notes.arne.me/img/logo@3x.png 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">Automatic darkmode for Emacs</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/automatic-darkmode-for-emacs/" alt="Automatic darkmode for Emacs" class="permalink"><h1>Automatic darkmode for Emacs</h1></a>
+      <dl>
+<dt>tags</dt>
+<dd><a href="/gnu-emacs/">GNU Emacs</a>
+, <a href="/macos/">macOS</a>
+</dd>
+</dl>
+<h2 id="macos">macOS</h2>
+<p>On macOS you can use the following code to check the system appearance every two seconds and on change use a dark theme.</p>
+<p>This is loosely based on <a href="http://sodaware.sdf.org/notes/emacs-darkmode-theme-switch/" target="_blank">Automatic Emacs theme switching in OSX dark mode
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+, with the added bonnus that this is fully automatic:</p>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="k">setq</span> <span class="nv">last-dark-mode-state</span> <span class="ss">&#39;unknown</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">check-and-set-dark-mode</span> <span class="p">()</span>
+  <span class="s">&#34;Automatically set the theme to match if macOS is in dark mode.&#34;</span>
+  <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">dark-mode-enabled</span> <span class="p">(</span><span class="nv">system-dark-mode-enabled-p</span><span class="p">)))</span>
+    <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nf">not</span> <span class="p">(</span><span class="nf">eq</span> <span class="nv">dark-mode-enabled</span> <span class="nv">last-dark-mode-state</span><span class="p">))</span>
+	<span class="p">(</span><span class="k">progn</span>
+	  <span class="p">(</span><span class="k">setq</span> <span class="nv">last-dark-mode-state</span> <span class="nv">dark-mode-enabled</span><span class="p">)</span>
+	  <span class="p">(</span><span class="k">if</span> <span class="nv">dark-mode-enabled</span>
+	    <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;doom-one</span>       <span class="no">t</span><span class="p">)</span>
+	    <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;doom-one-light</span> <span class="no">t</span><span class="p">))))))</span>
+
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">system-dark-mode-enabled-p</span> <span class="p">()</span>
+  <span class="s">&#34;Check if dark mode is currently enabled on macOS.&#34;</span>
+  <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nf">string=</span> <span class="nv">system-type</span> <span class="s">&#34;darwin&#34;</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">string=</span>
+       <span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="s">&#34;printf %s \&#34;$( osascript -e \&#39;tell application \&#34;System Events\&#34; to tell appearance preferences to return dark mode\&#39; )\&#34;&#34;</span><span class="p">)</span>
+       <span class="s">&#34;true&#34;</span><span class="p">)</span>
+      <span class="no">nil</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nv">run-with-timer</span> <span class="mi">0</span> <span class="mi">2</span> <span class="ss">&#39;check-and-set-dark-mode</span><span class="p">)</span>
+</code></pre></div>
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//automatic-darkmode-for-emacs.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>

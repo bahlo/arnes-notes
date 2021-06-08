@@ -97,6 +97,17 @@ Create a layouts/_default/_markup/render-heading.html and put the following code
     </item>
     
     <item>
+      <title>Automatic darkmode for Emacs</title>
+      <link>https://notes.arne.me/automatic-darkmode-for-emacs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/automatic-darkmode-for-emacs/</guid>
+      <description>tags GNU Emacs , macOS   macOS On macOS you can use the following code to check the system appearance every two seconds and on change use a dark theme.
+This is loosely based on Automatic Emacs theme switching in OSX dark mode   , with the added bonnus that this is fully automatic:
+(setq last-dark-mode-state &amp;#39;unknown) (defun check-and-set-dark-mode () &amp;#34;Automatically set the theme to match if macOS is in dark mode.</description>
+    </item>
+    
+    <item>
       <title>Automatic darkmode for iTerm</title>
       <link>https://notes.arne.me/automatic-darkmode-for-iterm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -114,7 +125,7 @@ Here&amp;rsquo;s how:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/automatic-darkmode-for-vim/</guid>
-      <description>tags Vim   macOS On macOS you can add the following lines to your .vimrc to check the system appearance every 2s and change the theme accordingly:
+      <description>tags Vim , macOS   macOS On macOS you can add the following lines to your .vimrc to check the system appearance every 2s and change the theme accordingly:
 &amp;quot; Automatically switch light/dark background + theme function! SetAppearance(...) try let s:mode = systemlist(&amp;quot;defaults read -g AppleInterfaceStyle&amp;quot;)[0] let s:new_bg = &amp;quot;&amp;quot; let s:new_theme = &amp;quot;&amp;quot; if s:mode ==? &amp;quot;Dark&amp;quot; let s:new_bg = &amp;quot;dark&amp;quot; let s:new_theme = &amp;quot;base16-unikitty-dark&amp;quot; else let s:new_bg = &amp;quot;light&amp;quot; let s:new_theme = &amp;quot;base16-unikitty-light&amp;quot; endif if &amp;amp;background !</description>
     </item>
     
@@ -474,6 +485,15 @@ Set up Run the following to create an encrypted volume on /dev/sdb:
 $ cryptsetup luksFormat /dev/sdb Please note that this delete the contents of /dev/sdb.
 After that, open the volume and create a file system:
 $ cryptsetup open /dev/sdb encrypted $ mkfs.</description>
+    </item>
+    
+    <item>
+      <title>macOS</title>
+      <link>https://notes.arne.me/macos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/macos/</guid>
+      <description>macOS is an operating system developed by Apple.</description>
     </item>
     
     <item>
