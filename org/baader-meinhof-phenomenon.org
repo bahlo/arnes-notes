@@ -10,5 +10,5 @@ The Baader Meinhof phenomenon is a cognitive bias in which people tend to see a 
 
 * Why is it called the Baader-Meinhof Phenomenon?
 #+BEGIN_QUOTE
-It all started in the comments section of a newspaper called the Minnesota St. Pauls Pioneer Press. During the 90s, one commenter talked about the Baader-Meinhof group, which was a West German terrorist organization, and within hours, he saw another reference to the group 70 years after the organization was disbanded. Hence, the term was coined as the Baader-Meinhof phenomenon.
+It all started in the comments section of a newspaper called the Minnesota St. Pauls Pioneer Press. During the 90s, one commenter talked about the Baader-Meinhof group, which was a West German terrorist organization, and within hours, he saw another reference to the group. Hence, the term was coined as the Baader-Meinhof phenomenon.
 #+END_QUOTE
