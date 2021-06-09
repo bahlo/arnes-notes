@@ -2,8 +2,9 @@
   {{ $logo := resources.Get "img/logo.png" }} 
   {{ $logo2x := resources.Get "img/logo@2x.png" }} 
   {{ $logo3x := resources.Get "img/logo@3x.png" }} 
+  {{ $version := 4 }}
   <a href= "{{ $.Site.Params.entrypoint }}" id="logo">
-    <img src="{{ $logo.Permalink }}?v=3" srcset="{{ $logo2x.Permalink }} 2x, {{ $logo3x.Permalink }} 3x" alt="Arne Bahlo">
+    <img src="{{ $logo.Permalink }}?v={{ $version }}" srcset="{{ $logo2x.Permalink }}?v={{ $version }} 2x, {{ $logo3x.Permalink }}?v={{ $version }} 3x" alt="Arne Bahlo">
     <h3 class="site-title">{{.Site.Title}}</h3>
   </a>
 </header>
