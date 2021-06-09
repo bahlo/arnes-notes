@@ -1,0 +1,94 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: var(--bg);
+  line-height: 1.4;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: var(--fg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+code {
+  font-family: 'Iosevka Web', monospace;
+  background: var(--code-bg);
+  border-radius: 6px;
+  padding: 0 2px 2px;
+}
+
+dd a {
+  // For some reason goldmark renders a space before the comma, fix it with CSS
+  margin-right: -4px;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1em 0;
+}
+
+dl > * {
+  padding-top: 0.5em;
+}
+
+dt {
+  width: 30%;
+  font-weight: bold;
+  text-align: right;
+}
+dd {
+  width: 60%;
+  padding-left: 1em;
+  margin-left: 0px;
+}
+dd + dd {
+  width: 100%;
+  padding-left: calc(30% + 1em);
+}
+dt + dt {
+  padding-right: 60%;
+}
+dt + dt + dd {
+  margin-top: -1.625em; // own height including padding
+  padding-left: calc(30% + 1em);
+}

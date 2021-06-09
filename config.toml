@@ -1,7 +1,6 @@
 baseURL = "https://notes.arne.me/"
 languageCode = "en-us"
 title = "Arnes notes"
-theme = "cortex"
 pygmentsUseClasses = true
 
 [params]

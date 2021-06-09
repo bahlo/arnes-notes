@@ -1,0 +1,17 @@
+{{define "main"}}
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">{{ .Title }}</h1>
+    <div class="content">
+      <a href="{{ .Permalink}}" alt="{{ .Title }}" class="permalink"><h1>{{ .Title }}</h1></a>
+      {{ .Content }}
+      {{ $slug := strings.TrimPrefix "/notes/" .RelPermalink }}
+      {{ $slug := strings.TrimSuffix "/" $slug }}
+      <small><a href="{{ $.Site.Params.repo }}/edit/main/org/{{ $slug }}.org">Edit this page on GitHub</a></small>
+    </div>
+    {{ partial "backlinks.html" . }}
+    </div>
+ </div>
+{{ $pagejs := resources.Get "js/page.js" }}
+<script src="{{ $pagejs.Permalink }}" type="text/javascript"></script>
+{{end}}

@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  align-items: center;
+  background: var(--header-bg);
+  border-bottom: 1px var(--border-color) solid;
+  padding: 8px 20px;
+}
+
+.site-title {
+  padding: 0;
+  margin: 0;
+}
+
+#logo {
+  display: inline-block;
+  display: flex;
+  border: 0;
+
+  &.active {
+    // Disable highlighting in logo
+    background: none;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  h3 {
+    margin-left: 8px;
+    line-height: 30px;
+    color: var(--fg);
+  }
+}

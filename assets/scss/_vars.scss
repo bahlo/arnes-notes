@@ -1,0 +1,31 @@
+:root {
+  --primary: #1f77d4;
+
+  --fg: #111;
+  --bg: var(--primary);
+  --header-bg: #fff;
+  --page-bg: #fff;
+  --grid-bg: #fafafc;
+  --code-bg: #fff;
+  --border-color: #eee;
+  --link-color: var(--primary);
+  --backlink-color: var(--primary);
+  --active-link-background-color: #eee;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Override for dark mode */
+  :root {
+    --primary: #1c98fc;
+
+    --fg: #eee;
+    --grid-bg: #111;
+    --code-bg: #2e2a31;
+    --header-bg: #222;
+    --page-bg: #222;
+    --border-color: #333;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --active-link-background-color: #444;
+  }
+}

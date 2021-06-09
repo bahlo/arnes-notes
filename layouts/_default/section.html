@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="grid-container">
+  <div class="grid">
+    <div class="page">
+      <div class="content">
+        {{ range sort .Pages "Title" "asc" }}
+        <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
