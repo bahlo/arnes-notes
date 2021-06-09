@@ -1,6 +1,8 @@
 #+title: About these notes
 
-Hey, you've found my notes!
+Hey, I'm [[https://arne.me][Arne Bahlo]] and these are my notes.
+
+I try to collect my knowledge and I'm adding new notes almost every day.
 
 Here are some topics to get started:
 
@@ -13,4 +15,4 @@ Here are some topics to get started:
 - [[file:wisdom.org][Wisdom]]
 - [[file:electrical-engineering.org][Electrical Engineering]]
 
-This whole page is on GitHub: [[https://github.com/bahlo/arnes-notes][bahlo/arnes-notes]].
+You can find the source of this page on GitHub: [[https://github.com/bahlo/arnes-notes][bahlo/arnes-notes]].
