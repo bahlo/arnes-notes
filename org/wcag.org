@@ -1,0 +1,16 @@
+#+title: WCAG
+
+- url ::  [[https://www.w3.org/WAI/WCAG21/quickref][w3.org]]
+- tags :: [[file:web-development.org][Web Development]], [[file:acessibility.org][Acessibility]]
+
+WCAG are the Web Content Accessibility Guidelines.
+
+If you're developing a website, please check the quick reference linked above.
+
+Here are the most basic points:
+- All non-text content needs to have a text alternative that serves the equivalent purpose.
+- Text needs to have a contrast ratio of at least 4.5:1.
+- All functionality of the content needs to be operable through a keyboard
+- There needs to be a mechanism to bypass blocks of content that are repeatet on multiple web pages
+- Prefer native elements over fancy JS
+- Prefer special html element over ~div~ (i.e. ~main~ or ~nav~)
