@@ -87,6 +87,15 @@ Here are some topics to get started:
     </item>
     
     <item>
+      <title>Acessibility</title>
+      <link>https://notes.arne.me/acessibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/acessibility/</guid>
+      <description>Accessibility, sometimes called a11y is about desining products (physical or digital) that are accessible and usable by people with disabilities.</description>
+    </item>
+    
+    <item>
       <title>Anchored headings in Hugo</title>
       <link>https://notes.arne.me/anchored-headings-in-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -731,6 +740,18 @@ Modes Vim has 6 basic modes:
       
       <guid>https://notes.arne.me/voting/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>WCAG</title>
+      <link>https://notes.arne.me/wcag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/wcag/</guid>
+      <description>url w3.org    tags Web Development , Acessibility   WCAG are the Web Content Accessibility Guidelines.
+If you&amp;rsquo;re developing a website, please check the quick reference linked above.
+Here are the most basic points:
+ All non-text content needs to have a text alternative that serves the equivalent purpose. Text needs to have a contrast ratio of at least 4.5:1. All functionality of the content needs to be operable through a keyboard There needs to be a mechanism to bypass blocks of content that are repeatet on multiple web pages Prefer native elements over fancy JS Prefer special html element over div (i.</description>
     </item>
     
     <item>
