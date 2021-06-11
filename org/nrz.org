@@ -20,4 +20,4 @@ NRZI is used because is easier to detect a transition at high speeds than measur
 You can see how the NRZI signal is translated to binary. A change in the signal results in a 1, no change results in a 0:
 
 #+CAPTION: From  [[https://en.wikipedia.org/wiki/Non-return-to-zero#/media/File:NRZI_example.png][wikipedia.org]], licensed by CC BY-SA 3.0
-[[./nrzi_example.png]]
+[[./images/nrzi_example.png]]

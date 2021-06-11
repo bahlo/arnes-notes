@@ -1,0 +1,18 @@
+#+title: Install CircuitPython on MagTag
+
+- url :: [[https://learn.adafruit.com/adafruit-magtag/circuitpython][learn.adafruit.com]]
+- tags :: [[file:magtag.org][MagTag]], [[file:circuitpython.org][CircuitPython]]
+
+* Load with UF2 Bootloader
+This is the easiest option. If your MagTag has a black front it came with UF2 installed.
+
+1. Download the [[https://circuitpython.org/board/adafruit_magtag_2.9_grayscale/][latest CircuitPython release]]
+2. Attach your MagTag to a computer
+3. Launch UF2 by double-clicking the Reset button (might take a few tries)
+4. If UF2 is installed you will see a new disk drive appear, called =MAGTAGBOOT=
+5. Copy the UF2 file onto the =MAGTAGBOOT= drive
+
+Your MagTag should auto-reset into [[file:circuitpython.org][CircuitPython]], or you may need to press reset. A =CIRCUITPY= drive will appear. You did it!
+
+* Load with esptool
+If you have an original MagTag (white front) you need to use ~esptool~. Check [[https://learn.adafruit.com/adafruit-magtag/circuitpython][the original guide]] for instructions.

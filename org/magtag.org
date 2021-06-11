@@ -1,0 +1,18 @@
+#+title: MagTag
+
+- url :: [[https://www.adafruit.com/product/4819][adafruit.com]]
+- tags :: [[file:embedded-systems.org][Embedded systems]]
+
+[[./images/magtag.jpg]]
+
+The MagTag combines a ESP32-S2 wireless module, a 2.9" grayscale E-Ink display. It's called MagTag because you can attach magnetic feet.
+
+* Features
+- USB-C
+- Four RGB LEDs ("NeoPixels")
+- Four buttons
+- Triple-axis accelerometer
+- Speaker/Buzzer
+- STEMMA QT port
+- Two STEMMA 3 pin JST connectors
+- Support for external batteries
