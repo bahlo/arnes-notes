@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Node.js Intl and ICU – Arnes notes</title>
+  <head><title>Install CircuitPython on MagTag – Arnes notes</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,39 +31,43 @@
 
 <div class="grid">
   <div class="page" data-level="1">
-    <h1 class="collapsed-title">Node.js Intl and ICU</h1>
+    <h1 class="collapsed-title">Install CircuitPython on MagTag</h1>
     <div class="content">
-      <a href="https://notes.arne.me/node-js-intl-and-icu/" alt="Node.js Intl and ICU" class="permalink"><h1>Node.js Intl and ICU</h1></a>
+      <a href="https://notes.arne.me/install-circuitpython-on-magtag/" alt="Install CircuitPython on MagTag" class="permalink"><h1>Install CircuitPython on MagTag</h1></a>
       <dl>
+<dt>url</dt>
+<dd><a href="https://learn.adafruit.com/adafruit-magtag/circuitpython" target="_blank">learn.adafruit.com
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+</dd>
 <dt>tags</dt>
-<dd><a href="/node-js/">Node.js</a>
+<dd><a href="/magtag/">MagTag</a>
+, <a href="/circuitpython/">CircuitPython</a>
 </dd>
 </dl>
-<p>If you use i18n features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global%5FObjects/Intl" target="_blank">Intl
+<h2 id="load-with-uf2-bootloader">Load with UF2 Bootloader</h2>
+<p>This is the easiest option. If your MagTag has a black front it came with UF2 installed.</p>
+<ol>
+<li>Download the <a href="https://circuitpython.org/board/adafruit%5Fmagtag%5F2.9%5Fgrayscale/" target="_blank">latest CircuitPython release
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
-, you need ICU (International Components for Unicode).
-Your local <code>node</code> installation will most likely have the full ICU installed, but it&rsquo;s often missing on servers or containers.</p>
-<p>Node will fall back to the locale it has installed, so consider writing a test to make sure your locale is available.
-Below are two options on how to get full ICU data.</p>
-<h2 id="compile-node-yourself">Compile node yourself</h2>
-<p>Use the flag <code>--with-intl=full-icu</code> to compile node with full ICU (see <a href="https://nodejs.org/api/intl.html#intl%5Foptions%5Ffor%5Fbuilding%5Fnode%5Fjs" target="_blank">ICU options
+</li>
+<li>Attach your MagTag to a computer</li>
+<li>Launch UF2 by double-clicking the Reset button (might take a few tries)</li>
+<li>If UF2 is installed you will see a new disk drive appear, called <code>MAGTAGBOOT</code></li>
+<li>Copy the UF2 file onto the <code>MAGTAGBOOT</code> drive</li>
+</ol>
+<p>Your MagTag should auto-reset into <a href="/circuitpython/">CircuitPython</a>
+, or you may need to press reset. A <code>CIRCUITPY</code> drive will appear. You did it!</p>
+<h2 id="load-with-esptool">Load with esptool</h2>
+<p>If you have an original MagTag (white front) you need to use <code>esptool</code>. Check <a href="https://learn.adafruit.com/adafruit-magtag/circuitpython" target="_blank">the original guide
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
-).</p>
-<h2 id="provide-icu-data-at-runtime">Provide ICU data at runtime</h2>
-<p>Install the package <a href="https://www.npmjs.com/package/full-icu" target="_blank">full-icu
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-</a>
- and tell node to use it by either setting the environment variable <code>NODE_ICU_DATA=node_modules/full-icu</code> or passing <code>--icu-data-dir=node_modules/full-icu</code>.
-You can find more detailed information in the official <a href="https://nodejs.org/api/intl.html#intl%5Fproviding%5Ficu%5Fdata%5Fat%5Fruntime" target="_blank">documentation
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-</a>
-.</p>
+ for instructions.</p>
 
       
       
-      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//node-js-intl-and-icu.org">Edit this page on GitHub</a></small>
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//install-circuitpython-on-magtag.org">Edit this page on GitHub</a></small>
     </div>
     
 

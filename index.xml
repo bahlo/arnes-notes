@@ -160,6 +160,15 @@ The idea  If you think about people, there are two categories of high-quality pe
     </item>
     
     <item>
+      <title>CircuitPython</title>
+      <link>https://notes.arne.me/circuitpython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/circuitpython/</guid>
+      <description>url circuitpython.org    tags Embedded systems , Python   CircuitPython is an open-source derivative of the MicroPython   programming language (which is compatible to Python , but optimized for microcontrollers).</description>
+    </item>
+    
+    <item>
       <title>Cognitive Biases</title>
       <link>https://notes.arne.me/cognitive-biases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -270,6 +279,15 @@ FROMgolang:1 AS builderCOPY /app /WORKDIR/appRUN go build -o /bin/app ./appFROMa
       
       <guid>https://notes.arne.me/electrical-engineering/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded systems</title>
+      <link>https://notes.arne.me/embedded-systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/embedded-systems/</guid>
+      <description>tags Software Engineering   Embedded systems are computer systems that are embedded as part of a complete device, often including eletrical or electronic hardware and mechanical parts (such as sensors or motors).</description>
     </item>
     
     <item>
@@ -455,6 +473,16 @@ Recording Microphone Okay obviously you need a microphone.</description>
     </item>
     
     <item>
+      <title>Install CircuitPython on MagTag</title>
+      <link>https://notes.arne.me/install-circuitpython-on-magtag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/install-circuitpython-on-magtag/</guid>
+      <description>url learn.adafruit.com    tags MagTag , CircuitPython   Load with UF2 Bootloader This is the easiest option. If your MagTag has a black front it came with UF2 installed.
+ Download the latest CircuitPython release    Attach your MagTag to a computer Launch UF2 by double-clicking the Reset button (might take a few tries) If UF2 is installed you will see a new disk drive appear, called MAGTAGBOOT Copy the UF2 file onto the MAGTAGBOOT drive  Your MagTag should auto-reset into CircuitPython , or you may need to press reset.</description>
+    </item>
+    
+    <item>
       <title>Interactive Rebase</title>
       <link>https://notes.arne.me/interactive-rebase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -504,6 +532,16 @@ $ cryptsetup open /dev/sdb encrypted $ mkfs.</description>
       
       <guid>https://notes.arne.me/macos/</guid>
       <description>macOS is an operating system developed by Apple.</description>
+    </item>
+    
+    <item>
+      <title>MagTag</title>
+      <link>https://notes.arne.me/magtag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/magtag/</guid>
+      <description> url adafruit.com    tags Embedded systems     The MagTag combines a ESP32-S2 wireless module, a 2.9&amp;rdquo; grayscale E-Ink display. It&amp;rsquo;s called MagTag because you can attach magnetic feet.
+Features  USB-C Four RGB LEDs (&amp;ldquo;NeoPixels&amp;rdquo;) Four buttons Triple-axis accelerometer Speaker/Buzzer STEMMA QT port Two STEMMA 3 pin JST connectors Support for external batteries  </description>
     </item>
     
     <item>
@@ -582,6 +620,15 @@ Variants    Code name Complete name Description     NRZ(L) Non-return-to-zero le
       
       <guid>https://notes.arne.me/print-type-in-rust/</guid>
       <description>tags Rust    fn type_of&amp;lt;T&amp;gt;(_: &amp;amp;T)-&amp;gt; String {format!</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://notes.arne.me/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/python/</guid>
+      <description>url python.org    tags Software Engineering   Python is a programming language with emphasis on code readability.</description>
     </item>
     
     <item>

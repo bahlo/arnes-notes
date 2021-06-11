@@ -71,6 +71,10 @@
   </url>
   
   <url>
+    <loc>https://notes.arne.me/circuitpython/</loc>
+  </url>
+  
+  <url>
     <loc>https://notes.arne.me/cognitive-biases/</loc>
   </url>
   
@@ -112,6 +116,10 @@
   
   <url>
     <loc>https://notes.arne.me/electrical-engineering/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/embedded-systems/</loc>
   </url>
   
   <url>
@@ -187,6 +195,10 @@
   </url>
   
   <url>
+    <loc>https://notes.arne.me/install-circuitpython-on-magtag/</loc>
+  </url>
+  
+  <url>
     <loc>https://notes.arne.me/interactive-rebase/</loc>
   </url>
   
@@ -204,6 +216,10 @@
   
   <url>
     <loc>https://notes.arne.me/macos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/magtag/</loc>
   </url>
   
   <url>
@@ -236,6 +252,10 @@
   
   <url>
     <loc>https://notes.arne.me/print-type-in-rust/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/python/</loc>
   </url>
   
   <url>
