@@ -91,6 +91,7 @@ function initializePage(page, level) {
         (
           rawHref.indexOf("http://") === 0 ||
           rawHref.indexOf("https://") === 0 ||
+          rawHref.indexOf("mailto:") === 0 ||
           rawHref.indexOf("#") === 0 ||
           rawHref.includes(".pdf") ||
           rawHref.includes(".svg")
