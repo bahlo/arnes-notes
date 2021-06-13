@@ -55,7 +55,8 @@ code {
   padding: 0 2px 2px;
 }
 
-dd a {
+dd a,
+a[href^="mailto:"] {
   // For some reason goldmark renders a space before the comma, fix it with CSS
   margin-right: -4px;
 }
