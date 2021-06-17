@@ -473,6 +473,16 @@ Recording Microphone Okay obviously you need a microphone.</description>
     </item>
     
     <item>
+      <title>Ian McEwan, Why Do You Want to Live Forever?</title>
+      <link>https://notes.arne.me/ian-mcewan-why-do-you-want-to-live-forever/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/ian-mcewan-why-do-you-want-to-live-forever/</guid>
+      <description>source zeit.de    tags Podcasts    In the first English edition of our never-ending podcast &amp;ldquo;Alles gesagt?&amp;rdquo; novelist Ian McEwan talks about Brexit and the new art of lying, climate change and his family.
+ 17:45 Alternative to democracy: Epistocracy: Only People with a certain level of education are allowed to vote (e.g. only people with a degree). 26:45 Creative Pessimism about Climate Change 39:30 Advise to novelists: Find some Detail in life that excites you</description>
+    </item>
+    
+    <item>
       <title>Install CircuitPython on MagTag</title>
       <link>https://notes.arne.me/install-circuitpython-on-magtag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -602,6 +612,15 @@ Variants    Code name Complete name Description     NRZ(L) Non-return-to-zero le
       <description> url orgmode.org     A mode for GNU Emacs . Quoting the homepage:
  Org mode is for keeping notes, maintaining to-do lists, planning projects, authoring documents, computational notebooks, literate programming and more — in a fast and effective plain text system.
  </description>
+    </item>
+    
+    <item>
+      <title>Podcasts</title>
+      <link>https://notes.arne.me/podcasts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/podcasts/</guid>
+      <description>A podcast is a series of audio files, distributed decentralized and consumed via an XML feed.</description>
     </item>
     
     <item>
