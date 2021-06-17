@@ -1,0 +1,12 @@
+#+TITLE: Fix git-lfs Error
+
+At some point you might get this error on any [[file:git.org][Git]] operation when working with LFS:
+
+#+BEGIN_SRC sh
+remote: GitLab: LFS objects are missing. Ensure LFS is properly set up or try a manual "git lfs push --all".
+#+END_SRC
+
+If ~git lfs push --all~ doesn't work, try this:
+#+BEGIN_SRC sh
+git lfs fetch --all upstream # or whatever branch you want to update from
+#+END_SRC
