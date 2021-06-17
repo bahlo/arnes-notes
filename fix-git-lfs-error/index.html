@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Git – Arnes notes</title>
+  <head><title>Fix git-lfs Error – Arnes notes</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
@@ -31,19 +33,18 @@
 
 <div class="grid">
   <div class="page" data-level="1">
-    <h1 class="collapsed-title">Git</h1>
+    <h1 class="collapsed-title">Fix git-lfs Error</h1>
     <div class="content">
-      <a href="https://notes.arne.me/git/" alt="Git" class="permalink"><h1>Git</h1></a>
-      <dl>
-<dt>tags</dt>
-<dd><a href="/software-engineering/">Software Engineering</a>
-</dd>
-</dl>
-<p>Git is a version-control software, created by Linus Torvalds in 2005.</p>
-
+      <a href="https://notes.arne.me/fix-git-lfs-error/" alt="Fix git-lfs Error" class="permalink"><h1>Fix git-lfs Error</h1></a>
+      <p>At some point you might get this error on any <a href="/git/">Git</a>
+ operation when working with LFS:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">remote: GitLab: LFS objects are missing. Ensure LFS is properly <span class="nb">set</span> up or try a manual <span class="s2">&#34;git lfs push --all&#34;</span>.
+</code></pre></div><p>If <code>git lfs push --all</code> doesn&rsquo;t work, try this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git lfs fetch --all upstream <span class="c1"># or whatever branch you want to update from</span>
+</code></pre></div>
       
       
-      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//git.org">Edit this page on GitHub</a></small>
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//fix-git-lfs-error.org">Edit this page on GitHub</a></small>
     </div>
     
 
@@ -113,23 +114,11 @@
   
 
   
-    
-  
 
   
 
   
 
-  
-
-  
-
-  
-    
-  
-
-  
-    
   
 
   
@@ -155,8 +144,6 @@
   
 
   
-    
-  
 
   
 
@@ -171,7 +158,11 @@
   
 
   
-    
+
+  
+
+  
+
   
 
   
@@ -231,25 +222,6 @@
   
 
 
-
-  <div class="bl-section">
-    <h4>Links to this note</h4>
-    <div class="backlinks">
-       <ul>
-       
-         <li><a href="/fix-git-lfs-error/">Fix git-lfs Error</a></li>
-       
-         <li><a href="/git-log/">git log</a></li>
-       
-         <li><a href="/git-wip/">git wip</a></li>
-       
-         <li><a href="/interactive-rebase/">Interactive Rebase</a></li>
-       
-         <li><a href="/multiple-gitconfigs/">Multiple Gitconfigs</a></li>
-       
-      </ul>
-    </div>
-  </div>
 
 
     </div>

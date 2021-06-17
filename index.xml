@@ -323,6 +323,17 @@ Permanent skills Permanent were as essential 100 years ago as they are today, an
     </item>
     
     <item>
+      <title>Fix git-lfs Error</title>
+      <link>https://notes.arne.me/fix-git-lfs-error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/fix-git-lfs-error/</guid>
+      <description>At some point you might get this error on any Git operation when working with LFS:
+remote: GitLab: LFS objects are missing. Ensure LFS is properly set up or try a manual &amp;#34;git lfs push --all&amp;#34;. If git lfs push --all doesn&amp;rsquo;t work, try this:
+git lfs fetch --all upstream # or whatever branch you want to update from </description>
+    </item>
+    
+    <item>
       <title>Format on save in Goland</title>
       <link>https://notes.arne.me/format-on-save-in-goland/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
