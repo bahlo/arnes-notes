@@ -1,0 +1,5 @@
+#+TITLE: Convert PNG to Byte Arrays
+
+For developing on [[file:embedded-systems.org][Embedded systems]] you might want to embed images to a byte array to be able to compile them into the binary.
+
+There is an online tool that allows you to do this conversion: [[https://github.com/javl/image2cpp][github.com/javl/image2cpp]]
