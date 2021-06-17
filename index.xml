@@ -178,6 +178,16 @@ The idea  If you think about people, there are two categories of high-quality pe
     </item>
     
     <item>
+      <title>Convert PNG to Byte Arrays</title>
+      <link>https://notes.arne.me/convert-png-to-byte-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/convert-png-to-byte-arrays/</guid>
+      <description>For developing on Embedded systems you might want to embed images to a byte array to be able to compile them into the binary.
+There is an online tool that allows you to do this conversion: github.com/javl/image2cpp   </description>
+    </item>
+    
+    <item>
       <title>cron</title>
       <link>https://notes.arne.me/cron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
