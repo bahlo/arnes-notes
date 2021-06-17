@@ -83,7 +83,7 @@ Life is too Short for Short Term Games Copied from these Tweets   :
       <description>Hey, I&amp;rsquo;m Arne Bahlo   and these are my notes.
 I try to collect my knowledge and I&amp;rsquo;m adding new notes almost every day.
 Here are some topics to get started:
- Software Engineering  SysOps  Smart Home  Gardening  Cognitive Biases  Politics  Wisdom  Electrical Engineering   The source of this wiki is available on GitHub: bahlo/arnes-notes   . If you want a personal wiki like this but don&amp;rsquo;t know how to build it, let me know, I&amp;rsquo;ll happily help you find a solution: hey@arne.</description>
+ Software Engineering  SysOps  Smart Home  Gardening  Cognitive Biases  Politics  Wisdom  Electrical Engineering  Philosophy  Podcasts   The source of this wiki is available on GitHub: bahlo/arnes-notes   .</description>
     </item>
     
     <item>
@@ -445,6 +445,17 @@ When running go get git.domain.com/foo/bar, go does the following:
     </item>
     
     <item>
+      <title>Hanlons Razor</title>
+      <link>https://notes.arne.me/hanlons-razor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/hanlons-razor/</guid>
+      <description>A philosophical razor that suggests a way of eliminating unlikely explanations for human behaviour. Likely named after Robert J. Hanlon, who submitted the statement to a joke book.
+ Never attribute to malice that which is adequately explained by stupidity.
+ </description>
+    </item>
+    
+    <item>
       <title>Home Assistant</title>
       <link>https://notes.arne.me/home-assistant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -633,6 +644,15 @@ Variants    Code name Complete name Description     NRZ(L) Non-return-to-zero le
       <description> url orgmode.org     A mode for GNU Emacs . Quoting the homepage:
  Org mode is for keeping notes, maintaining to-do lists, planning projects, authoring documents, computational notebooks, literate programming and more — in a fast and effective plain text system.
  </description>
+    </item>
+    
+    <item>
+      <title>Philosophy</title>
+      <link>https://notes.arne.me/philosophy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/philosophy/</guid>
+      <description>φιλοσοφία, love of wisdom, is the study of general and fundamental questions.</description>
     </item>
     
     <item>
