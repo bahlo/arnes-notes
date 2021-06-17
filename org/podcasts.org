@@ -1,0 +1,3 @@
+#+TITLE: Podcasts
+
+A podcast is a series of audio files, distributed decentralized and consumed via an XML feed.
