@@ -1,0 +1,7 @@
+#+TITLE: Hanlons Razor
+
+A [[file:philosophy.org][philosophical]] razor that suggests a way of eliminating unlikely explanations for human behaviour. Likely named after Robert J. Hanlon, who submitted the statement to a joke book.
+
+#+BEGIN_QUOTE
+Never attribute to malice that which is adequately explained by stupidity.
+#+END_QUOTE
