@@ -1,0 +1,6 @@
+#+TITLE: K3s
+
+- url :: [[https://k3s.io][k3s.io]]
+- tags :: [[file:sysops.org][SysOps]]
+
+K3s is a lightweigt (and simpler) [[file:kubernetes.org][Kubernetes]] in a single <40MB binary.

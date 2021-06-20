@@ -1,0 +1,6 @@
+#+TITLE: Kubernetes
+
+- url :: [[https://kubernetes.io][kubernetes.io]]
+- tags :: [[file:sysops.org][SysOps]], [[file:docker.org][Docker]]
+
+Kubernetes (or K8s) is an open-source container orchestrator.
