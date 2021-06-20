@@ -83,7 +83,7 @@ Life is too Short for Short Term Games Copied from these Tweets   :
       <description>Hey, I&amp;rsquo;m Arne Bahlo   and these are my notes.
 I try to collect my knowledge and I&amp;rsquo;m adding new notes almost every day.
 Here are some topics to get started:
- Software Engineering  SysOps  Smart Home  Gardening  Cognitive Biases  Politics  Wisdom  Electrical Engineering  Philosophy  Podcasts   The source of this wiki is available on GitHub: bahlo/arnes-notes   .</description>
+ Software Engineering  SysOps  Smart Home  Gardening  Cognitive Biases  Politics  Wisdom  Electrical Engineering  Philosophy  Podcasts  Leadership   The source of this wiki is available on GitHub: bahlo/arnes-notes   .</description>
     </item>
     
     <item>
@@ -545,6 +545,15 @@ e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c255
     </item>
     
     <item>
+      <title>Leadership</title>
+      <link>https://notes.arne.me/leadership/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/leadership/</guid>
+      <description>Leadership is a skill of an invidiual or a group to lead, influcence or guide other individuals, teams, or entire organizations.</description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://notes.arne.me/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -799,6 +808,17 @@ Then add the following CSS:
       <guid>https://notes.arne.me/sticky-header-scrollto/</guid>
       <description>source twitter.com    tags CSS    You know that annoying thing when you&amp;rsquo;re scrolled to an anchor and the site&amp;rsquo;s sticky header covers it up? That&amp;rsquo;s fixable in 1 CSS declaration now 🎉
  .heading { scroll-margin-top: 72px; } On November 26, 2020 (when the Tweet was written) this was supported by Chrome, Firefox, Edge and Opera. Safari needs ~scroll-snap-margin-top~ .</description>
+    </item>
+    
+    <item>
+      <title>Subbu Allamaraju&#39;s Leadership Document — 2021 Edition</title>
+      <link>https://notes.arne.me/subbu-allamarajus-leadership-document-2021-edition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/subbu-allamarajus-leadership-document-2021-edition/</guid>
+      <description>source m.subbu.org     Subbu Allamaraju is technology leader at the Expedia Group at the time of writing this note. He writes about 3 believs and 6 behaviours for Leadership .
+Beliefs Leadership is about being a better person.  Leadership is much less about what you do and much more about who you are. — John C. Maxwell
+  One must learn to lead themselves before one can lead others A leaders insecurities, opinions, bad habits and ego can come in the way of deciding what&amp;rsquo;s right for the team  To create a high performing team, you must help others grow as leaders  You can&amp;rsquo;t create a high-performing team when you neglect team member&amp;rsquo;s leadership development Developing people is a force multiplier-  Leaders must set unarguable goals for the team they lead  It’s necessary for a real leader to articulate what I call unarguable goals and aspirations for the institution that they lead.</description>
     </item>
     
     <item>
