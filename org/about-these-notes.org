@@ -16,5 +16,6 @@ Here are some topics to get started:
 - [[file:electrical-engineering.org][Electrical Engineering]]
 - [[file:philosophy.org][Philosophy]]
 - [[file:podcasts.org][Podcasts]]
+- [[file:leadership.org][Leadership]]
 
 The source of this wiki is available on GitHub: [[https://github.com/bahlo/arnes-notes][bahlo/arnes-notes]]. If you want a personal wiki like this but don't know how to build it, let me know, I'll happily help you find a solution: [[mailto:hey@arne.me][hey@arne.me]].

@@ -1,0 +1,62 @@
+#+TITLE: Subbu Allamaraju's Leadership Document — 2021 Edition
+
+- source :: [[https://m.subbu.org/my-leadership-document-2021-edition-132aec22fc0e][m.subbu.org]]
+
+Subbu Allamaraju is technology leader at the Expedia Group at the time of writing this note. He writes about 3 believs and 6 behaviours for [[file:leadership.org][Leadership]].
+
+* Beliefs
+** Leadership is about being a better person.
+#+BEGIN_QUOTE
+Leadership is much less about what you do and much more about who you are.
+— John C. Maxwell
+#+END_QUOTE
+
+- One must learn to lead themselves before one can lead others
+- A leaders insecurities, opinions, bad habits and ego can come in the way of deciding what's right for the team
+** To create a high performing team, you must help others grow as leaders
+- You can't create a high-performing team when you neglect team member's leadership development
+- Developing people is a force multiplier-
+** Leaders must set unarguable goals for the team they lead
+  #+BEGIN_QUOTE
+  It’s necessary for a real leader to articulate what I call unarguable goals and aspirations for the institution that they lead.
+  — Paul O’Neill
+  #+END_QUOTE
+
+- With leadership, anything is possible, and without it, nothing is possible
+- It's the leaders job to set a goal for the team they lead
+
+#+BEGIN_QUOTE
+On picking an unarguable goal, you must be honest to highlight brutal facts, invest in tackling the hard problems first, be grounded in reality, and continually persuade, inspire and walk with talk. You should expect criticism and pushback from peers and your team members. You must show empathy and patience to talk to people who don’t believe in what you’re saying.
+#+END_QUOTE
+* Behaviours
+** Setting the Pace
+Includes:
+- Goal setting
+- Tracking progress
+- Timeley decision making
+- Continous progress towards outcomes
+- Hiring
+- Addressing performance concerns
+- Tackling lingering topics
+- Anticipating issues
+- Asking lots of questions like there is no end
+** Watch for excuses
+Here are some patterns for excuses:
+*** Contraints
+Recognize that Leadership is a constraints management game. You will only have new constraints to replace old mitigated constraints.
+*** Making decisions to suit convenience
+When making decisions with incomplete information, ask yourself it you're making it because it's convenient or if it's the right decision.
+*** Stopping at boundaries
+Stopping at boundaries limits the outcomes we can get for the customer and limits personal growth.
+** Using your leverage
+Use your role and title to solve problems yourself. E.g. when your team is debating for weeks over a topic, try to set a direction and align the team.
+** Following through with commitments
+Producing timely and quality outcomes is an essential leadership behaviour.
+** Sharpening your knives
+Understand the technologies your team is working with, but resist to chase details or tell the team how to solve their technical problems.
+** Picking up the hard parts of growing people
+These are the hard parts:
+- Make your team and yourself uncomfortable every once in a while to stretch your team beyond what they think they are capable of.
+- Set unarguable goals for the team (and challenge them with care and respect)
+- Provide timely feedback without sugarcoating
+- Active performance management. When you let someone go, favor that person to discover a future elsewhere.
