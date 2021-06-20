@@ -545,6 +545,24 @@ e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c255
     </item>
     
     <item>
+      <title>K3s</title>
+      <link>https://notes.arne.me/k3s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/k3s/</guid>
+      <description>url k3s.io    tags SysOps   K3s is a lightweigt (and simpler) Kubernetes in a single &amp;lt;40MB binary.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://notes.arne.me/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/kubernetes/</guid>
+      <description>url kubernetes.io    tags SysOps , Docker   Kubernetes (or K8s) is an open-source container orchestrator.</description>
+    </item>
+    
+    <item>
       <title>Leadership</title>
       <link>https://notes.arne.me/leadership/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
