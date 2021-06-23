@@ -1,0 +1,22 @@
+#+TITLE: Compile Git SHA Into Rust
+
+It often make sense to compile the Git SHA into the binary to be able to debug issues.
+
+To achieve this in [[file:rust.org][Rust]], add the following to your ~build.rs~:
+
+#+BEGIN_SRC rust
+use anyhow::Result;
+use std::process::Command;
+
+fn main() -> Result<()> {
+    let output = Command::new("git")
+        .args(&["rev-parse", "--short", "HEAD"])
+        .output()?;
+    let git_hash = String::from_utf8(output.stdout)?;
+    println!("cargo:rustc-env=GIT_SHA={}", git_hash);
+
+    Ok(())
+}
+#+END_SRC
+
+Printing ~cargo:rustc-env=MY_ENV_KEY=<my-env-value>~ from your ~build.rs~ will make it available in your application with ~env!("MY_ENV_KEY")~ (which resolves to an ENV at compile time).
