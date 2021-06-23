@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Compile Git SHA Into Rust – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="manifest" href="/site.webmanifest?v=2">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.6e809dda569e01e8cb9f82e6c851fff7f642f67cb030108c519adb557d4a39d7.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png?v=4" srcset="https://notes.arne.me/img/logo@2x.png?v=4 2x, https://notes.arne.me/img/logo@3x.png?v=4 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">Compile Git SHA Into Rust</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/compile-git-sha-into-rust/" alt="Compile Git SHA Into Rust" class="permalink"><h1>Compile Git SHA Into Rust</h1></a>
+      <p>It often make sense to compile the Git SHA into the binary to be able to debug issues.</p>
+<p>To achieve this in <a href="/rust/">Rust</a>
+, add the following to your <code>build.rs</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-rust" data-lang="rust"><span class="k">use</span><span class="w"> </span><span class="n">anyhow</span>::<span class="nb">Result</span><span class="p">;</span><span class="w">
+</span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="n">process</span>::<span class="n">Command</span><span class="p">;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span>-&gt; <span class="nb">Result</span><span class="o">&lt;</span><span class="p">()</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Command</span>::<span class="n">new</span><span class="p">(</span><span class="s">&#34;git&#34;</span><span class="p">)</span><span class="w">
+</span><span class="w">	</span><span class="p">.</span><span class="n">args</span><span class="p">(</span><span class="o">&amp;</span><span class="p">[</span><span class="s">&#34;rev-parse&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;--short&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;HEAD&#34;</span><span class="p">])</span><span class="w">
+</span><span class="w">	</span><span class="p">.</span><span class="n">output</span><span class="p">()</span><span class="o">?</span><span class="p">;</span><span class="w">
+</span><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">git_hash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">from_utf8</span><span class="p">(</span><span class="n">output</span><span class="p">.</span><span class="n">stdout</span><span class="p">)</span><span class="o">?</span><span class="p">;</span><span class="w">
+</span><span class="w">    </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;cargo:rustc-env=GIT_SHA={}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">git_hash</span><span class="p">);</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span><span class="nb">Ok</span><span class="p">(())</span><span class="w">
+</span><span class="w"></span><span class="p">}</span><span class="w">
+</span></code></pre></div><p>Printing <code>cargo:rustc-env=MY_ENV_KEY=&lt;my-env-value&gt;</code> from your <code>build.rs</code> will make it available in your application with <code>env!(&quot;MY_ENV_KEY&quot;)</code> (which resolves to an ENV at compile time).</p>
+
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//compile-git-sha-into-rust.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>
