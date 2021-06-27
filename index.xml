@@ -38,7 +38,7 @@
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/fast-webfonts/</guid>
-      <description>source iainbean.com    tags Web Development   Use the most modern file formats Web Open Font Format 2.0 (WOFF2) is the smallest and most efficient file format for web fonts as of May 2021. Make sure it appears before older file formats as a browser will use the first font it understands. If you care about IE11 you&amp;rsquo;ll need WOFF as well. If you care about IE8 as well you&amp;rsquo;ll need TTF (or some other old format).</description>
+      <description>source iainbean.com    tags Web Development , Fonts   Use the most modern file formats Web Open Font Format 2.0 (WOFF2) is the smallest and most efficient file format for web fonts as of May 2021. Make sure it appears before older file formats as a browser will use the first font it understands. If you care about IE11 you&amp;rsquo;ll need WOFF as well. If you care about IE8 as well you&amp;rsquo;ll need TTF (or some other old format).</description>
     </item>
     
     <item>
@@ -355,6 +355,15 @@ git lfs fetch --all upstream # or whatever branch you want to update from </desc
     </item>
     
     <item>
+      <title>Fonts</title>
+      <link>https://notes.arne.me/fonts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/fonts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Format on save in Goland</title>
       <link>https://notes.arne.me/format-on-save-in-goland/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -453,6 +462,16 @@ When running go get git.domain.com/foo/bar, go does the following:
       
       <guid>https://notes.arne.me/golang/</guid>
       <description>tags Software Engineering   A programming language designed at Google. First released November 10, 2009.</description>
+    </item>
+    
+    <item>
+      <title>Great Programming Fonts</title>
+      <link>https://notes.arne.me/great-programming-fonts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/great-programming-fonts/</guid>
+      <description>Here&amp;rsquo;s a list of programming Fonts I like, in no order:
+ Iosevka    Operator Mono   ($199) Mono Lisa   (59 €) Fira Code     </description>
     </item>
     
     <item>
