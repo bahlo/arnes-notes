@@ -1,0 +1,8 @@
+#+TITLE: Great Programming Fonts
+
+Here's a list of programming [[file:fonts.org][Fonts]] I like, in no order:
+
+- [Iosevka](https://typeof.net/Iosevka/)
+- [Operator Mono](https://www.typography.com/fonts/operator/styles/operatormono) ($199)
+- [Mono Lisa](https://www.monolisa.dev) (59 €)
+- [Fira Code](https://github.com/tonsky/FiraCode)
