@@ -9,3 +9,6 @@ So you want to lean [[file:networking.org][Networking]]? Here's a collection of 
 * Even more
 - [[https://www.pearson.com/us/higher-education/program/Tanenbaum-Computer-Networks-5th-Edition/PGM270019.html][Tanenbaum & Wetherall, Computer Networks]]
 - [[https://hpbn.co][High Performance Browser Networking]]
+
+* Sources
+- [[https://news.ycombinator.com/item?id=27650775][Ask HN: Good books/courses to learn networking essentials for web developers?]]
