@@ -83,7 +83,7 @@ Life is too Short for Short Term Games Copied from these Tweets   :
       <description>Hey, I&amp;rsquo;m Arne Bahlo   and these are my notes.
 I try to collect my knowledge and I&amp;rsquo;m adding new notes almost every day.
 Here are some topics to get started:
- Software Engineering  SysOps  Smart Home  Gardening  Cognitive Biases  Politics  Wisdom  Electrical Engineering  Philosophy  Podcasts  Leadership   The source of this wiki is available on GitHub: bahlo/arnes-notes   .</description>
+ Software Engineering  SysOps  Smart Home  Gardening  Cognitive Biases  Politics  Wisdom  Electrical Engineering  Philosophy  Podcasts  Leadership  Networking   The source of this wiki is available on GitHub: bahlo/arnes-notes   .</description>
     </item>
     
     <item>
@@ -612,6 +612,16 @@ Things I would try first  You Don&amp;amp;rsquo;t Know JS    The Modern JavaScri
     </item>
     
     <item>
+      <title>Learn Networking</title>
+      <link>https://notes.arne.me/learn-networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/learn-networking/</guid>
+      <description>So you want to lean Networking ? Here&amp;rsquo;s a collection of resources I found over time that might be of help (although I used different resources back in the day).
+Things I would try first  Beej&amp;amp;rsquo;s Guide to Network Programming    Kurose &amp;amp;amp; Ross, Computer Networking: A Top-Down Approach     Even more  Tanenbaum &amp;amp;amp; Wetherall, Computer Networks    High Performance Browser Networking     </description>
+    </item>
+    
+    <item>
       <title>Learn Vim</title>
       <link>https://notes.arne.me/learn-vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -681,6 +691,15 @@ To mark external links in Hugo, create the following file: layouts/_default/_mar
       <guid>https://notes.arne.me/multiple-gitconfigs/</guid>
       <description> tags Git   You can have multiple .gitconfig files that override each other based on the directory you&amp;rsquo;re in. This is especially useful if you use a different Email for work commits.
 [includeIf &amp;#34;gitdir:~/Developer/work/&amp;#34;] path = .gitconfig-work </description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>https://notes.arne.me/networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/networking/</guid>
+      <description>Networks are used in computer systems.</description>
     </item>
     
     <item>

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Subset Webfonts – Arnes notes</title>
+  <head><title>Learn Networking – Arnes notes</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
-
-<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
@@ -33,50 +31,37 @@
 
 <div class="grid">
   <div class="page" data-level="1">
-    <h1 class="collapsed-title">Subset Webfonts</h1>
+    <h1 class="collapsed-title">Learn Networking</h1>
     <div class="content">
-      <a href="https://notes.arne.me/subset-webfonts/" alt="Subset Webfonts" class="permalink"><h1>Subset Webfonts</h1></a>
-      <dl>
-<dt>tags</dt>
-<dd><a href="/web-development/">Web Development</a>
-, <a href="/fast-webfonts/">Fast Webfonts</a>
-</dd>
-</dl>
-<h2 id="the-problem">The problem</h2>
-<p>Webfonts can have relatively large sizes. <a href="https://typeof.net/Iosevka/" target="_blank">Iosevka
+      <a href="https://notes.arne.me/learn-networking/" alt="Learn Networking" class="permalink"><h1>Learn Networking</h1></a>
+      <p>So you want to lean <a href="/networking/">Networking</a>
+? Here&rsquo;s a collection of resources I found over time that might be of help (although I used different resources back in the day).</p>
+<h2 id="things-i-would-try-first">Things I would try first</h2>
+<ul>
+<li><a href="https://beej.us/guide/bgnet/" target="_blank">Beej&amp;rsquo;s Guide to Network Programming
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- for example (the typeface that I use for code on this website) is 660kb for one font.</p>
-<h2 id="the-solution">The solution</h2>
-<p>You can subset your fonts, i.e. generate a font with <em>only</em> the glyphs you need. With font subsetting I was able to reduce the size of Iosevka from 660kb to 12kb.</p>
-<h2 id="how-to">How to</h2>
-<ol>
-<li>Install <a href="https://github.com/zachleat/glyphhanger" target="_blank">glyphhanger
+</li>
+<li><a href="https://www.pearson.com/us/higher-education/product/Kurose-Computer-Networking-A-Top-Down-Approach-7th-Edition/9780133594140.html" target="_blank">Kurose &amp;amp; Ross, Computer Networking: A Top-Down Approach
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- with npm</li>
-<li>Install <code>fonttools</code>, <code>brotli</code> and <code>zopfli</code> with pip</li>
-<li>Start your local server (you can skip this if you want to use a remote target)</li>
-<li>Call glyphhanger with the remote target and your base font.</li>
-</ol>
-<p>Glyphhanger will start a headless Chrome, load your page(s), determining the glyphs you need.</p>
-<p>I cannot recommend using the <code>--spyder</code> argument as it didn&rsquo;t seem to work for me, but that would be the easiest solution as it follows links from the inital page up to 10x.</p>
-<p>Instead for my website I&rsquo;m using the command to subset Iosevka (<code>localhost:1313</code> is the address of the local <a href="/hugo/">Hugo</a>
- server):</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">glyphhanger <span class="k">$(</span>curl -s http://localhost:1313/sitemap.xml <span class="p">|</span> grep loc <span class="p">|</span> sed <span class="s1">&#39;s/\s*&lt;loc&gt;//&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/&lt;\/loc&gt;//&#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span><span class="k">)</span> --family<span class="o">=</span><span class="s2">&#34;iosevka web&#34;</span> --formats<span class="o">=</span>woff2,woff --subset<span class="o">=</span><span class="s2">&#34;./fonts/iosevka-*.ttf&#34;</span>
-</code></pre></div><p>It&rsquo;s a bit hacky ngl, maybe I will propose a change to the tool to parse the sitemap itself.</p>
-<p>Check out my <a href="https://github.com/bahlo/arnes-notes/blob/main/.github/workflows/build.yml" target="_blank">GitHub Actions workflow
+</li>
+</ul>
+<h2 id="even-more">Even more</h2>
+<ul>
+<li><a href="https://www.pearson.com/us/higher-education/program/Tanenbaum-Computer-Networks-5th-Edition/PGM270019.html" target="_blank">Tanenbaum &amp;amp; Wetherall, Computer Networks
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- for a real-world example with <a href="https://rsms.me/inter/" target="_blank">Inter
+</li>
+<li><a href="https://hpbn.co" target="_blank">High Performance Browser Networking
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
-, Iosevka and <a href="/hugo/">Hugo</a>
-.</p>
+</li>
+</ul>
 
       
       
-      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//subset-webfonts.org">Edit this page on GitHub</a></small>
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//learn-networking.org">Edit this page on GitHub</a></small>
     </div>
     
 
