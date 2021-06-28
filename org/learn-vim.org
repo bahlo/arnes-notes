@@ -1,0 +1,7 @@
+#+TITLE: Learn Vim
+
+So you want to lean [[file:vim.org][Vim]]? Here's a collection of resources I found over time that might be of help (although I used different resources back in the day).
+
+* Things I would try first
+- [[https://thevaluable.dev/vim-beginner/][Is Vim Really Not For You? A Beginner Guide]]
+
