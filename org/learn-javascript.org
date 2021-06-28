@@ -3,7 +3,7 @@
 So you want to learn [[file:javascript.org][JavaScript]]? Here's a collection of resources I found over time that might be of help (although I used different resources back in the day).
 
 * Things I would try first
-- [[https://github.com/getify/You-Dont-Know-JS][You Don't Know JS]]
+- [[https://github.com/getify/You-Dont-Know-JS][You Dont Know JS]]
 - [[https://javascript.info][The Modern JavaScript Tutorial]]
 - [[https://eloquentjavascript.net][Eloquent JavaScript]]
 
