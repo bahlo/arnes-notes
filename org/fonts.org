@@ -1,1 +1,5 @@
 #+TITLE: Fonts
+
+* Good resources for free fonts
+- [[https://www.fontshare.com][FontShare]]
+- [[https://fonts.google.com][Google Fonts]]
