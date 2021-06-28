@@ -602,6 +602,16 @@ e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c255
     </item>
     
     <item>
+      <title>Learn Javascript</title>
+      <link>https://notes.arne.me/learn-javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/learn-javascript/</guid>
+      <description>So you want to learn JavaScript ? Here&amp;rsquo;s a collection of resources I found over time that might be of help (although I used different resources back in the day).
+Things I would try first  You Don&amp;amp;rsquo;t Know JS    The Modern JavaScript Tutorial    Eloquent JavaScript     Even more  freeCodeCamp    Khan Academy    JavaScript Garden    JavaScript on MDN Web Docs    JavaScript Notes for Professionals    Learn javascript in Y Minutes    JavaScript for Cats    JavaScript: The Good Parts     Sources  Tweet by Alexandria    Tweet by Danny Thompson     </description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://notes.arne.me/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
