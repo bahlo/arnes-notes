@@ -1,0 +1,22 @@
+#+TITLE: Learn Javascript
+
+So you want to learn [[file:javascript.org][JavaScript]]? Here's a collection of resources I found over time that might be of help (although I used different resources back in the day).
+
+* Things I would try first
+- [[https://github.com/getify/You-Dont-Know-JS][You Don't Know JS]]
+- [[https://javascript.info][The Modern JavaScript Tutorial]]
+- [[https://eloquentjavascript.net][Eloquent JavaScript]]
+
+* Even more
+- [[https://freecodecamp.org][freeCodeCamp]]
+- [[https://www.khanacademy.org/computing/computer-programming][Khan Academy]]
+- [[https://bonsaiden.github.io/JavaScript-Garden/][JavaScript Garden]]
+- [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][JavaScript on MDN Web Docs]]
+- [[https://goalkicker.com/JavaScriptBook/][JavaScript Notes for Professionals]]
+- [[https://learnxinyminutes.com/docs/javascript/][Learn javascript in Y Minutes]]
+- [[http://jsforcats.com][JavaScript for Cats]]
+- [[http://shop.oreilly.com/product/9780596517748.do][JavaScript: The Good Parts]]
+
+* Sources
+- [[https://mobile.twitter.com/AlexandriasTech/status/1408933734422822913][Tweet by Alexandria]]
+- [[https://mobile.twitter.com/DThompsonDev/status/1409168400249540608][Tweet by Danny Thompson]]
