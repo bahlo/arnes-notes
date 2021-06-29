@@ -1,6 +1,6 @@
 #+title: Subset Webfonts
 
-- tags :: [[file:web-development.org][Web Development]], [[file:fast-webfonts.org][Fast Webfonts]]
+- tags :: [[file:web-development.org][Web Development]], [[file:fast-webfonts.org][Fast Webfonts]], [[file:fonts.org][Fonts]]
 
 * The problem
 Webfonts can have relatively large sizes. [[https://typeof.net/Iosevka/][Iosevka]] for example (the typeface that I use for code on this website) is 660kb for one font.
