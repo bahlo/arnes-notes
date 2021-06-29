@@ -738,7 +738,7 @@ Variants    Code name Complete name Description     NRZ(L) Non-return-to-zero le
       
       <guid>https://notes.arne.me/option-to-result-rust/</guid>
       <description>This is how you convert from Option to Result and vice versa in Rust .
-Option -&amp;gt; Result leterr=anyhow!(&amp;#34;some error&amp;#34;);letx=Some(&amp;#34;foo&amp;#34;);assert_eq!(x.ok_or(err),Ok(&amp;#34;foo&amp;#34;));Result -&amp;gt; Option #+BEGIN_SRC rust let x = Ok(&amp;ldquo;foo&amp;rdquo;); assert_eq!(x.ok(), Some(&amp;ldquo;foo&amp;rdquo;)); #+END_SRC rust</description>
+Option -&amp;gt; Result leterr=anyhow!(&amp;#34;some error&amp;#34;);letx=Some(&amp;#34;foo&amp;#34;);assert_eq!(x.ok_or(err),Ok(&amp;#34;foo&amp;#34;));Result -&amp;gt; Option letx=Ok(&amp;#34;foo&amp;#34;);assert_eq!</description>
     </item>
     
     <item>
