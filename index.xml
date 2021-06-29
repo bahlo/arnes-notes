@@ -471,7 +471,7 @@ When running go get git.domain.com/foo/bar, go does the following:
       
       <guid>https://notes.arne.me/great-programming-fonts/</guid>
       <description>Here&amp;rsquo;s a list of programming Fonts I like, in no order:
- Iosevka    Operator Mono   ($199) Mono Lisa   (59 €) Fira Code     </description>
+ Iosevka    Operator Mono   ($199) Mono Lisa   (59 €) Fira Code    Pragmata Pro   ($199)  </description>
     </item>
     
     <item>
@@ -914,7 +914,7 @@ Beliefs Leadership is about being a better person.  Leadership is much less abou
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/subset-webfonts/</guid>
-      <description>tags Web Development , Fast Webfonts   The problem Webfonts can have relatively large sizes. Iosevka   for example (the typeface that I use for code on this website) is 660kb for one font.
+      <description>tags Web Development , Fast Webfonts , Fonts   The problem Webfonts can have relatively large sizes. Iosevka   for example (the typeface that I use for code on this website) is 660kb for one font.
 The solution You can subset your fonts, i.e. generate a font with only the glyphs you need. With font subsetting I was able to reduce the size of Iosevka from 660kb to 12kb.</description>
     </item>
     
