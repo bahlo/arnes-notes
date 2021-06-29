@@ -1,0 +1,17 @@
+#+TITLE: Option to Result in Rust
+
+This is how you convert from ~Option~ to ~Result~ and vice versa in [[file:rust.org][Rust]].
+
+* ~Option~ -> ~Result~
+
+#+BEGIN_SRC rust
+let err = anyhow!("some error");
+let x = Some("foo");
+assert_eq!(x.ok_or(err), Ok("foo"));
+#+END_SRC
+
+* ~Result~ -> ~Option~
+#+BEGIN_SRC rust
+let x = Ok("foo");
+assert_eq!(x.ok(), Some("foo"));
+#+END_SRC rust
