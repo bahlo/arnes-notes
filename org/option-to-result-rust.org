@@ -11,7 +11,8 @@ assert_eq!(x.ok_or(err), Ok("foo"));
 #+END_SRC
 
 * ~Result~ -> ~Option~
+
 #+BEGIN_SRC rust
 let x = Ok("foo");
 assert_eq!(x.ok(), Some("foo"));
-#+END_SRC rust
+#+END_SRC
