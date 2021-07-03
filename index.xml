@@ -87,6 +87,15 @@ Here are some topics to get started:
     </item>
     
     <item>
+      <title>Accessibility</title>
+      <link>https://notes.arne.me/accessibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/accessibility/</guid>
+      <description>Accessibility (or short a11y) is the design of products, services or environments to be usable by people with disabilities.</description>
+    </item>
+    
+    <item>
       <title>Acessibility</title>
       <link>https://notes.arne.me/acessibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -175,6 +184,18 @@ The idea  If you think about people, there are two categories of high-quality pe
       
       <guid>https://notes.arne.me/cognitive-biases/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Colors Optimized for Color-Blind Individuals</title>
+      <link>https://notes.arne.me/colors-optimized-for-color-blind-individuals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/colors-optimized-for-color-blind-individuals/</guid>
+      <description> source nature.com     Accessibility in Web Development is important and should not be an afterthought. The linked post offers guidelines to make graphics accessible to those with color vision deficiencies.
+  Figure 1: P and D indicate simulated colors as seen by individuals with protanopia and deuteranopia, respectively.
+  Here are the colors with copyable RGB and Hex codes:
+   Color name RGB Hex     Black 0, 0, 0 #000   Orange 230, 159, 0 #e69f00   Sky blue 86, 180, 233 #56b4e9   Bluish green 0, 158, 115 #009e73   Yellow 240, 228, 66 #f0e442   Blue 0, 114, 178 #0072b2   Vermillion 213, 94, 0 #d55e00   Reddish purple 204, 121, 167 #cc79a7    CSS Custom Properties :root { --black: rgb(0, 0, 0); --orange: rgb(230, 159, 0); --sky-blue: rgb(86, 180, 233); --bluish-green: rgb(0, 158, 115); --yellow: rgb(240, 228, 66); --blue: rgb(0, 114, 178); --vermillion: rgb(213, 94, 0); --reddish-purple: rgb(204, 121, 167); } SASS Variables $black: rgb(0, 0, 0); $orange: rgb(230, 159, 0); $sky-blue: rgb(86, 180, 233); $bluish-green: rgb(0, 158, 115); $yellow: rgb(240, 228, 66); $blue: rgb(0, 114, 178); $vermillion: rgb(213, 94, 0); $reddish-purple: rgb(204, 121, 167); </description>
     </item>
     
     <item>

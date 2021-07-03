@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Colors Optimized for Color-Blind Individuals – Arnes notes</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="manifest" href="/site.webmanifest?v=2">
+
+
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.6e809dda569e01e8cb9f82e6c851fff7f642f67cb030108c519adb557d4a39d7.css"/>
+</head>
+  <body><header>
+   
+   
+   
+  
+  <a href= "/about-these-notes/" id="logo">
+    <img src="https://notes.arne.me/img/logo.png?v=4" srcset="https://notes.arne.me/img/logo@2x.png?v=4 2x, https://notes.arne.me/img/logo@3x.png?v=4 3x" alt="Arne Bahlo">
+    <h3 class="site-title">Arnes notes</h3>
+  </a>
+</header>
+
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">Colors Optimized for Color-Blind Individuals</h1>
+    <div class="content">
+      <a href="https://notes.arne.me/colors-optimized-for-color-blind-individuals/" alt="Colors Optimized for Color-Blind Individuals" class="permalink"><h1>Colors Optimized for Color-Blind Individuals</h1></a>
+      <dl>
+<dt>source</dt>
+<dd><a href="https://www.nature.com/articles/nmeth.1618" target="_blank">nature.com
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+</dd>
+</dl>
+<p><a href="/accessibility/">Accessibility</a>
+ in <a href="/web-development/">Web Development</a>
+ is important and should not be an afterthought.
+The linked post offers guidelines to make graphics accessible to those with color vision deficiencies.</p>
+<figure>
+    <img src="/ox-hugo/colors-optimized-for-color-blind-individuals.jpg"
+         alt="Figure 1: P and D indicate simulated colors as seen by individuals with protanopia and deuteranopia, respectively."/> <figcaption>
+            <p>Figure 1: P and D indicate simulated colors as seen by individuals with protanopia and deuteranopia, respectively.</p>
+        </figcaption>
+</figure>
+
+<p>Here are the colors with copyable RGB and Hex codes:</p>
+<table>
+<thead>
+<tr>
+<th>Color name</th>
+<th>RGB</th>
+<th>Hex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Black</td>
+<td>0, 0, 0</td>
+<td>#000</td>
+</tr>
+<tr>
+<td>Orange</td>
+<td>230, 159, 0</td>
+<td>#e69f00</td>
+</tr>
+<tr>
+<td>Sky blue</td>
+<td>86, 180, 233</td>
+<td>#56b4e9</td>
+</tr>
+<tr>
+<td>Bluish green</td>
+<td>0, 158, 115</td>
+<td>#009e73</td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td>240, 228, 66</td>
+<td>#f0e442</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>0, 114, 178</td>
+<td>#0072b2</td>
+</tr>
+<tr>
+<td>Vermillion</td>
+<td>213, 94, 0</td>
+<td>#d55e00</td>
+</tr>
+<tr>
+<td>Reddish purple</td>
+<td>204, 121, 167</td>
+<td>#cc79a7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="css-custom-properties">CSS Custom Properties</h2>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+    <span class="nv">--black</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="nv">--orange</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">230</span><span class="p">,</span> <span class="mi">159</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="nv">--sky-blue</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">86</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">233</span><span class="p">);</span>
+    <span class="nv">--bluish-green</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">158</span><span class="p">,</span> <span class="mi">115</span><span class="p">);</span>
+    <span class="nv">--yellow</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">240</span><span class="p">,</span> <span class="mi">228</span><span class="p">,</span> <span class="mi">66</span><span class="p">);</span>
+    <span class="nv">--blue</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">114</span><span class="p">,</span> <span class="mi">178</span><span class="p">);</span>
+    <span class="nv">--vermillion</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">213</span><span class="p">,</span> <span class="mi">94</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="nv">--reddish-purple</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">204</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">167</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><h2 id="sass-variables">SASS Variables</h2>
+<div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nv">$black</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="nv">$orange</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">230</span><span class="o">,</span> <span class="mi">159</span><span class="o">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="nv">$sky-blue</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">86</span><span class="o">,</span> <span class="mi">180</span><span class="o">,</span> <span class="mi">233</span><span class="p">);</span>
+<span class="nv">$bluish-green</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">158</span><span class="o">,</span> <span class="mi">115</span><span class="p">);</span>
+<span class="nv">$yellow</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">240</span><span class="o">,</span> <span class="mi">228</span><span class="o">,</span> <span class="mi">66</span><span class="p">);</span>
+<span class="nv">$blue</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">114</span><span class="o">,</span> <span class="mi">178</span><span class="p">);</span>
+<span class="nv">$vermillion</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">213</span><span class="o">,</span> <span class="mi">94</span><span class="o">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="nv">$reddish-purple</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">204</span><span class="o">,</span> <span class="mi">121</span><span class="o">,</span> <span class="mi">167</span><span class="p">);</span>
+</code></pre></div>
+      
+      
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//colors-optimized-for-color-blind-individuals.org">Edit this page on GitHub</a></small>
+    </div>
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    </div>
+ </div>
+
+<script src="https://notes.arne.me/js/page.js" type="text/javascript"></script>
+<script async defer data-domain="notes.arne.me" src="https://stats.arne.me/js/script.js"></script>
+</body>
+</html>
