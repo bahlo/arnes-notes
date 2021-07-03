@@ -1,0 +1,47 @@
+#+TITLE: Colors Optimized for Color-Blind Individuals
+
+- source :: [[https://www.nature.com/articles/nmeth.1618][nature.com]]
+
+[[file:accessibility.org][Accessibility]] in [[file:web-development.org][Web Development]] is important and should not be an afterthought.
+The linked post offers guidelines to make graphics accessible to those with color vision deficiencies.
+
+#+CAPTION: P and D indicate simulated colors as seen by individuals with protanopia and deuteranopia, respectively.
+[[./images/colors-optimized-for-color-blind-individuals.jpg]]
+
+
+Here are the colors with copyable RGB and Hex codes:
+| Color name     | RGB           | Hex     |
+| Black          | 0, 0, 0       | #000    |
+| Orange         | 230, 159, 0   | #e69f00 |
+| Sky blue       | 86, 180, 233  | #56b4e9 |
+| Bluish green   | 0, 158, 115   | #009e73 |
+| Yellow         | 240, 228, 66  | #f0e442 |
+| Blue           | 0, 114, 178   | #0072b2 |
+| Vermillion     | 213, 94, 0    | #d55e00 |
+| Reddish purple | 204, 121, 167 | #cc79a7 |
+
+* CSS Custom Properties
+#+BEGIN_SRC css
+:root {
+    --black: rgb(0, 0, 0);
+    --orange: rgb(230, 159, 0);
+    --sky-blue: rgb(86, 180, 233);
+    --bluish-green: rgb(0, 158, 115);
+    --yellow: rgb(240, 228, 66);
+    --blue: rgb(0, 114, 178);
+    --vermillion: rgb(213, 94, 0);
+    --reddish-purple: rgb(204, 121, 167);
+}
+#+END_SRC
+
+* SASS Variables
+#+BEGIN_SRC scss
+$black: rgb(0, 0, 0);
+$orange: rgb(230, 159, 0);
+$sky-blue: rgb(86, 180, 233);
+$bluish-green: rgb(0, 158, 115);
+$yellow: rgb(240, 228, 66);
+$blue: rgb(0, 114, 178);
+$vermillion: rgb(213, 94, 0);
+$reddish-purple: rgb(204, 121, 167);
+#+END_SRC

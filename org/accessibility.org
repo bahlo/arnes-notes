@@ -1,0 +1,3 @@
+#+TITLE: Accessibility
+
+Accessibility (or short a11y) is the design of products, services or environments to be usable by people with disabilities.
