@@ -1,0 +1,13 @@
+#+TITLE: Signed Commits on macOS
+
+This is how you sign your [[file:git.org][Git]] commits on [[file:macos.org][macOS]]).
+
+1. Install the [[https://gpgtools.org][GPG Suite]] (~brew install --cask gpg-suite~)
+2. Open the GPG Keychain application and create a new key with the email address you use for git commits
+3. Run ~git config --global commit.gpgsign true~ to enable GPG for all repositories
+4. Run ~git config --global gpg.program gpg2~ to make sure git uses ~gpg2~
+5. Copy the Key ID from the Key Details in GPG Keychain
+6. Run ~git config --global user.signingKey <copied key id>~ to tell git which key to use
+7. To make sure your git host knows about they key you should upload the public part ([[https://github.com/settings/keys][GitHub Settings]])
+
+This also works with [[file:multiple-gitconfigs.org][Multiple Gitconfigs]], add the =signingKey= to your other ~.gitconfig~ and you're good.
