@@ -890,6 +890,16 @@ SASS (The Indented Syntax) This was the original syntax and uses .sass.. It does
     </item>
     
     <item>
+      <title>Signed Commits on macOS</title>
+      <link>https://notes.arne.me/signed-commits-on-macos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/signed-commits-on-macos/</guid>
+      <description>This is how you sign your Git commits on macOS ).
+ Install the GPG Suite   (brew install --cask gpg-suite) Open the GPG Keychain application and create a new key with the email address you use for git commits Run git config --global commit.gpgsign true to enable GPG for all repositories Run git config --global gpg.program gpg2 to make sure git uses gpg2 Copy the Key ID from the Key Details in GPG Keychain Run git config --global user.</description>
+    </item>
+    
+    <item>
       <title>Smart Home</title>
       <link>https://notes.arne.me/smart-home/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

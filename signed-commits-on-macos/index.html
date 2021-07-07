@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Rust – Arnes notes</title>
+  <head><title>Signed Commits on macOS – Arnes notes</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,24 +31,33 @@
 
 <div class="grid">
   <div class="page" data-level="1">
-    <h1 class="collapsed-title">Rust</h1>
+    <h1 class="collapsed-title">Signed Commits on macOS</h1>
     <div class="content">
-      <a href="https://notes.arne.me/rust/" alt="Rust" class="permalink"><h1>Rust</h1></a>
-      <dl>
-<dt>url</dt>
-<dd><a href="https://www.rust-lang.org" target="_blank">rust-lang.org
+      <a href="https://notes.arne.me/signed-commits-on-macos/" alt="Signed Commits on macOS" class="permalink"><h1>Signed Commits on macOS</h1></a>
+      <p>This is how you sign your <a href="/git/">Git</a>
+ commits on <a href="/macos/">macOS</a>
+).</p>
+<ol>
+<li>Install the <a href="https://gpgtools.org" target="_blank">GPG Suite
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
-</dd>
-<dt>tags</dt>
-<dd><a href="/software-engineering/">Software Engineering</a>
-</dd>
-</dl>
-<p>A programming language developed by Mozilla with a focus on performance and safety.</p>
+ (<code>brew install --cask gpg-suite</code>)</li>
+<li>Open the GPG Keychain application and create a new key with the email address you use for git commits</li>
+<li>Run <code>git config --global commit.gpgsign true</code> to enable GPG for all repositories</li>
+<li>Run <code>git config --global gpg.program gpg2</code> to make sure git uses <code>gpg2</code></li>
+<li>Copy the Key ID from the Key Details in GPG Keychain</li>
+<li>Run <code>git config --global user.signingKey &lt;copied key id&gt;</code> to tell git which key to use</li>
+<li>To make sure your git host knows about they key you should upload the public part (<a href="https://github.com/settings/keys" target="_blank">GitHub Settings
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+)</li>
+</ol>
+<p>This also works with <a href="/multiple-gitconfigs/">Multiple Gitconfigs</a>
+, add the <code>signingKey</code> to your other <code>.gitconfig</code> and you&rsquo;re good.</p>
 
       
       
-      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//rust.org">Edit this page on GitHub</a></small>
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//signed-commits-on-macos.org">Edit this page on GitHub</a></small>
     </div>
     
 
@@ -94,8 +103,6 @@
   
 
   
-    
-  
 
   
 
@@ -159,8 +166,6 @@
 
   
 
-  
-    
   
 
   
@@ -210,8 +215,6 @@
   
 
   
-    
-  
 
   
 
@@ -222,8 +225,6 @@
   
 
   
-    
-  
 
   
 
@@ -270,25 +271,8 @@
   
 
   
-
 
 
-  <div class="bl-section">
-    <h4>Links to this note</h4>
-    <div class="backlinks">
-       <ul>
-       
-         <li><a href="/compile-git-sha-into-rust/">Compile Git SHA Into Rust</a></li>
-       
-         <li><a href="/taking-rust-for-a-test-drive/">How to find a good first Rust project</a></li>
-       
-         <li><a href="/option-to-result-rust/">Option to Result in Rust</a></li>
-       
-         <li><a href="/print-type-in-rust/">Print Type in Rust</a></li>
-       
-      </ul>
-    </div>
-  </div>
 
 
     </div>
