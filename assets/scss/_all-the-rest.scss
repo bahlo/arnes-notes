@@ -158,7 +158,19 @@ iframe {
 }
 
 .bl-section {
-  padding: 1em;
+  padding: 12px;
+  background: var(--backlinks-bg);
+  margin: 12px;
+  border-radius: 8px;
+
+  ul {
+    padding: 0;
+    margin: 8px 0 0 0;
+    list-style: none;
+  }
+}
+
+.bl-section-wrapper {
   border-top: 1px var(--border-color) solid;
 }
 

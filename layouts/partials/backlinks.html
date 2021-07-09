@@ -7,14 +7,16 @@
 {{ end }}
 
 {{ if gt (len $backlinks) 0 }}
-  <div class="bl-section">
-    <h4>Links to this note</h4>
-    <div class="backlinks">
-       <ul>
-       {{ range $backlinks }}
-         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-       {{ end }}
-      </ul>
+  <div class="bl-section-wrapper">
+    <div class="bl-section">
+      <h4>Links to this note</h4>
+      <div class="backlinks">
+         <ul>
+         {{ range $backlinks }}
+           <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+         {{ end }}
+        </ul>
+      </div>
     </div>
   </div>
 {{ end }}
