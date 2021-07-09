@@ -16,9 +16,9 @@
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/68-bits-of-unsolicited-advice/</guid>
-      <description>source kk.org    tags Wisdom    It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.
- These are the things that resonated with me at the time of writing this:
- Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it.</description>
+      <description>tags Wisdom   Kevin Kelly in his blogpost 68 Bits of Unsolicited Advice   :
+ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.
+ These are the things that resonated with me at the time of writing this:</description>
     </item>
     
     <item>
@@ -27,9 +27,10 @@
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/99-additional-bits-of-unsolicited-advice/</guid>
-      <description>source kk.org    tags Wisdom    I have another birthday, and another bunch of unsolicited advice.
+      <description>tags Wisdom   Kevin Kelly in his second unsolicited advice blogpost 99 Additional Bits of Unsolicited Advice   :
+ I have another birthday, and another bunch of unsolicited advice.
  These are the things that resonated with me at the time of writing this:
- That thing that made you weird as a kid could make you great as an adult — if you don’t lose it. If you have any doubt at all about being able to carry a load in one trip, do yourself a huge favor and make two trips.</description>
+ That thing that made you weird as a kid could make you great as an adult — if you don’t lose it.</description>
     </item>
     
     <item>
@@ -602,6 +603,15 @@ e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c255
       
       <guid>https://notes.arne.me/k3s/</guid>
       <description>url k3s.io    tags SysOps   K3s is a lightweigt (and simpler) Kubernetes in a single &amp;lt;40MB binary.</description>
+    </item>
+    
+    <item>
+      <title>Kevin Kelly</title>
+      <link>https://notes.arne.me/kevin-kelly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/kevin-kelly/</guid>
+      <description>Kevin Kelly is Senior Maverick for Wired   magazine, which he also co-founded. On his website kk.org   he shares his thoughts in The Technium   and has sub-pages for Cool Tools   or True Films   .</description>
     </item>
     
     <item>
