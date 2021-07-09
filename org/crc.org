@@ -9,4 +9,4 @@ They are called CRCs because the /check/ value is a /redundancy/ and the algorit
 CRCs are popular because they are simple to implement in hardware, easy to analyze and good at detecting common errors cause by noise in transmission channels.
 
 * Computation
-TBD, but check out [[https://crccalc.com][crccalc.com]] if you just need a result.
+TBD, but check out [[https://crccalc.com][crccalc.com]] if all you need is a result.
