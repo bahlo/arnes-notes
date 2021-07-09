@@ -40,10 +40,8 @@ a svg.external-link-icon {
 
 blockquote {
   margin-left: 1rem;
-  font-style: italic;
-  border-left: 3px solid;
-  border-left-color: currentcolor;
-  border-color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-left-width: 4px;
   padding-left: 1em;
 }
 
