@@ -3,7 +3,7 @@
 - tags :: [[file:web-development.org][Web Development]], [[file:fast-webfonts.org][Fast Webfonts]], [[file:fonts.org][Fonts]]
 
 * The problem
-Webfonts can have relatively large sizes. [[https://typeof.net/Iosevka/][Iosevka]] for example (the typeface that I use for code on this website) is 660kb for one font.
+Webfonts can have relatively large sizes. [[https://typeof.net/Iosevka/][Iosevka]] for example is 660kb for one font.
 
 * The solution
 You can subset your fonts, i.e. generate a font with /only/ the glyphs you need. With font subsetting I was able to reduce the size of Iosevka from 660kb to 12kb.
@@ -24,5 +24,3 @@ glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<
 #+end_src
 
 It's a bit hacky ngl, maybe I will propose a change to the tool to parse the sitemap itself.
-
-Check out my [[https://github.com/bahlo/arnes-notes/blob/main/.github/workflows/build.yml][GitHub Actions workflow]] for a real-world example with [[https://rsms.me/inter/][Inter]], Iosevka and [[file:hugo.org][Hugo]].

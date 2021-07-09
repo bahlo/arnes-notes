@@ -33,35 +33,6 @@ jobs:
         run: mkdir -p static
       - name: Convert org files to hugo
         run: make org2hugo
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-      - name: Setup python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-      - name: Install subset dependencies
-        run: |
-          npm install -g glyphhanger
-          pip3 install fonttools brotli zopfli
-      - name: Subset fonts
-        run: |
-          # Start hugo and note pid
-          hugo serve --port 1313 &
-          echo $! > /tmp/hugo-pid
-
-          # Generate subset fonts
-          # We do a pretty wonky parsing of sitemap.xml
-          glyphhanger $(curl -s http://localhost:1313/sitemap.xml | grep loc | sed 's/\s*<loc>//' | sed 's/<\/loc>//' | tr '\n' ' ') --family="iosevka web" --formats=woff2 --subset="./fonts/iosevka/*.woff2"
-
-          # Kill hugo
-          kill -9 "$(cat /tmp/hugo-pid)"
-
-          # Move subset fonts to static/fonts to override theme
-          mkdir -p static/fonts
-          mv ./fonts/iosevka/*-subset.* ./static/fonts/
-          for file in ./static/fonts/iosevka-*-subset.*; do mv "$file" ${file/-subset/}; done
       - name: Generate site
         run: make hugo
       - name: Deploy
