@@ -1,0 +1,3 @@
+#+TITLE: Kevin Kelly
+
+Kevin Kelly is Senior Maverick for [[https://www.wired.com/magazine/][Wired]] magazine, which he also co-founded. On his website [[https://kk.org][kk.org]] he shares his thoughts in [[https://kk.org/thetechnium/][The Technium]] and has sub-pages for [[https://kk.org/cooltools/][Cool Tools]] or [[https://truefilms.com][True Films]].
