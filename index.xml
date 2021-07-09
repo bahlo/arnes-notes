@@ -965,8 +965,9 @@ Beliefs Leadership is about being a better person.  Leadership is much less abou
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/subset-webfonts/</guid>
-      <description>tags Web Development , Fast Webfonts , Fonts   The problem Webfonts can have relatively large sizes. Iosevka   for example (the typeface that I use for code on this website) is 660kb for one font.
-The solution You can subset your fonts, i.e. generate a font with only the glyphs you need. With font subsetting I was able to reduce the size of Iosevka from 660kb to 12kb.</description>
+      <description>tags Web Development , Fast Webfonts , Fonts   The problem Webfonts can have relatively large sizes. Iosevka   for example is 660kb for one font.
+The solution You can subset your fonts, i.e. generate a font with only the glyphs you need. With font subsetting I was able to reduce the size of Iosevka from 660kb to 12kb.
+How to  Install glyphhanger   with npm Install fonttools, brotli and zopfli with pip Start your local server (you can skip this if you want to use a remote target) Call glyphhanger with the remote target and your base font.</description>
     </item>
     
     <item>
