@@ -9,7 +9,7 @@
   --backlinks-heading: #555;
   --page-bg: #fff;
   --grid-bg: #fff;
-  --code-bg: #fff;
+  --code-bg: none;
   --border-color: #e6e7e8;
   --link-color: var(--primary);
   --backlink-color: var(--primary);
@@ -25,7 +25,7 @@
     --fg: #eee;
     --bg: #111;
     --grid-bg: #111;
-    --code-bg: #2e2a31;
+    // --code-bg: #2e2a31;
     --header-bg: #262728;
     --backlinks-bg: #262728;
     --backlinks-heading: #999;
