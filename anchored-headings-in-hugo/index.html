@@ -34,18 +34,11 @@
     <h1 class="collapsed-title">Anchored headings in Hugo</h1>
     <div class="content">
       <a href="https://notes.arne.me/anchored-headings-in-hugo/" alt="Anchored headings in Hugo" class="permalink"><h1>Anchored headings in Hugo</h1></a>
-      <dl>
-<dt>source</dt>
-<dd><a href="https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/24" target="_blank">discourse.gohugo.io
+      <p>If you want to have anchored headings in <a href="/hugo/">Hugo</a>
+ (e.g. having a <code>#</code> before each headings that links to the heading directly), this is how you do it (found in <a href="https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/24" target="_blank">a post on hugos forum
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
-</dd>
-<dt>tags</dt>
-<dd><a href="/hugo/">Hugo</a>
-, <a href="/golang/">Golang</a>
-</dd>
-</dl>
-<p>If you want to have anchored headings in Hugo (i.e. having a <code>#</code> before each headings that links to the heading directly), this is how you do it:</p>
+).</p>
 <p>Create a <code>layouts/_default/_markup/render-heading.html</code> and put the following code in it:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h</span><span class="err">{{</span> <span class="err">.</span><span class="na">Level</span> <span class="err">}}</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;{{ .Anchor | safeURL }}&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;heading-anchor&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#{{ .Anchor | safeURL }}&#34;</span><span class="p">&gt;</span>

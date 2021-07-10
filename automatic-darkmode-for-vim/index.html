@@ -34,14 +34,11 @@
     <h1 class="collapsed-title">Automatic darkmode for Vim</h1>
     <div class="content">
       <a href="https://notes.arne.me/automatic-darkmode-for-vim/" alt="Automatic darkmode for Vim" class="permalink"><h1>Automatic darkmode for Vim</h1></a>
-      <dl>
-<dt>tags</dt>
-<dd><a href="/vim/">Vim</a>
-, <a href="/macos/">macOS</a>
-</dd>
-</dl>
+      <p><a href="/vim/">Vim</a>
+ doesn&rsquo;t have a native way of detecting system appearance yet, but you can do it yourself. Here&rsquo;s how.</p>
 <h2 id="macos">macOS</h2>
-<p>On macOS you can add the following lines to your <code>.vimrc</code> to check the system appearance every 2s and change the theme accordingly:</p>
+<p>On <a href="/macos/">macOS</a>
+ you can add the following lines to your <code>.vimrc</code> to check the system appearance every 2s and change the theme accordingly:</p>
 <pre><code class="language-vimscript" data-lang="vimscript">&quot; Automatically switch light/dark background + theme
 function! SetAppearance(...)
   try

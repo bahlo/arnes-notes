@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>Aesthetic-Accessibility Paradox</title>
+      <link>https://notes.arne.me/aesthetic-accessibility-paradox/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/aesthetic-accessibility-paradox/</guid>
+      <description>In a thread on Twitter   , Cat Noone explains why there is no such thing.
+ Finding a middle ground between what is aesthetically pleasing and what is simultaneously usable by everyone is your job as a designer.
+  Form follows function every time Accessibility about is permanent, temporal and situational scenarios (e.g. one arm, arm injury or new parent)  </description>
+    </item>
+    
+    <item>
       <title>Docker Secrets</title>
       <link>https://notes.arne.me/docker-secrets/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
@@ -27,7 +38,7 @@ RUN --mount=type=secret,id=auth \  curl -O -u &amp;#34;$(cat /run/secrets/auth)&
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/68-bits-of-unsolicited-advice/</guid>
-      <description>tags Wisdom   Kevin Kelly in his blogpost 68 Bits of Unsolicited Advice   :
+      <description>Kevin Kelly shares some Wisdom in his blogpost 68 Bits of Unsolicited Advice   :
  It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.
  These are the things that resonated with me at the time of writing this:</description>
     </item>
@@ -38,10 +49,10 @@ RUN --mount=type=secret,id=auth \  curl -O -u &amp;#34;$(cat /run/secrets/auth)&
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/99-additional-bits-of-unsolicited-advice/</guid>
-      <description>tags Wisdom   Kevin Kelly in his second unsolicited advice blogpost 99 Additional Bits of Unsolicited Advice   :
+      <description>Kevin Kelly shares even more Wisdom in his second unsolicited advice blogpost 99 Additional Bits of Unsolicited Advice   :
  I have another birthday, and another bunch of unsolicited advice.
  These are the things that resonated with me at the time of writing this:
- That thing that made you weird as a kid could make you great as an adult — if you don’t lose it.</description>
+ That thing that made you weird as a kid could make you great as an adult — if you don’t lose it. If you have any doubt at all about being able to carry a load in one trip, do yourself a huge favor and make two trips.</description>
     </item>
     
     <item>
@@ -80,7 +91,8 @@ Examples Redirecting a single URL: Redirect /index.html /some-other-page/ Redire
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/35-principles-for-35-years/</guid>
-      <description>source swyx.io    tags Wisdom    I turn 35 today. Here are 35 principles I have accumulated and try to live by [&amp;hellip;].
+      <description>Shawn Wang compiles some Wisdom in this blogpost   :
+ I turn 35 today. Here are 35 principles I have accumulated and try to live by [&amp;hellip;].
  Here are the things from that post which resonated with me:
 Life is too Short for Short Term Games Copied from these Tweets   :
  Systems &amp;gt; Goals, Discipline &amp;gt; Motivation, Trust &amp;gt; Distrust, Principles &amp;gt; Tactics, Writing &amp;gt; Reading, Vulnerability &amp;gt; Confidence, North Stars &amp;gt; Low Hanging Fruit, Trends &amp;gt; News, Habits &amp;gt; Sprints, Questions &amp;gt; Answers, Problems &amp;gt; Solutions, People &amp;gt; Projects, Listening &amp;gt; Arguing, Empathy &amp;gt; Enmity, Values &amp;gt; Metrics, Actions &amp;gt; Reactions, Health &amp;gt; Wealth, Forgiveness &amp;gt; Revenge, Automation &amp;gt; Decision, Delegation &amp;gt; Control, Growth &amp;gt; Fixed mindset, &amp;ldquo;Yes, and&amp;rdquo; &amp;gt; &amp;ldquo;Well, actually&amp;rdquo;, Community &amp;gt; Solo effort, Identity &amp;gt; Outcomes, Science &amp;gt; Social Science, Integrity &amp;gt; Capability, Designing &amp;gt; Forecasting, History &amp;gt; Geography, Micro &amp;gt; Macro econ.</description>
@@ -108,23 +120,12 @@ Check out the Index with all notes, alternatively here&amp;rsquo;s a small selec
     </item>
     
     <item>
-      <title>Aesthetic-Accessibility Paradox</title>
-      <link>https://notes.arne.me/aesthetic-accessibility-paradox/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.arne.me/aesthetic-accessibility-paradox/</guid>
-      <description>In a thread on Twitter   , Cat Noone explains why there is no such thing.
- Finding a middle ground between what is aesthetically pleasing and what is simultaneously usable by everyone is your job as a designer.
-  Form follows function every time Accessibility about is permanent, temporal and situational scenarios (e.g. one arm, arm injury or new parent)  </description>
-    </item>
-    
-    <item>
       <title>Anchored headings in Hugo</title>
       <link>https://notes.arne.me/anchored-headings-in-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/anchored-headings-in-hugo/</guid>
-      <description>source discourse.gohugo.io    tags Hugo , Golang   If you want to have anchored headings in Hugo (i.e. having a # before each headings that links to the heading directly), this is how you do it:
+      <description>If you want to have anchored headings in Hugo (e.g. having a # before each headings that links to the heading directly), this is how you do it (found in a post on hugos forum   ).
 Create a layouts/_default/_markup/render-heading.html and put the following code in it:
 &amp;lt;h{{ .Level }} id=&amp;#34;{{ .Anchor | safeURL }}&amp;#34;&amp;gt; &amp;lt;a class=&amp;#34;heading-anchor&amp;#34; href=&amp;#34;#{{ .Anchor | safeURL }}&amp;#34;&amp;gt; {{ strings.Repeat .Level &amp;#34;#&amp;#34; }} &amp;lt;/a&amp;gt; {{ .</description>
     </item>
@@ -135,9 +136,9 @@ Create a layouts/_default/_markup/render-heading.html and put the following code
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/automatic-darkmode-for-emacs/</guid>
-      <description>tags GNU Emacs , macOS   macOS On macOS you can use the following code to check the system appearance every two seconds and on change use a dark theme.
-This is loosely based on Automatic Emacs theme switching in OSX dark mode   , with the added bonnus that this is fully automatic:
-(setq last-dark-mode-state &amp;#39;unknown) (defun check-and-set-dark-mode () &amp;#34;Automatically set the theme to match if macOS is in dark mode.</description>
+      <description>Emacs doesn&amp;rsquo;t have a native way of detecting dark mode (yet?). But since it&amp;rsquo;s emacs, you can build it yourself, here&amp;rsquo;s how.
+macOS On macOS you can use the following code to check the system appearance every two seconds and on change use a dark theme.
+This is loosely based on Automatic Emacs theme switching in OSX dark mode   , with the added bonnus that this is fully automatic:</description>
     </item>
     
     <item>
@@ -146,10 +147,10 @@ This is loosely based on Automatic Emacs theme switching in OSX dark mode   , wi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/automatic-darkmode-for-iterm/</guid>
-      <description>tags Automatic darkmode for Vim   iTerm 2   is a terminal emulator for macOS. It supports dark and light mode, but it won&amp;rsquo;t change the colors automatically.
+      <description>iTerm 2   is a terminal emulator for macOS. It supports dark and light mode, but it won&amp;rsquo;t change the colors automatically.
 But we&amp;rsquo;re lucky! iTerm has great scripting support. See the Scripting Documentation   . We can use that to automatically switch profiles based on the system appearance.
 Here&amp;rsquo;s how:
- Create two profiles and name them Light and Dark.</description>
+ Create two profiles and name them Light and Dark. It probably makes sense to create one profile to your liking with a light theme, duplicate it and set the dark theme on the duplicate.</description>
     </item>
     
     <item>
@@ -158,18 +159,21 @@ Here&amp;rsquo;s how:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/automatic-darkmode-for-vim/</guid>
-      <description>tags Vim , macOS   macOS On macOS you can add the following lines to your .vimrc to check the system appearance every 2s and change the theme accordingly:
-&amp;quot; Automatically switch light/dark background + theme function! SetAppearance(...) try let s:mode = systemlist(&amp;quot;defaults read -g AppleInterfaceStyle&amp;quot;)[0] let s:new_bg = &amp;quot;&amp;quot; let s:new_theme = &amp;quot;&amp;quot; if s:mode ==? &amp;quot;Dark&amp;quot; let s:new_bg = &amp;quot;dark&amp;quot; let s:new_theme = &amp;quot;base16-unikitty-dark&amp;quot; else let s:new_bg = &amp;quot;light&amp;quot; let s:new_theme = &amp;quot;base16-unikitty-light&amp;quot; endif if &amp;amp;background !</description>
+      <description>Vim doesn&amp;rsquo;t have a native way of detecting system appearance yet, but you can do it yourself. Here&amp;rsquo;s how.
+macOS On macOS you can add the following lines to your .vimrc to check the system appearance every 2s and change the theme accordingly:
+&amp;quot; Automatically switch light/dark background + theme function! SetAppearance(...) try let s:mode = systemlist(&amp;quot;defaults read -g AppleInterfaceStyle&amp;quot;)[0] let s:new_bg = &amp;quot;&amp;quot; let s:new_theme = &amp;quot;&amp;quot; if s:mode ==?</description>
     </item>
     
     <item>
-      <title>Baader-Meinhof Phenomenon</title>
+      <title>Baader Meinhof Phenomenon</title>
       <link>https://notes.arne.me/baader-meinhof-phenomenon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/baader-meinhof-phenomenon/</guid>
-      <description>source science.howstuffworks.com    tags Cognitive Biases   What does Baader-Meinhof mean?  The Baader Meinhof phenomenon is a cognitive bias in which people tend to see a particular thing everywhere after noticing it for the first time.
- Why is it called the Baader-Meinhof Phenomenon?  It all started in the comments section of a newspaper called the Minnesota St. Pauls Pioneer Press. During the 90s, one commenter talked about the Baader-Meinhof group, which was a West German terrorist organization, and within hours, he saw another reference to the group.</description>
+      <description>The Baader Meinhof Phenomenon is a Cognitive Biase in which you notice a particular thing everywhere after noticing it somewhere.
+A common example is buying a car and suddenyl seeing it everywhere.
+Why is it called the Baader-Meinhof Phenomenon? Kate Kershner has the following explanation in her What&amp;amp;rsquo;s the Baader-Meinhof phenomenon?   :
+ It all started in the comments section of a newspaper called the Minnesota St. Pauls Pioneer Press.</description>
     </item>
     
     <item>
@@ -178,7 +182,7 @@ Here&amp;rsquo;s how:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/barrels-and-ammunition/</guid>
-      <description>source conordewey.com     Conor Dewey summarizes a talk by Keith Rabois. The quotes in this document are from the talk, the points mostly from the article.
+      <description>Conor Dewey summarizes a talk by Keith Rabois on his blog   . The quotes in this document are from the talk, the points mostly from the article.
 The idea  If you think about people, there are two categories of high-quality people: there is the ammunition, and then there are the barrels. You can add all the ammunition you want, but if you have only five barrels in your company, you can literally do only five things simultaneously.</description>
     </item>
     
@@ -1049,7 +1053,7 @@ Here are the most basic points:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/web-development/</guid>
-      <description>tags Software Engineering   Web development is the work involved in developing a web site.</description>
+      <description>Web development is a form of Software Engineering that involves developing a web site.</description>
     </item>
     
     <item>
