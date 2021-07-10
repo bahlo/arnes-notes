@@ -402,7 +402,7 @@ git lfs fetch --all upstream # or whatever branch you want to update from </desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/fonts/</guid>
-      <description>Good resources for free fonts  FontShare    Google Fonts     </description>
+      <description>A font is a synonym for typeface although a typical typeface (or font family) consists of a number of fonts (regular, bold, italic, bolditalic).</description>
     </item>
     
     <item>
@@ -411,9 +411,8 @@ git lfs fetch --all upstream # or whatever branch you want to update from </desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/format-on-save-in-goland/</guid>
-      <description>tags Goland   Open Settings and go to Tools -&amp;gt; Filewatchers
-Click + and choose either gofmt or goimports (whatever you prefer)
-That&amp;rsquo;s it! This should be the default in my opinion.</description>
+      <description>If you use Goland , you most likely want to format on save, here&amp;rsquo;s how:
+ Open Settings and go to Tools -&amp;gt; Filewatchers Click + and choose either gofmt or goimports (whatever you prefer)  That&amp;rsquo;s it! This should be the default in my opinion.</description>
     </item>
     
     <item>
@@ -441,7 +440,7 @@ Perfect coffee/water ratio The best ratio is 65g to 1L (2.3oz to 34 US fl oz for
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/git/</guid>
-      <description>tags Software Engineering   Git is a version-control software, created by Linus Torvalds in 2005.</description>
+      <description>Git is a version-control software used in Software Engineering , created by Linus Torvalds in 2005.</description>
     </item>
     
     <item>
@@ -450,7 +449,7 @@ Perfect coffee/water ratio The best ratio is 65g to 1L (2.3oz to 34 US fl oz for
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/git-log/</guid>
-      <description> tags Git   The problem Running git log on your terminal is pretty verbose and can make getting and overview pretty hard.
+      <description>Git can be pretty verbose when running git log on your terminal which makes getting and overview pretty hard.
 The solution Add the following to your .gitconfig:
 [alias] l = log --graph --format=&amp;#39;%C(yellow)%h%Creset - %s %Cgreen(%cr) %C(blue)%an %Creset&amp;#39; Running ~git l~ will present the commits, one per line and even visualize merges.
 Example (The real thing is more colorful.)
@@ -463,8 +462,8 @@ Example (The real thing is more colorful.)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/git-wip/</guid>
-      <description> source carolynvanslyck.com    tags Git    Have you ever run git branch and still wasn’t sure what each one is for and if it’s recent? Here’s a git alias, git wip, that displays your branches and when you last changed them. It’s really useful for remembering which one you were just working on, and which branches probably should be deleted.
- [alias] wip = for-each-ref --sort=&amp;#39;authordate:iso8601&amp;#39; --format=&amp;#39; %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)&amp;#39; refs/heads </description>
+      <description>Carolyn Van Slyck shares an amazing Git alias for showing the recent branches on her blog   .
+ Have you ever run git branch and still wasn’t sure what each one is for and if it’s recent? Here’s a git alias, git wip, that displays your branches and when you last changed them. It’s really useful for remembering which one you were just working on, and which branches probably should be deleted.</description>
     </item>
     
     <item>
@@ -473,7 +472,7 @@ Example (The real thing is more colorful.)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/gnu-emacs/</guid>
-      <description>url gnu.org     A free/libre text editor.</description>
+      <description>Emacs   is a free/libre text editor.</description>
     </item>
     
     <item>
@@ -482,10 +481,11 @@ Example (The real thing is more colorful.)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/go-get-meta-tag/</guid>
-      <description>tags Golang   How it works Go documents the functionality here: Remote import paths   .
+      <description>This note descibes how Golang figures out where to clone a dependency from.
+How it works Go documents the functionality here: Remote import paths   .
 This is the short version:
 When running go get git.domain.com/foo/bar, go does the following:
- Fetch https://git.domain.com/foo/bar?go-get=1 Check if that page contains a meta tag like this (could also be a https url):   &amp;lt;meta name=&amp;#34;go-import&amp;#34; content=&amp;#34;git.domain.com git git@git.domain.com:foo/bar.git&amp;#34;&amp;gt;  Verify that git.domain.com contains the same meta tag Git clone git@git.</description>
+ Fetch https://git.domain.com/foo/bar?go-get=1 Check if that page contains a meta tag like this (could also be a https url):   &amp;lt;meta name=&amp;#34;go-import&amp;#34; content=&amp;#34;git.domain.com git git@git.domain.com:foo/bar.git&amp;#34;&amp;gt;  Verify that git.</description>
     </item>
     
     <item>
@@ -494,7 +494,7 @@ When running go get git.domain.com/foo/bar, go does the following:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/goland/</guid>
-      <description>url jetbrains.com    tags Golang   An IDE for Go, by Jetbrains.</description>
+      <description>Goland   is an IDE for Golang .</description>
     </item>
     
     <item>
@@ -503,7 +503,7 @@ When running go get git.domain.com/foo/bar, go does the following:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/golang/</guid>
-      <description>tags Software Engineering   A programming language designed at Google. First released November 10, 2009.</description>
+      <description>A programming language designed at Google.</description>
     </item>
     
     <item>
