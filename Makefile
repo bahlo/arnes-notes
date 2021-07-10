@@ -14,3 +14,5 @@ org2hugo:
 .PHONY: hugo
 hugo:
 	hugo
+	mkdir -p public/index
+	mv public/index.html public/index/

@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    {{- partial "head.html" . -}}  
-    <meta http-equiv="refresh" content="0; url='{{ $.Site.Params.entrypoint }}'" />
-  </head>
-  <body>
-    <p class="redirect">If you're not being redirected, <a href="{{ $.Site.Params.entrypoint }}">click here</a>.
-  </body>
-</html>
+{{define "main"}}
+<div class="grid">
+  <div class="page" data-level="1">
+    <h1 class="collapsed-title">Index</h1>
+    <div class="content">
+      <h1>Index</h1>
+      <p>Here are all {{ len .Site.AllPages }} notes that exist at the moment:</p>
+      <ul>
+      {{ $re := $.File.BaseFileName }}
+      {{ range .Site.AllPages }}
+        {{ if ne $re .File.BaseFileName }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end}}
+      {{ end }}
+      </ul>
+    </div>
+    </div>
+ </div>
+{{ $pagejs := resources.Get "js/page.js" }}
+<script src="{{ $pagejs.Permalink }}" type="text/javascript"></script>
+{{end}}
