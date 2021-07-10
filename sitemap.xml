@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://notes.arne.me/docker-secrets/</loc>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://notes.arne.me/68-bits-of-unsolicited-advice/</loc>
     <lastmod>2021-06-02T00:00:00+00:00</lastmod>
   </url>

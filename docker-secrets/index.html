@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<title>Wisdom – Arnes notes</title>
+<title>Docker Secrets – Arnes notes</title>
 
 
 <meta charset="utf-8">
@@ -31,13 +31,22 @@
 
 <div class="grid">
   <div class="page" data-level="1">
-    <h1 class="collapsed-title">Wisdom</h1>
+    <h1 class="collapsed-title">Docker Secrets</h1>
     <div class="content">
-      <a href="https://notes.arne.me/wisdom/" alt="Wisdom" class="permalink"><h1>Wisdom</h1></a>
+      <a href="https://notes.arne.me/docker-secrets/" alt="Docker Secrets" class="permalink"><h1>Docker Secrets</h1></a>
+      <p>Using the <code>--secret</code> flag allows you to mount secrets into your <a href="/docker/">Docker</a>
+ container in a safe way (i.e. they won&rsquo;t end up in the final image).</p>
+<h2 id="example">Example</h2>
+<p>Let&rsquo;s say we want to download a file that is protected using basic auth. Our <code>Dockerfile</code> would look like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="k">RUN</span> --mount<span class="o">=</span><span class="nv">type</span><span class="o">=</span>secret,id<span class="o">=</span>auth <span class="se">\
+</span><span class="se"></span>    curl -O -u <span class="s2">&#34;</span><span class="k">$(</span>cat /run/secrets/auth<span class="k">)</span><span class="s2">&#34;</span> http://example.org/some-file<span class="err">
+</span></code></pre></div><p>When building the container we need to pass the <code>--secret</code> flag and provide a file, like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">echo</span> <span class="s2">&#34;foo:bar&#34;</span> &gt; auth.txt
+$ docker build --secret <span class="nv">id</span><span class="o">=</span>auth,src<span class="o">=</span>auth.txt .
+</code></pre></div>
       
       
-      
-      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//wisdom.org">Edit this page on GitHub</a></small>
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//docker-secrets.org">Edit this page on GitHub</a></small>
     </div>
     
 
@@ -45,12 +54,8 @@
   
 
   
-    
-  
 
   
-    
-  
 
   
 
@@ -58,13 +63,9 @@
 
   
 
-  
-    
   
 
   
-    
-  
 
   
 
@@ -123,8 +124,6 @@
   
 
   
-    
-  
 
   
 
@@ -265,27 +264,8 @@
   
 
   
-
 
 
-  <div class="bl-section">
-    <h4>Links to this note</h4>
-    <div class="backlinks">
-       <ul>
-       
-         <li><a href="/68-bits-of-unsolicited-advice/">68 Bits of Unsolicited Advice</a></li>
-       
-         <li><a href="/99-additional-bits-of-unsolicited-advice/">99 Additional Bits of Unsolicited Advice</a></li>
-       
-         <li><a href="/35-principles-for-35-years/">35 Principles for 35 Years</a></li>
-       
-         <li><a href="/about-these-notes/">About these notes</a></li>
-       
-         <li><a href="/expiring-vs-permanent-skills/">Expiring vs. Permanent Skills</a></li>
-       
-      </ul>
-    </div>
-  </div>
 
 
     </div>

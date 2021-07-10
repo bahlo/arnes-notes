@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>Docker Secrets</title>
+      <link>https://notes.arne.me/docker-secrets/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/docker-secrets/</guid>
+      <description>Using the --secret flag allows you to mount secrets into your Docker container in a safe way (i.e. they won&amp;rsquo;t end up in the final image).
+Example Let&amp;rsquo;s say we want to download a file that is protected using basic auth. Our Dockerfile would look like this:
+RUN --mount=type=secret,id=auth \  curl -O -u &amp;#34;$(cat /run/secrets/auth)&amp;#34; http://example.org/some-fileWhen building the container we need to pass the --secret flag and provide a file, like this:</description>
+    </item>
+    
+    <item>
       <title>68 Bits of Unsolicited Advice</title>
       <link>https://notes.arne.me/68-bits-of-unsolicited-advice/</link>
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
@@ -290,7 +301,7 @@ Note that as of the writing of this post Internet Explorer (and some other minor
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/docker/</guid>
-      <description>url docker.com    tags Software Engineering , SysOps   Docker is a container virtualization software.</description>
+      <description>Docker   is a container virtualization software. It&amp;rsquo;s mostly used for Software Engineering and SysOps .</description>
     </item>
     
     <item>
@@ -299,7 +310,7 @@ Note that as of the writing of this post Internet Explorer (and some other minor
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/docker-multistage-builds/</guid>
-      <description>url docs.docker.com    tags Docker   You probably don&amp;rsquo;t need the whole language toolchain in your Docker container. If you still want to use Docker to build you can use so-called multi-stage builds.
+      <description>You probably don&amp;rsquo;t need the whole language toolchain in your Docker container. If you still want to use Docker to build you can use so-called multi-stage builds (official documentation   ).
 Example This is an example for a Golang application:
 FROMgolang:1 AS builderCOPY /app /WORKDIR/appRUN go build -o /bin/app ./appFROMalpine:latestRUN apk --no-cache add ca-certificatesCOPY --from=builder /bin/app .CMD [&amp;#34;.</description>
     </item>
