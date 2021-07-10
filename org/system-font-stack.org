@@ -1,8 +1,8 @@
-#+title: System Font Stack
+#+TITLE: System Font Stack
 
-- source :: [[https://css-tricks.com/snippets/css/system-font-stack/][css-tricks.com]]
-- tags :: [[file:css.org][CSS]]
+If you don't want to use [[file:webfonts.org][Webfonts]] due to size or other reasons, you can fall back to system fonts to provide an integrated experience.
 
+This is what GitHub uses:
 #+BEGIN_SRC css
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

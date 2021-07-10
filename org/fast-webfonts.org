@@ -1,8 +1,7 @@
-#+title: Fast Webfonts
-#+date: 2021-05-31
+#+TITLE: Fast Webfonts
+#+DATE: 2021-05-31
 
-- source :: [[https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/][iainbean.com]]
-- tags :: [[file:web-development.org][Web Development]], [[file:fonts.org][Fonts]]
+Iain Bean shares some tricks on [[https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/][his blog]] to make your [[file:webfonts.org][Webfonts]] faster.
 
 * Use the most modern file formats
    =Web Open Font Format 2.0= (WOFF2) is the smallest and most efficient file format for web fonts as of May 2021.
@@ -18,9 +17,9 @@ Use ~font-display: swap;~ so browsers will use a fallback font until the webfont
 
 * Preload your font files
 Add the following tag to your ~head~:
-#+begin_src html
+#+BEGIN_SRC html
 <link rel="preload" href="/some-font.woff2" as="font" type="font/woff2" crossorigin="">
-#+end_src
+#+END_SRC
 
 This forces the browser to start downloading the font before it knows it needs it. Otherwise the browser parses the CSS first, checks if the font is needed on the page and only then loads it.
 

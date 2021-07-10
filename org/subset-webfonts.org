@@ -1,9 +1,7 @@
-#+title: Subset Webfonts
-
-- tags :: [[file:web-development.org][Web Development]], [[file:fast-webfonts.org][Fast Webfonts]], [[file:fonts.org][Fonts]]
+#+TITLE: Subset Webfonts
 
 * The problem
-Webfonts can have relatively large sizes. [[https://typeof.net/Iosevka/][Iosevka]] for example is 660kb for one font.
+[[file:webfonts.org][Webfonts]] can have relatively large sizes. [[https://typeof.net/Iosevka/][Iosevka]] for example is 660kb for one font.
 
 * The solution
 You can subset your fonts, i.e. generate a font with /only/ the glyphs you need. With font subsetting I was able to reduce the size of Iosevka from 660kb to 12kb.

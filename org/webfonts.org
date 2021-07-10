@@ -1,0 +1,3 @@
+#+TITLE: Webfonts
+
+Webfonts are [[file:fonts.org][Fonts]], which are optimized for web browsers, used in [[file:web-development.org][Web Development]].
