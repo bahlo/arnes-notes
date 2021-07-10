@@ -16,7 +16,7 @@
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/docker-secrets/</guid>
-      <description>Using the --secret flag allows you to mount secrets into your Docker container in a safe way (i.e. they won&amp;rsquo;t end up in the final image).
+      <description>Using the --secret flag allows you to mount secrets into your Docker container in a safe way where they won&amp;rsquo;t end up in the final image (official documentation   ).
 Example Let&amp;rsquo;s say we want to download a file that is protected using basic auth. Our Dockerfile would look like this:
 RUN --mount=type=secret,id=auth \  curl -O -u &amp;#34;$(cat /run/secrets/auth)&amp;#34; http://example.org/some-fileWhen building the container we need to pass the --secret flag and provide a file, like this:</description>
     </item>

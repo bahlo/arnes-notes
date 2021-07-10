@@ -35,7 +35,10 @@
     <div class="content">
       <a href="https://notes.arne.me/docker-secrets/" alt="Docker Secrets" class="permalink"><h1>Docker Secrets</h1></a>
       <p>Using the <code>--secret</code> flag allows you to mount secrets into your <a href="/docker/">Docker</a>
- container in a safe way (i.e. they won&rsquo;t end up in the final image).</p>
+ container in a safe way where they won&rsquo;t end up in the final image (<a href="https://docs.docker.com/develop/develop-images/build%5Fenhancements/#new-docker-build-secret-information" target="_blank">official documentation
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+).</p>
 <h2 id="example">Example</h2>
 <p>Let&rsquo;s say we want to download a file that is protected using basic auth. Our <code>Dockerfile</code> would look like this:</p>
 <div class="highlight"><pre class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="k">RUN</span> --mount<span class="o">=</span><span class="nv">type</span><span class="o">=</span>secret,id<span class="o">=</span>auth <span class="se">\
