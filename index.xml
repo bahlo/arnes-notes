@@ -192,7 +192,7 @@ The idea  If you think about people, there are two categories of high-quality pe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/circuitpython/</guid>
-      <description>url circuitpython.org    tags Embedded systems , Python   CircuitPython is an open-source derivative of the MicroPython   programming language (which is compatible to Python , but optimized for microcontrollers).</description>
+      <description>CircuitPython   is an open-source derivative of the MicroPython   programming language (which is compatible to Python , but optimized for Embedded systems ).</description>
     </item>
     
     <item>
@@ -201,7 +201,7 @@ The idea  If you think about people, there are two categories of high-quality pe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/cognitive-biases/</guid>
-      <description></description>
+      <description>A cognitive bias is describing how an instead of an objective input individuals base their behavior on their construction of reality.</description>
     </item>
     
     <item>
@@ -210,7 +210,7 @@ The idea  If you think about people, there are two categories of high-quality pe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/colors-optimized-for-color-blind-individuals/</guid>
-      <description> source nature.com     Accessibility in Web Development is important and should not be an afterthought. The linked post offers guidelines to make graphics accessible to those with color vision deficiencies.
+      <description>Accessibility in Web Development is important and should not be an afterthought. Bang Wong writes a post in Nature   , which offers guidelines to make graphics accessible to those with color vision deficiencies.
   Figure 1: P and D indicate simulated colors as seen by individuals with protanopia and deuteranopia, respectively.
   Here are the colors with copyable RGB and Hex codes:
    Color name RGB Hex     Black 0, 0, 0 #000   Orange 230, 159, 0 #e69f00   Sky blue 86, 180, 233 #56b4e9   Bluish green 0, 158, 115 #009e73   Yellow 240, 228, 66 #f0e442   Blue 0, 114, 178 #0072b2   Vermillion 213, 94, 0 #d55e00   Reddish purple 204, 121, 167 #cc79a7    CSS Custom Properties :root { --black: rgb(0, 0, 0); --orange: rgb(230, 159, 0); --sky-blue: rgb(86, 180, 233); --bluish-green: rgb(0, 158, 115); --yellow: rgb(240, 228, 66); --blue: rgb(0, 114, 178); --vermillion: rgb(213, 94, 0); --reddish-purple: rgb(204, 121, 167); } SASS Variables $black: rgb(0, 0, 0); $orange: rgb(230, 159, 0); $sky-blue: rgb(86, 180, 233); $bluish-green: rgb(0, 158, 115); $yellow: rgb(240, 228, 66); $blue: rgb(0, 114, 178); $vermillion: rgb(213, 94, 0); $reddish-purple: rgb(204, 121, 167); </description>
@@ -243,7 +243,7 @@ There is an online tool that allows you to do this conversion: github.com/javl/i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/cron/</guid>
-      <description>tags Linux , SysOps   The software utility cron (or cron job) is a time-based job scheduler in Unix-like operating systems.
+      <description>The software utility cron (or cron job) is a time-based job scheduler in Unix-like operating systems (e.g. Linux ).
 Crontab A crontab file defines the cron jobs of a user or system. You can edit it by running crontab -e.
 Each line of a crontab represents a job. This is the schema:
 # ┌───────────── minute (0 - 59) # │ ┌───────────── hour (0 - 23) # │ │ ┌───────────── day of the month (1 - 31) # │ │ │ ┌───────────── month (1 - 12) # │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday) # │ │ │ │ │ # * * * * * &amp;lt;command to execute&amp;gt; If a * is at one position, it is unrestricted.</description>
@@ -255,7 +255,7 @@ Each line of a crontab represents a job. This is the schema:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/css/</guid>
-      <description>tags Web Development , Software Engineering   Cascading Style Sheets is a style-sheet language used to style webpages.</description>
+      <description>Cascading Style Sheets is a style-sheet language used in Web Development .</description>
     </item>
     
     <item>
@@ -264,10 +264,11 @@ Each line of a crontab represents a job. This is the schema:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/css-custom-properties/</guid>
-      <description>tags CSS , Web Development   CSS Custom Properties (sometimes referred to as CSS Variables) allow you to define variables that can be used throughout a document.
+      <description>CSS Custom Properties (sometimes referred to as CSS Variables) allow you to define variables that can be used throughout a document.
 Basic usage Seting a variable on :root defines it globally:
 :root { --title-font-size: 1em; } You can also limit the scope of variables by defining them on any element, like this:
-header { --fg: red; } Use the var function to lookup a variable:</description>
+header { --fg: red; } Use the var function to lookup a variable:
+header .title { font-size: var(--title-font-size); color: var(--fg); } </description>
     </item>
     
     <item>
@@ -276,7 +277,7 @@ header { --fg: red; } Use the var function to lookup a variable:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/crc/</guid>
-      <description>tags Signal Processing   An error-detecting code commonly used in networks and storage devices to detect accidental changed to raw data. The check value is based on the remainder of a polynomial division of the data.
+      <description>An error-detecting code commonly used in Signal Processing to detect accidental changed to raw data. The check value is based on the remainder of a polynomial division of the data.
 They are called CRCs because the check value is a redundancy and the algorithm is based on cyclic codes.
 CRCs are popular because they are simple to implement in hardware, easy to analyze and good at detecting common errors cause by noise in transmission channels.</description>
     </item>
@@ -287,7 +288,7 @@ CRCs are popular because they are simple to implement in hardware, easy to analy
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/darkmode-in-css/</guid>
-      <description>tags CSS , Web Development   You can use the following @media query to detect system dark mode. In this example we use a dark background for dark mode:
+      <description>You can use the following @media query to detect system dark mode in CSS . In this example we use a dark background for dark mode:
 @media (prefers-color-scheme: dark) { body { background: #000; } } I personally like to combine this with CSS Custom Properties to make the switch as seamless as possible.
 Note that as of the writing of this post Internet Explorer (and some other minor browsers) did not support this query.</description>
     </item>
@@ -298,7 +299,7 @@ Note that as of the writing of this post Internet Explorer (and some other minor
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/diy/</guid>
-      <description></description>
+      <description>DIY stands for Do It Yourself.</description>
     </item>
     
     <item>
@@ -327,7 +328,7 @@ FROMgolang:1 AS builderCOPY /app /WORKDIR/appRUN go build -o /bin/app ./appFROMa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/dwim/</guid>
-      <description>tags Software Engineering   Emacs has a concept called DWIM. Here&amp;rsquo;s an excerpt from the comment-dwim   command:
+      <description>GNU Emacs has a concept called DWIM. Here&amp;rsquo;s an excerpt from the comment-dwim   command:
  The word “dwim” is an acronym for “Do What I Mean”; it indicates that this command can be used for many different jobs relating to comments, depending on the situation where you use it.
  Example Álvaro Ramírez wrote about this and provided a concrete example in his blogpost Emacs DWIM: do what I mean   .</description>
     </item>
@@ -347,7 +348,8 @@ FROMgolang:1 AS builderCOPY /app /WORKDIR/appRUN go build -o /bin/app ./appFROMa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/embedded-systems/</guid>
-      <description>tags Software Engineering   Embedded systems are computer systems that are embedded as part of a complete device, often including eletrical or electronic hardware and mechanical parts (such as sensors or motors).</description>
+      <description>Embedded systems are computer systems that are embedded as part of a complete device, often including eletrical or electronic hardware and mechanical parts (such as sensors or motors).
+They are often programmed in low-level languages (see Software Engineering ) like C.</description>
     </item>
     
     <item>
@@ -356,8 +358,7 @@ FROMgolang:1 AS builderCOPY /app /WORKDIR/appRUN go build -o /bin/app ./appFROMa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/esphome/</guid>
-      <description>url esphome.io    tags Smart Home , DIY , Home Assistant    ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
- Supports tons of sensors and integrates with Home Assistant .</description>
+      <description>ESPHome   is a system to add ESP8266/ESP32 boards (see Embedded systems ) to your Smart Home using Home Assistant . It supports a multitude of input and output compoennts.</description>
     </item>
     
     <item>
@@ -366,8 +367,9 @@ FROMgolang:1 AS builderCOPY /app /WORKDIR/appRUN go build -o /bin/app ./appFROMa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/eucalyptus-gunnii/</guid>
-      <description>tags Gardening   Eucalyptus gunii (Cider Gum) is an evergreen small to medium-sized tree, native to Tasmania. It has a smooth bark and egg-shaped leaves and it can grow up to 9-21 meters tall (30-70 ft.) and 5-12 meters wide (18-40 ft.).
-Handling  Easy to grow, easy to care for (beginner friendly) Moderate resistance to cold (can take a short -10°C freeze). Performs best in a sunny spot with little wind.</description>
+      <description>Eucalyptus gunii (Cider Gum) is an evergreen small to medium-sized tree, native to Tasmania. It has a smooth bark and egg-shaped leaves and it can grow up to 9-21 meters tall (30-70 ft.) and 5-12 meters wide (18-40 ft.).
+Handling If you want one for your Garden , here are the most important facts:
+ Easy to grow, easy to care for (beginner friendly) Moderate resistance to cold (can take a short -10°C freeze).</description>
     </item>
     
     <item>
@@ -376,7 +378,7 @@ Handling  Easy to grow, easy to care for (beginner friendly) Moderate resistance
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/expiring-vs-permanent-skills/</guid>
-      <description>url collaborativefund.com    tags Wisdom   Every field has two kinds of skills: expiring and permanent.
+      <description>Morgan Housel shares some Wisdom in a blogpost   , saying every field has two kinds of skills: expiring and permanent.
 Expiring skills Expiring skills are vital at a given time but prone to disminishing as technology improves and a field evolves
 They tend to get more attention, are more likely to be the &amp;ldquo;cool thing&amp;rdquo;.
 Permanent skills Permanent were as essential 100 years ago as they are today, and will still be 100 years from now.</description>
