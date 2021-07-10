@@ -80,10 +80,11 @@ pre {
     display: none;
     position: absolute;
     writing-mode: vertical-lr;
-    left: -12px;
-    top: 16px;
-    font-size: 24px;
+    font-size: 20px;
+    margin: 16px 0 0 0;
+    line-height: 42px;
     white-space: nowrap;
+    font-weight: normal;
   }
 
   .content {
