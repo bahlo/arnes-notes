@@ -15,17 +15,16 @@
   --backlink-color: var(--primary);
   --active-link-background-color: #eee;
   --shadow-color: rgba(0, 0, 0, 0.075);
+  --icon-color: #767778;
 }
 
 @media (prefers-color-scheme: dark) {
-  /* Override for dark mode */
   :root {
     --primary: #1c98fc;
 
     --fg: #eee;
     --bg: #111;
     --grid-bg: #111;
-    // --code-bg: #2e2a31;
     --header-bg: #262728;
     --backlinks-bg: #262728;
     --backlinks-heading: #999;
@@ -33,5 +32,6 @@
     --border-color: #161718;
     --shadow-color: rgba(0, 0, 0, 0.2);
     --active-link-background-color: #444;
+    --icon-color: #a6a7a8;
   }
 }

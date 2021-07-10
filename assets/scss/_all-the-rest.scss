@@ -36,7 +36,8 @@ a:hover {
 
 a svg.external-link-icon {
   position: relative;
-  top: 2px;
+  top: 1px;
+  stroke: var(--icon-color);
 }
 
 blockquote {
