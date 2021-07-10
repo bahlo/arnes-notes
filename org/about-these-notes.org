@@ -4,19 +4,12 @@ Hey, I'm [[https://arne.me][Arne Bahlo]] and these are my notes.
 
 I try to collect my knowledge and I'm adding new notes almost every day.
 
-Here are some topics to get started:
+Check out the [[/index][Index]] with all notes, alternatively here's a small selection of good entrypoints:
 
 - [[file:software-engineering.org][Software Engineering]]
 - [[file:sysops.org][SysOps]]
-- [[file:smart-home.org][Smart Home]]
-- [[file:gardening.org][Gardening]]
-- [[file:cognitive-biases.org][Cognitive Biases]]
-- [[file:politics.org][Politics]]
 - [[file:wisdom.org][Wisdom]]
-- [[file:electrical-engineering.org][Electrical Engineering]]
 - [[file:philosophy.org][Philosophy]]
-- [[file:podcasts.org][Podcasts]]
 - [[file:leadership.org][Leadership]]
-- [[file:networking.org][Networking]]
 
 The source of this wiki is available on GitHub: [[https://github.com/bahlo/arnes-notes][bahlo/arnes-notes]]. If you want a personal wiki like this but don't know how to build it, let me know, I'll happily help you find a solution: [[mailto:hey@arne.me][hey@arne.me]].
