@@ -61,7 +61,8 @@ RUN --mount=type=secret,id=auth \  curl -O -u &amp;#34;$(cat /run/secrets/auth)&
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/fast-webfonts/</guid>
-      <description>source iainbean.com    tags Web Development , Fonts   Use the most modern file formats Web Open Font Format 2.0 (WOFF2) is the smallest and most efficient file format for web fonts as of May 2021. Make sure it appears before older file formats as a browser will use the first font it understands. If you care about IE11 you&amp;rsquo;ll need WOFF as well. If you care about IE8 as well you&amp;rsquo;ll need TTF (or some other old format).</description>
+      <description>Iain Bean shares some tricks on his blog   to make your Webfonts faster.
+Use the most modern file formats Web Open Font Format 2.0 (WOFF2) is the smallest and most efficient file format for web fonts as of May 2021. Make sure it appears before older file formats as a browser will use the first font it understands. If you care about IE11 you&amp;rsquo;ll need WOFF as well. If you care about IE8 as well you&amp;rsquo;ll need TTF (or some other old format).</description>
     </item>
     
     <item>
@@ -994,7 +995,7 @@ Beliefs Leadership is about being a better person.  Leadership is much less abou
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/subset-webfonts/</guid>
-      <description>tags Web Development , Fast Webfonts , Fonts   The problem Webfonts can have relatively large sizes. Iosevka   for example is 660kb for one font.
+      <description>The problem Webfonts can have relatively large sizes. Iosevka   for example is 660kb for one font.
 The solution You can subset your fonts, i.e. generate a font with only the glyphs you need. With font subsetting I was able to reduce the size of Iosevka from 660kb to 12kb.
 How to  Install glyphhanger   with npm Install fonttools, brotli and zopfli with pip Start your local server (you can skip this if you want to use a remote target) Call glyphhanger with the remote target and your base font.</description>
     </item>
@@ -1014,7 +1015,9 @@ How to  Install glyphhanger   with npm Install fonttools, brotli and zopfli with
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/system-font-stack/</guid>
-      <description> source css-tricks.com    tags CSS    body { font-family: -apple-system, BlinkMacSystemFont, &amp;#34;Segoe UI&amp;#34;, Roboto, Helvetica, Arial, sans-serif, &amp;#34;Apple Color Emoji&amp;#34;, &amp;#34;Segoe UI Emoji&amp;#34;, &amp;#34;Segoe UI Symbol&amp;#34;; } </description>
+      <description>If you don&amp;rsquo;t want to use Webfonts due to size or other reasons, you can fall back to system fonts to provide an integrated experience.
+This is what GitHub uses:
+body { font-family: -apple-system, BlinkMacSystemFont, &amp;#34;Segoe UI&amp;#34;, Roboto, Helvetica, Arial, sans-serif, &amp;#34;Apple Color Emoji&amp;#34;, &amp;#34;Segoe UI Emoji&amp;#34;, &amp;#34;Segoe UI Symbol&amp;#34;; } </description>
     </item>
     
     <item>
@@ -1056,6 +1059,15 @@ Here are the most basic points:
       
       <guid>https://notes.arne.me/web-development/</guid>
       <description>Web development is a form of Software Engineering that involves developing a web site.</description>
+    </item>
+    
+    <item>
+      <title>Webfonts</title>
+      <link>https://notes.arne.me/webfonts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/webfonts/</guid>
+      <description>Webfonts are Fonts , which are optimized for web browsers, used in Web Development .</description>
     </item>
     
     <item>
