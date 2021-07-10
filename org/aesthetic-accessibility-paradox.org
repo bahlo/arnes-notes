@@ -1,0 +1,10 @@
+#+TITLE: Aesthetic-Accessibility Paradox
+
+In [[https://twitter.com/imcatnoone/status/1198072099321057281][a thread on Twitter]], Cat Noone explains why there is no such thing.
+
+#+BEGIN_QUOTE
+Finding a middle ground between what is aesthetically pleasing and what is simultaneously usable by everyone is your job as a designer.
+#+END_QUOTE
+
+- Form follows function every time
+- [[file:accessibility.org][Accessibility]] about is permanent, temporal and situational scenarios (e.g. one arm, arm injury or new parent)
