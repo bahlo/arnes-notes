@@ -1,9 +1,9 @@
-#+title: Automatic darkmode for Vim
+#+TITLE: Automatic darkmode for Vim
 
-- tags :: [[file:vim.org][Vim]], [[file:../macos.org][macOS]]
+[[file:vim.org][Vim]] doesn't have a native way of detecting system appearance yet, but you can do it yourself. Here's how.
 
 * macOS
-On macOS you can add the following lines to your ~.vimrc~ to check the system appearance every 2s and change the theme accordingly:
+On [[file:macos.org][macOS]] you can add the following lines to your ~.vimrc~ to check the system appearance every 2s and change the theme accordingly:
 
 #+begin_src vimscript
 " Automatically switch light/dark background + theme

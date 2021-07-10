@@ -1,4 +1,5 @@
 #+TITLE: Aesthetic-Accessibility Paradox
+#+DATE: 2021-07-10
 
 In [[https://twitter.com/imcatnoone/status/1198072099321057281][a thread on Twitter]], Cat Noone explains why there is no such thing.
 

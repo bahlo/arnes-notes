@@ -1,14 +1,12 @@
-#+TITLE: Baader-Meinhof Phenomenon
+#+TITLE: Baader Meinhof Phenomenon
 
-- source :: [[https://science.howstuffworks.com/life/inside-the-mind/human-brain/baader-meinhof-phenomenon.htm][science.howstuffworks.com]]
-- tags :: [[file:cognitive-biases.org][Cognitive Biases]]
+The Baader Meinhof Phenomenon is a [[file:cognitive-biases.org][Cognitive Biase]] in which you notice a particular thing everywhere after noticing it somewhere.
 
-* What does Baader-Meinhof mean?
-#+BEGIN_QUOTE
-The Baader Meinhof phenomenon is a cognitive bias in which people tend to see a particular thing everywhere after noticing it for the first time.
-#+END_QUOTE
+A common example is buying a car and suddenyl seeing it everywhere.
 
 * Why is it called the Baader-Meinhof Phenomenon?
+Kate Kershner has the following explanation in her [[https://science.howstuffworks.com/life/inside-the-mind/human-brain/baader-meinhof-phenomenon.htm][What's the Baader-Meinhof phenomenon?]]:
+
 #+BEGIN_QUOTE
 It all started in the comments section of a newspaper called the Minnesota St. Pauls Pioneer Press. During the 90s, one commenter talked about the Baader-Meinhof group, which was a West German terrorist organization, and within hours, he saw another reference to the group. Hence, the term was coined as the Baader-Meinhof phenomenon.
 #+END_QUOTE

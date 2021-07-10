@@ -1,10 +1,11 @@
-#+title: Automatic darkmode for Emacs
+#+TITLE: Automatic darkmode for Emacs
 
-- tags :: [[file:gnu-emacs.org][GNU Emacs]], [[file:../macos.org][macOS]]
+[[file:gnu-emacs.org][Emacs]] doesn't have a native way of detecting dark mode (yet?).
+But since it's emacs, you can build it yourself, here's how.
 
 * macOS
 
-On macOS you can use the following code to check the system appearance every two seconds and on change use a dark theme.
+On [[file:macos.org][macOS]] you can use the following code to check the system appearance every two seconds and on change use a dark theme.
 
 This is loosely based on [[http://sodaware.sdf.org/notes/emacs-darkmode-theme-switch/][Automatic Emacs theme switching in OSX dark mode]], with the added bonnus that this is fully automatic:
 

@@ -1,4 +1,4 @@
-#+title: About these notes
+#+TITLE: About these notes
 
 Hey, I'm [[https://arne.me][Arne Bahlo]] and these are my notes.
 

@@ -1,9 +1,7 @@
 #+title: 99 Additional Bits of Unsolicited Advice
 #+date: 2021-06-02
 
-- tags :: [[file:wisdom.org][Wisdom]]
-
-[[file:kevin-kelly.org][Kevin Kelly]] in his second unsolicited advice blogpost [[https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/][99 Additional Bits of Unsolicited Advice]]:
+[[file:kevin-kelly.org][Kevin Kelly]] shares even more [[file:wisdom.org][Wisdom]] in his second unsolicited advice blogpost [[https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/][99 Additional Bits of Unsolicited Advice]]:
 
 #+begin_quote
 I have another birthday, and another bunch of unsolicited advice.

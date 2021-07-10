@@ -1,11 +1,10 @@
-#+title: 35 Principles for 35 Years
+#+TITLE: 35 Principles for 35 Years
 
-- source :: [[https://www.swyx.io/35-principles/][swyx.io]]
-- tags :: [[file:wisdom.org][Wisdom]]
+Shawn Wang compiles some [[file:wisdom.org][Wisdom]] in [[https://www.swyx.io/35-principles/][this blogpost]]:
 
-#+begin_quote
+#+BEGIN_QUOTE
 I turn 35 today. Here are 35 principles I have accumulated and try to live by [...].
-#+end_quote
+#+END_QUOTE
 
 Here are the things from that post which resonated with me:
 
