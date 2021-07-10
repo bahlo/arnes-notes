@@ -14,7 +14,7 @@
 <link rel="manifest" href="/site.webmanifest?v=2">
 
 
-<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.baa0fbc741cc4f85f13b1636fde6f88824f2d9bb8ac8c55b46fe10caffbec180.css"/>
+<link rel="stylesheet" href="https://notes.arne.me/scss/main.min.901876c3e997f24b26e6cd5f6cc535d90f01e100d5d9dee0b7dc94e5119817d8.css"/>
 </head>
   <body><header>
    
@@ -38,7 +38,7 @@
 </dd>
 </dl>
 <p>If you use i18n features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global%5FObjects/Intl" target="_blank">Intl
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
 , you need ICU (International Components for Unicode).
 Your local <code>node</code> installation will most likely have the full ICU installed, but it&rsquo;s often missing on servers or containers.</p>
@@ -46,16 +46,16 @@ Your local <code>node</code> installation will most likely have the full ICU ins
 Below are two options on how to get full ICU data.</p>
 <h2 id="compile-node-yourself">Compile node yourself</h2>
 <p>Use the flag <code>--with-intl=full-icu</code> to compile node with full ICU (see <a href="https://nodejs.org/api/intl.html#intl%5Foptions%5Ffor%5Fbuilding%5Fnode%5Fjs" target="_blank">ICU options
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
 ).</p>
 <h2 id="provide-icu-data-at-runtime">Provide ICU data at runtime</h2>
 <p>Install the package <a href="https://www.npmjs.com/package/full-icu" target="_blank">full-icu
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
  and tell node to use it by either setting the environment variable <code>NODE_ICU_DATA=node_modules/full-icu</code> or passing <code>--icu-data-dir=node_modules/full-icu</code>.
 You can find more detailed information in the official <a href="https://nodejs.org/api/intl.html#intl%5Fproviding%5Ficu%5Fdata%5Fat%5Fruntime" target="_blank">documentation
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
 .</p>
 
