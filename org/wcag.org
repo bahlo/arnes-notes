@@ -1,11 +1,10 @@
 #+title: WCAG
 
 - url ::  [[https://www.w3.org/WAI/WCAG21/quickref][w3.org]]
-- tags :: [[file:web-development.org][Web Development]], [[file:acessibility.org][Acessibility]]
 
-WCAG are the Web Content Accessibility Guidelines.
+WCAG are the Web Content [[file:accessibility.org][Accessibility]] Guidelines.
 
-If you're developing a website, please check the quick reference linked above.
+If you're [[file:web-development.org][developing a website]], please check the quick reference linked above.
 
 Here are the most basic points:
 - All non-text content needs to have a text alternative that serves the equivalent purpose.

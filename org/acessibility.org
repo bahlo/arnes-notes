@@ -1,3 +1,0 @@
-#+title: Acessibility
-
-Accessibility, sometimes called a11y is about desining products (physical or digital) that are accessible and usable by people with disabilities.
