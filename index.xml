@@ -350,7 +350,7 @@ FROMgolang:1 AS builderCOPY /app /WORKDIR/appRUN go build -o /bin/app ./appFROMa
       
       <guid>https://notes.arne.me/embedded-systems/</guid>
       <description>Embedded systems are computer systems that are embedded as part of a complete device, often including eletrical or electronic hardware and mechanical parts (such as sensors or motors).
-They are often programmed in low-level languages (see Software Engineering ) like C.</description>
+They are often programmed in low-level languages like C.</description>
     </item>
     
     <item>
