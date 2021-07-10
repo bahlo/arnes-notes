@@ -1,6 +1,6 @@
-#+title: Format on save in Goland
+#+TITLE: Format on save in Goland
 
-- tags :: [[file:goland.org][Goland]]
+If you use [[file:goland.org][Goland]], you most likely want to format on save, here's how:
 
 1. Open Settings and go to Tools -> Filewatchers
 2. Click =+= and choose either =gofmt= or =goimports= (whatever you prefer)

@@ -1,6 +1,3 @@
-#+title: Goland
+#+TITLE: Goland
 
-- url :: [[https://www.jetbrains.com/go/][jetbrains.com]]
-- tags :: [[file:golang.org][Golang]]
-
-An IDE for Go, by Jetbrains.
+[[https://www.jetbrains.com/go/][Goland]] is an IDE for [[file:golang.org][Golang]].

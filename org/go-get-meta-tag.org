@@ -1,6 +1,6 @@
-#+title: go get <meta> tag
+#+TITLE: go get <meta> tag
 
-- tags :: [[file:golang.org][Golang]]
+This note descibes how [[file:golang.org][Golang]] figures out where to clone a dependency from.
 
 * How it works
 Go documents the functionality here: [[https://golang.org/cmd/go/#hdr-Remote_import_paths][Remote import paths]].

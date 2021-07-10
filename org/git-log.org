@@ -1,9 +1,6 @@
-#+title: git log
+#+TITLE: git log
 
-- tags :: [[file:git.org][Git]]
-
-* The problem
-Running ~git log~ on your terminal is pretty verbose and can make getting and overview pretty hard.
+[[file:git.org][Git]] can be pretty verbose when running ~git log~ on your terminal which makes getting and overview pretty hard.
 
 * The solution
 Add the following to your ~.gitconfig~:

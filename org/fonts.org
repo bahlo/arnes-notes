@@ -1,5 +1,3 @@
 #+TITLE: Fonts
 
-* Good resources for free fonts
-- [[https://www.fontshare.com][FontShare]]
-- [[https://fonts.google.com][Google Fonts]]
+A font is a synonym for =typeface= although a typical typeface (or =font family=) consists of a number of fonts (regular, bold, italic, bolditalic).

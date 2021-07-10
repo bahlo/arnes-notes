@@ -1,5 +1,3 @@
-#+title: GNU Emacs
+#+TITLE: GNU Emacs
 
-- url :: [[https://www.gnu.org/software/emacs/][gnu.org]]
-
-A free/libre text editor.
+[[https://www.gnu.org/software/emacs/][Emacs]] is a free/libre text editor.

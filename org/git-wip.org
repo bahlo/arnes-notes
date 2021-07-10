@@ -1,7 +1,6 @@
-#+title: git wip
+#+TITLE: git wip
 
-- source :: [[https://carolynvanslyck.com/blog/2020/12/git-wip/][carolynvanslyck.com]]
-- tags :: [[file:git.org][Git]]
+Carolyn Van Slyck shares an amazing [[file:git.org][Git]] alias for showing the recent branches [[https://carolynvanslyck.com/blog/2020/12/git-wip/][on her blog]].
 
 #+BEGIN_QUOTE
 Have you ever run git branch and still wasn’t sure what each one is for and if it’s recent? Here’s a git alias, git wip, that displays your branches and when you last changed them. It’s really useful for remembering which one you were just working on, and which branches probably should be deleted.
