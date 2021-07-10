@@ -1,8 +1,6 @@
-#+title: Cyclic redundancy check
+#+TITLE: Cyclic redundancy check
 
-- tags :: [[file:signal-processing.org][Signal Processing]]
-
-An error-detecting code commonly used in networks and storage devices to detect accidental changed to raw data. The check value is based on the remainder of a polynomial division of the data.
+An error-detecting code commonly used in [[file:signal-processing.org][Signal Processing]] to detect accidental changed to raw data. The check value is based on the remainder of a polynomial division of the data.
 
 They are called CRCs because the /check/ value is a /redundancy/ and the algorithm is based on /cyclic/ codes.
 

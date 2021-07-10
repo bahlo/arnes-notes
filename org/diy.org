@@ -1,1 +1,3 @@
-#+title: DIY
+#+TITLE: DIY
+
+DIY stands for Do It Yourself.

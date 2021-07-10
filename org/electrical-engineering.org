@@ -1,1 +1,1 @@
-#+title: Electrical Engineering
+#+TITLE: Electrical Engineering

@@ -1,8 +1,6 @@
-#+title: Darkmode in CSS
+#+TITLE: Darkmode in CSS
 
-- tags :: [[file:css.org][CSS]], [[file:web-development.org][Web Development]] 
-
-You can use the following ~@media~ query to detect system dark mode.
+You can use the following ~@media~ query to detect system dark mode in [[file:css.org][CSS]].
 In this example we use a dark background for dark mode:
 #+begin_src css
 @media (prefers-color-scheme: dark) {

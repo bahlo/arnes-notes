@@ -1,8 +1,6 @@
 #+title: CSS Custom Properties
 
-- tags :: [[file:css.org][CSS]], [[file:web-development.org][Web Development]]
-
-CSS Custom Properties (sometimes referred to as CSS Variables) allow you to define variables that can be used throughout a document.
+[[file:css.org][CSS]] Custom Properties (sometimes referred to as CSS Variables) allow you to define variables that can be used throughout a document.
 
 * Basic usage
 Seting a variable on ~:root~ defines it globally:

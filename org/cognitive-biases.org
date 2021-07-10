@@ -1,2 +1,3 @@
-#+title: Cognitive Biases
+#+TITLE: Cognitive Biases
 
+A cognitive bias is describing how an instead of an objective input individuals base their behavior on their construction of reality.

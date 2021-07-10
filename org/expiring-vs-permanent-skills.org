@@ -1,9 +1,6 @@
-#+title: Expiring vs. Permanent Skills
+#+TITLE: Expiring vs. Permanent Skills
 
-- url :: [[https://www.collaborativefund.com/blog/expiring-vs-permanent-skills/][collaborativefund.com]]
-- tags :: [[file:wisdom.org][Wisdom]]
-
-Every field has two kinds of skills: expiring and permanent.
+Morgan Housel shares some [[file:wisdom.org][Wisdom]] in a [[https://www.collaborativefund.com/blog/expiring-vs-permanent-skills/][blogpost]], saying every field has two kinds of skills: expiring and permanent.
 
 * Expiring skills
 Expiring skills are vital at a given time but prone to disminishing as technology improves and a field evolves

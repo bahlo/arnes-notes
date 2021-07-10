@@ -1,5 +1,5 @@
-#+title: Embedded systems
-
-- tags :: [[file:software-engineering.org][Software Engineering]]
+#+TITLE: Embedded systems
 
 Embedded systems are computer systems that are /embedded/ as part of a complete device, often including eletrical or electronic hardware and mechanical parts (such as sensors or motors).
+
+They are often programmed in low-level languages (see [[file:software-engineering.org][Software Engineering]]) like C.

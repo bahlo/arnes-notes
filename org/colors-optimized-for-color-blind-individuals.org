@@ -1,9 +1,7 @@
 #+TITLE: Colors Optimized for Color-Blind Individuals
 
-- source :: [[https://www.nature.com/articles/nmeth.1618][nature.com]]
-
 [[file:accessibility.org][Accessibility]] in [[file:web-development.org][Web Development]] is important and should not be an afterthought.
-The linked post offers guidelines to make graphics accessible to those with color vision deficiencies.
+Bang Wong writes [[https://www.nature.com/articles/nmeth.1618][a post in Nature]], which offers guidelines to make graphics accessible to those with color vision deficiencies.
 
 #+CAPTION: P and D indicate simulated colors as seen by individuals with protanopia and deuteranopia, respectively.
 [[./images/colors-optimized-for-color-blind-individuals.jpg]]

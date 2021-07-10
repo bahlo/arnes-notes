@@ -1,6 +1,3 @@
-#+title: CircuitPython
+#+TITLE: CircuitPython
 
-- url :: [[https://circuitpython.org][circuitpython.org]]
-- tags :: [[file:embedded-systems.org][Embedded systems]], [[file:python.org][Python]]
-
-CircuitPython is an open-source derivative of the [[https://micropython.org][MicroPython]] programming language (which is compatible to [[file:python.org][Python]], but optimized for microcontrollers).
+[[https://circuitpython.org][CircuitPython]] is an open-source derivative of the [[https://micropython.org][MicroPython]] programming language (which is compatible to [[file:python.org][Python]], but optimized for [[file:embedded-systems.org][Embedded systems]]).

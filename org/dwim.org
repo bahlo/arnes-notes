@@ -1,8 +1,6 @@
 #+title: DWIM (Do what I mean)
 
-- tags :: [[file:software-engineering.org][Software Engineering]]
-
-Emacs has a concept called =DWIM=. Here's an excerpt from the [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Comment-Commands.html][comment-dwim]] command:
+[[file:gnu-emacs.org][GNU Emacs]] has a concept called =DWIM=. Here's an excerpt from the [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Comment-Commands.html][comment-dwim]] command:
 
 #+begin_quote
 The word “dwim” is an acronym for “Do What I Mean”; it indicates that this command can be used for many different jobs relating to comments, depending on the situation where you use it.
