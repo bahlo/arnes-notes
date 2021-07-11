@@ -1,3 +1,3 @@
 #+TITLE: ESPHome
 
-[[https://esphome.io][ESPHome]] is a system to add ESP8266/ESP32 boards (see [[file:embedded-systems.org][Embedded systems]]) to your [[file:smart-home.org][Smart Home]] using [[file:home-assistant.org][Home Assistant]]. It supports a multitude of input and output compoennts.
+[[https://esphome.io][ESPHome]] is a system to add ESP8266/ESP32 boards (see [[file:embedded-systems.org][Embedded systems]]) to your [[file:smart-home.org][Smart Home]] using [[file:home-assistant.org][Home Assistant]]. It supports a multitude of input and output components.
