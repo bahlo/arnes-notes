@@ -1,4 +1,16 @@
-#+TITLhey can charge up the hill. They can motivate their team, and they can edit themselves autonomously.
+#+TITLE: Barrels and Ammunition
+
+Conor Dewey summarizes a talk by Keith Rabois [[https://www.conordewey.com/blog/barrels-and-ammunition/][on his blog]]. The quotes in this document are from the talk, the points mostly from the article.
+
+* The idea
+#+BEGIN_QUOTE
+If you think about people, there are two categories of high-quality people: there is the ammunition, and then there are the barrels. You can add all the ammunition you want, but if you have only five barrels in your company, you can literally do only five things simultaneously. If you add one more barrel, you can now do six things simultaneously. If you add another one, you can do seven, and so on.
+#+END_QUOTE
+
+An organization can only do as many things in parallel as it has barrels, aka people that can own projects and see them through to the end.
+
+#+BEGIN_QUOTE
+Finding those barrels that you can shoot through — someone who can take an idea from conception to live and it’s almost perfect — are incredibly difficult to find. This kind of person can pull people with them. They can charge up the hill. They can motivate their team, and they can edit themselves autonomously.
 #+END_QUOTE
 
 * How to identify barrels
