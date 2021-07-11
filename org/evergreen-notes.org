@@ -1,0 +1,21 @@
+#+TITLE: Evergreen Notes
+#+DATE: 2021-07-11
+
+Evergreen notes are meant to evolve and accumulate over time.
+Most people only us transient notes which don't accumulate and often go stale.
+
+* Principles
+These are taken from [[https://notes.andymatuschak.org/About_these_notes?stackedNotes=z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C][Andy Matuschaks note]], which goes way more in depth.
+
+** Evergreen notes should be atomic
+Evergreen should be about only one thing but capture the entirety of that thing.
+That makes it easy to form connections across topics and contexts.
+** Evergreen notes should be concept-oriented
+If you factor your notes by concept (instead of hirarchical) you're able to discover connections across notes that you wouldn't discovery oterhwise.
+** Evergreen notes should be densely linked
+Pushing yourself to add lots of links to your notes forces you to think about your other notes and concepts that might be related, therefore reviewing the notes already written.
+** Prefer associative ontologies to hierarchical taxonomies
+Organic structure is free of premature constraints that can occur when you start with a structure (e.g. folder-based).
+Items often belong in many places and don't fit exactly to one category.
+** Write notes for yourself by default, disregarding audience
+Don't explain every little thing (as the extra effort can lead to blockage), instead make sure you will understand it in a few years.
