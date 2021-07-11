@@ -34,16 +34,12 @@
     <h1 class="collapsed-title">Remove an element from a slice in Go</h1>
     <div class="content">
       <a href="https://notes.arne.me/remove-an-element-from-a-slice-go/" alt="Remove an element from a slice in Go" class="permalink"><h1>Remove an element from a slice in Go</h1></a>
-      <dl>
-<dt>source</dt>
-<dd><a href="https://stackoverflow.com/questions/37334119/how-to-delete-an-element-from-a-slice-in-golang" target="_blank">stackoverflow.com
+      <p>Since <a href="/golang/">Go</a>
+ slices don&rsquo;t have a <code>remove</code> method or anything similar you need to do it yourself.
+Stack Overflow has a <a href="https://stackoverflow.com/questions/37334119/how-to-delete-an-element-from-a-slice-in-golang" target="_blank">great thread
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
-</dd>
-<dt>tags</dt>
-<dd><a href="/golang/">Golang</a>
-</dd>
-</dl>
+ on the best ways to achieve this, summarized here:</p>
 <h2 id="order-matters">Order matters</h2>
 <p>If you need to retain the order, use this logic:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nx">slice</span> <span class="p">[]</span><span class="kt">int</span><span class="p">,</span> <span class="nx">s</span> <span class="kt">int</span><span class="p">)</span> <span class="p">[]</span><span class="kt">int</span> <span class="p">{</span>

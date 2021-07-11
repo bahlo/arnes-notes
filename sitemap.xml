@@ -281,10 +281,6 @@
   </url>
   
   <url>
-    <loc>https://notes.arne.me/linux/</loc>
-  </url>
-  
-  <url>
     <loc>https://notes.arne.me/luks/</loc>
   </url>
   
@@ -414,6 +410,10 @@
   
   <url>
     <loc>https://notes.arne.me/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.arne.me/unix/</loc>
   </url>
   
   <url>

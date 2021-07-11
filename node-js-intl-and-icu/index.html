@@ -34,15 +34,11 @@
     <h1 class="collapsed-title">Node.js Intl and ICU</h1>
     <div class="content">
       <a href="https://notes.arne.me/node-js-intl-and-icu/" alt="Node.js Intl and ICU" class="permalink"><h1>Node.js Intl and ICU</h1></a>
-      <dl>
-<dt>tags</dt>
-<dd><a href="/node-js/">Node.js</a>
-</dd>
-</dl>
-<p>If you use i18n features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global%5FObjects/Intl" target="_blank">Intl
+      <p>If you use i18n features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global%5FObjects/Intl" target="_blank">Intl
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
-, you need ICU (International Components for Unicode).
+ in your <a href="/node-js/">Node.js</a>
+ application, you need ICU (International Components for Unicode).
 Your local <code>node</code> installation will most likely have the full ICU installed, but it&rsquo;s often missing on servers or containers.</p>
 <p>Node will fall back to the locale it has installed, so consider writing a test to make sure your locale is available.
 Below are two options on how to get full ICU data.</p>

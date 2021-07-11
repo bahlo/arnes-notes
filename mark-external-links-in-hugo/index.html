@@ -34,21 +34,17 @@
     <h1 class="collapsed-title">Mark external links in Hugo</h1>
     <div class="content">
       <a href="https://notes.arne.me/mark-external-links-in-hugo/" alt="Mark external links in Hugo" class="permalink"><h1>Mark external links in Hugo</h1></a>
-      <dl>
-<dt>tags</dt>
-<dd><a href="/hugo/">Hugo</a>
-, <a href="/golang/">Golang</a>
-</dd>
-</dl>
-<p>If you use the <a href="https://github.com/yuin/goldmark/" target="_blank">Goldmark renderer
+      <p>If you use the <a href="https://github.com/yuin/goldmark/" target="_blank">Goldmark renderer
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- in Hugo you can use so-called <a href="https://gohugo.io/getting-started/configuration-markup/#markdown-render-hooks" target="_blank">Markdown Render Hooks
+ in <a href="/hugo/">Hugo</a>
+ you can use so-called <a href="https://gohugo.io/getting-started/configuration-markup/#markdown-render-hooks" target="_blank">Markdown Render Hooks
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
  to customize the render of some elements (as of May 2021 only images, links and headings are supported). See <a href="/anchored-headings-in-hugo/">Anchored headings in Hugo</a>
  to see how to use the same principle to customize your headings.</p>
-<p>To mark external links in Hugo, create the following file: <code>layouts/_default/_markup/render-link.html</code> and fill with with a template, for example:</p>
+<p>To mark external links in Hugo, create the following file: <code>layouts/_default/_markup/render-link.html</code> and fill with with a <a href="/golang/">Go</a>
+ template, for example:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Destination | safeURL }}&#34;</span><span class="err">{{</span> <span class="na">with</span> <span class="err">.</span><span class="na">Title</span><span class="err">}}</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;{{ . }}&#34;</span><span class="err">{{</span> <span class="na">end</span> <span class="err">}}{{</span> <span class="na">if</span> <span class="na">strings</span><span class="err">.</span><span class="na">HasPrefix</span> <span class="err">.</span><span class="na">Destination</span> <span class="err">&#34;</span><span class="na">http</span><span class="err">&#34;</span> <span class="err">}}</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span><span class="err">{{</span> <span class="na">end</span> <span class="err">}}</span><span class="p">&gt;</span>{{ .Text }}{{ end }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </code></pre></div><p>The code above will open all external links (i.e. links that start with <code>http</code> as internal links are relative) in a new tab. It might make sense to indicate that to viewers, I&rsquo;m using the <code>external-link</code> item from the <a href="https://feathericons.com/" target="_blank">Feather
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>

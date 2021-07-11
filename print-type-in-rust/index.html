@@ -34,12 +34,9 @@
     <h1 class="collapsed-title">Print Type in Rust</h1>
     <div class="content">
       <a href="https://notes.arne.me/print-type-in-rust/" alt="Print Type in Rust" class="permalink"><h1>Print Type in Rust</h1></a>
-      <dl>
-<dt>tags</dt>
-<dd><a href="/rust/">Rust</a>
-</dd>
-</dl>
-<!--listend-->
+      <p>If you want to print the type in <a href="/rust/">Rust</a>
+ (similar to <code>%T</code> in <a href="/golang/">Go</a>
+), here&rsquo;s a snippet:</p>
 <div class="highlight"><pre class="chroma"><code class="language-rust" data-lang="rust"><span class="k">fn</span> <span class="nf">type_of</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span>: <span class="kp">&amp;</span><span class="nc">T</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nb">String</span> <span class="p">{</span><span class="w">
 </span><span class="w">    </span><span class="n">format</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;{}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">std</span>::<span class="n">any</span>::<span class="n">type_name</span>::<span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">())</span><span class="w">
 </span><span class="w"></span><span class="p">}</span><span class="w">

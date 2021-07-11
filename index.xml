@@ -71,8 +71,9 @@ Use the most modern file formats Web Open Font Format 2.0 (WOFF2) is the smalles
       <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/org-mode-101/</guid>
-      <description>source orgmode.org    tags Org Mode   Metadata At the top of each file is so-called metadata. Most files will at least have #+title. Example:
-#+title: Org Mode 101 #+author: Arne Bahlo #+date: 2021-05-30 Outlining You create headlines by prefixing a line with a number of stars (*):
+      <description>This is a quick reference of the Org mode syntax, based on the official Quickstart document   .
+Metadata At the top of each file is so-called metadata. Most files will at least have #+title. Example:
+#+TITLE: Org Mode 101 #+AUTHOR: Arne Bahlo #+DATE: 2021-05-30 Outlining You create headlines by prefixing a line with a number of stars (*):
 *heading 1 ** heading 2 *** heading 3 Text formatting  /italics/ *bold* \~code\~ =literal= _underline_ +strikethrough+  Links [[destination][title]] or [[destinaton]]</description>
     </item>
     
@@ -82,7 +83,7 @@ Use the most modern file formats Web Open Font Format 2.0 (WOFF2) is the smalles
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/htaccess/</guid>
-      <description> tags SysOps   A directory-level configuration file, used for URL redirection, access control, and more.
+      <description>A directory-level configuration file, used for URL redirection, access control, and more, most commonly used in Apache and managed by SysOps .
 Examples Redirecting a single URL: Redirect /index.html /some-other-page/ Redirecting an old directory to a new directory RedirectRule ^old/(.*)$ /$1 [R=301,NC,L] Hiding a folder RedirectMatch 404 /\.git </description>
     </item>
     
@@ -244,7 +245,7 @@ There is an online tool that allows you to do this conversion: github.com/javl/i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/cron/</guid>
-      <description>The software utility cron (or cron job) is a time-based job scheduler in Unix-like operating systems (e.g. Linux ).
+      <description>The software utility cron (or cron job) is a time-based job scheduler in Unix -like operating systems.
 Crontab A crontab file defines the cron jobs of a user or system. You can edit it by running crontab -e.
 Each line of a crontab represents a job. This is the schema:
 # ┌───────────── minute (0 - 59) # │ ┌───────────── hour (0 - 23) # │ │ ┌───────────── day of the month (1 - 31) # │ │ │ ┌───────────── month (1 - 12) # │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday) # │ │ │ │ │ # * * * * * &amp;lt;command to execute&amp;gt; If a * is at one position, it is unrestricted.</description>
@@ -533,7 +534,7 @@ When running go get git.domain.com/foo/bar, go does the following:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/home-assistant/</guid>
-      <description>url home-assistant.io    tags Smart Home , DIY   Open source home automation system with a lot of integrations, can run on a Raspberry Pi. Has integrations for HomeKit .</description>
+      <description>Home Assistant   is an open source home automation system with a lot of integrations, can run on a Raspberry Pi. Has integrations for HomeKit .</description>
     </item>
     
     <item>
@@ -542,7 +543,7 @@ When running go get git.domain.com/foo/bar, go does the following:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/homekit/</guid>
-      <description>tags Smart Home   The home automation framework by Apple.</description>
+      <description>The Smart Home automation framework by Apple.</description>
     </item>
     
     <item>
@@ -551,8 +552,9 @@ When running go get git.domain.com/foo/bar, go does the following:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/taking-rust-for-a-test-drive/</guid>
-      <description>source ferrous-systems.com    tags Rust   Aim to answer three questions
- How can we minimize cost or risk to projects and timelines? How can we maximize rewards (reliability, efficiency, developer happiness) How can we maximize learnings from the first trial?  Qualitites of a good first challenge  Pick a problem domain you already know. If you rewrite a service, don&amp;rsquo;t change its behaviour or API, instead only change one variable at a time.</description>
+      <description>Lotte James have a few tips on how to introduce Rust into your workspace on the ferrous systems blog   .
+Aim to answer three questions
+ How can we minimize cost or risk to projects and timelines? How can we maximize rewards (reliability, efficiency, developer happiness) How can we maximize learnings from the first trial?  Qualitites of a good first challenge  Pick a problem domain you already know.</description>
     </item>
     
     <item>
@@ -573,7 +575,7 @@ Recording Microphone Okay obviously you need a microphone.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/hugo/</guid>
-      <description>url gohugo.io    tags Web Development   Hugo is a static site generator written in Golang .</description>
+      <description>Hugo   is a static site generator (see Web Development ) written in Golang .</description>
     </item>
     
     <item>
@@ -582,8 +584,8 @@ Recording Microphone Okay obviously you need a microphone.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/ian-mcewan-why-do-you-want-to-live-forever/</guid>
-      <description> source zeit.de    tags Podcasts    In the first English edition of our never-ending podcast &amp;ldquo;Alles gesagt?&amp;rdquo; novelist Ian McEwan talks about Brexit and the new art of lying, climate change and his family.
-  17:45 Alternative to democracy: Epistocracy: Only People with a certain level of education are allowed to vote (e.g. only people with a degree). 26:45 Creative Pessimism about Climate Change 39:30 Advise to novelists: Find some Detail in life that excites you  </description>
+      <description>In the first english episode of the Alles Gesagt? podcast , Chritoph Amend and Jochen Wegner interview the british novelist Ian McEwan   and talk about Brexit, climate change and his family.
+ 17:45 Alternative to democracy: Epistocracy: Only People with a certain level of education are allowed to vote (e.g. only people with a degree). 26:45 Creative Pessimism about Climate Change 39:30 Advise to novelists: Find some Detail in life that excites you  </description>
     </item>
     
     <item>
@@ -592,7 +594,8 @@ Recording Microphone Okay obviously you need a microphone.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/install-circuitpython-on-magtag/</guid>
-      <description>url learn.adafruit.com    tags MagTag , CircuitPython   Load with UF2 Bootloader This is the easiest option. If your MagTag has a black front it came with UF2 installed.
+      <description>This is a quick summary of the official guide   on how to install CircuitPython on a MagTag .
+Load with UF2 Bootloader This is the easiest option. If your MagTag has a black front it came with UF2 installed.
  Download the latest CircuitPython release    Attach your MagTag to a computer Launch UF2 by double-clicking the Reset button (might take a few tries) If UF2 is installed you will see a new disk drive appear, called MAGTAGBOOT Copy the UF2 file onto the MAGTAGBOOT drive  Your MagTag should auto-reset into CircuitPython , or you may need to press reset.</description>
     </item>
     
@@ -602,9 +605,9 @@ Recording Microphone Okay obviously you need a microphone.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/interactive-rebase/</guid>
-      <description>tags Git   Interactive rebase is a Git command that supports manipulating your Git history. Please note that this requires some understanding of how Git works.
+      <description>Interactive rebase is a Git command that supports manipulating your Git history. Please note that this requires some understanding of how Git works.
 The problem Let&amp;rsquo;s say we have the following Git history (the last 5 commits at the time of tihs writing):
-e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c2551 - Add Eucalyptus Gunii 21909d5 - Update Subset Webfonts 4a5dc2e - Parse sitemap.</description>
+e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c2551 - Add Eucalyptus Gunii 21909d5 - Update Subset Webfonts 4a5dc2e - Parse sitemap.xml for font subsetting You see that commit b956b7b (Fix formatting on Subset) fixes an issue introduced in 21909d5 (Update Subset Webfonts).</description>
     </item>
     
     <item>
@@ -613,7 +616,7 @@ e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c255
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/javascript/</guid>
-      <description>tags Web Development , Software Engineering   JavaScript is a dynamic, just-in-time compiled and multi-paradigm programming language that conforms to the ECMAScript   specification.</description>
+      <description>JavaScript is a dynamic, just-in-time compiled and multi-paradigm programming language that conforms to the ECMAScript   specification.</description>
     </item>
     
     <item>
@@ -622,7 +625,7 @@ e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c255
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/k3s/</guid>
-      <description>url k3s.io    tags SysOps   K3s is a lightweigt (and simpler) Kubernetes in a single &amp;lt;40MB binary.</description>
+      <description>K3s   is a lightweigt (and simpler) Kubernetes in a single &amp;lt;40MB binary. Often set up by SysOps teams.</description>
     </item>
     
     <item>
@@ -640,7 +643,7 @@ e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c255
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/kubernetes/</guid>
-      <description>url kubernetes.io    tags SysOps , Docker   Kubernetes (or K8s) is an open-source container orchestrator.</description>
+      <description>Kubernetes   (or K8s) is an open-source container orchestrator. It can deploy Docker containers and is often set up by SysOps teams.</description>
     </item>
     
     <item>
@@ -693,26 +696,16 @@ Things I would try first  Is Vim Really Not For You? A Beginner Guide     </desc
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://notes.arne.me/linux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.arne.me/linux/</guid>
-      <description>Linux is a family of open-source Unix-like operating systems based on the Linux kernel. Created by Linus Torwalds, initial release on September 17, 1991.</description>
-    </item>
-    
-    <item>
       <title>Luks</title>
       <link>https://notes.arne.me/luks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/luks/</guid>
-      <description>tags Linux   LUKS (Linux Unified Key Setup) is a full disk encryption specification. It allows you to easily create an encrypted volume.
+      <description>LUKS (Linux Unified Key Setup) is a full disk encryption specification for Unix systems (originally intended for Linux only). It allows you to easily create an encrypted volume.
 Install On Ubuntu/Debian, run: apt-get install cryptsetup.
 Set up Run the following to create an encrypted volume on /dev/sdb:
 $ cryptsetup luksFormat /dev/sdb Please note that this delete the contents of /dev/sdb.
-After that, open the volume and create a file system:
-$ cryptsetup open /dev/sdb encrypted $ mkfs.</description>
+After that, open the volume and create a file system:</description>
     </item>
     
     <item>
@@ -730,7 +723,7 @@ $ cryptsetup open /dev/sdb encrypted $ mkfs.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/magtag/</guid>
-      <description> url adafruit.com    tags Embedded systems     The MagTag combines a ESP32-S2 wireless module, a 2.9&amp;rdquo; grayscale E-Ink display. It&amp;rsquo;s called MagTag because you can attach magnetic feet.
+      <description>  The MagTag   is an embedded device , which combines a ESP32-S2 wireless module, a 2.9&amp;rdquo; grayscale E-Ink display. It&amp;rsquo;s called MagTag because you can attach magnetic feet.
 Features  USB-C Four RGB LEDs (&amp;ldquo;NeoPixels&amp;rdquo;) Four buttons Triple-axis accelerometer Speaker/Buzzer STEMMA QT port Two STEMMA 3 pin JST connectors Support for external batteries  </description>
     </item>
     
@@ -740,8 +733,8 @@ Features  USB-C Four RGB LEDs (&amp;ldquo;NeoPixels&amp;rdquo;) Four buttons Tri
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/mark-external-links-in-hugo/</guid>
-      <description>tags Hugo , Golang   If you use the Goldmark renderer   in Hugo you can use so-called Markdown Render Hooks   to customize the render of some elements (as of May 2021 only images, links and headings are supported). See Anchored headings in Hugo to see how to use the same principle to customize your headings.
-To mark external links in Hugo, create the following file: layouts/_default/_markup/render-link.</description>
+      <description>If you use the Goldmark renderer   in Hugo you can use so-called Markdown Render Hooks   to customize the render of some elements (as of May 2021 only images, links and headings are supported). See Anchored headings in Hugo to see how to use the same principle to customize your headings.
+To mark external links in Hugo, create the following file: layouts/_default/_markup/render-link.html and fill with with a Go template, for example:</description>
     </item>
     
     <item>
@@ -750,7 +743,8 @@ To mark external links in Hugo, create the following file: layouts/_default/_mar
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/multiple-gitconfigs/</guid>
-      <description> tags Git   You can have multiple .gitconfig files that override each other based on the directory you&amp;rsquo;re in. This is especially useful if you use a different Email for work commits.
+      <description>If you use the same computer for both personal and work git repositories, you probably want to use a different email address for each.
+One solution for this is having multiple .gitconfig files that override each other based on the directory you&amp;rsquo;re in.
 [includeIf &amp;#34;gitdir:~/Developer/work/&amp;#34;] path = .gitconfig-work </description>
     </item>
     
@@ -769,7 +763,7 @@ To mark external links in Hugo, create the following file: layouts/_default/_mar
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/node-js/</guid>
-      <description>tags Software Engineering   Node.js is an open-source backend JavaScript runtime environment built on the V8 engine.</description>
+      <description>Node.js is an open-source backend JavaScript runtime environment built on the V8 engine.</description>
     </item>
     
     <item>
@@ -778,7 +772,7 @@ To mark external links in Hugo, create the following file: layouts/_default/_mar
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/node-js-intl-and-icu/</guid>
-      <description>tags Node.js   If you use i18n features like Intl   , you need ICU (International Components for Unicode). Your local node installation will most likely have the full ICU installed, but it&amp;rsquo;s often missing on servers or containers.
+      <description>If you use i18n features like Intl   in your Node.js application, you need ICU (International Components for Unicode). Your local node installation will most likely have the full ICU installed, but it&amp;rsquo;s often missing on servers or containers.
 Node will fall back to the locale it has installed, so consider writing a test to make sure your locale is available. Below are two options on how to get full ICU data.</description>
     </item>
     
@@ -788,7 +782,7 @@ Node will fall back to the locale it has installed, so consider writing a test t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/nrz/</guid>
-      <description>tags Signal Processing   NRZ line code is a binary code in which ones an zeros are represented by a significant condition and no netural or rest condition.
+      <description>NRZ line code is a binary code in which ones an zeros are represented by a significant condition and no netural or rest condition. It&amp;rsquo;s often used in Signal Processing .
 Variants    Code name Complete name Description     NRZ(L) Non-return-to-zero level Raw binary bits without any coding. Typically binary 1 maps to high and binary 0 to low   NRU(I) Non-return-to-zero inverted Either NRZ(M) or NRZ(S)   NRZ(M) Non-return-to-zero mark 0 maps to constant, 1 maps to toggle   NRZ(I) Non-return-to-zero space 0 maps to toggle, 1 maps to constant   NRZ(C) Non-return-to-zero change ?</description>
     </item>
     
@@ -803,12 +797,12 @@ Option -&amp;gt; Result leterr=anyhow!(&amp;#34;some error&amp;#34;);letx=Some(&
     </item>
     
     <item>
-      <title>Org Mode</title>
+      <title>Org mode</title>
       <link>https://notes.arne.me/org-mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/org-mode/</guid>
-      <description> url orgmode.org     A mode for GNU Emacs . Quoting the homepage:
+      <description>Org mode   is a major mode for GNU Emacs . Quoting the homepage:
  Org mode is for keeping notes, maintaining to-do lists, planning projects, authoring documents, computational notebooks, literate programming and more — in a fast and effective plain text system.
  </description>
     </item>
@@ -846,7 +840,8 @@ Option -&amp;gt; Result leterr=anyhow!(&amp;#34;some error&amp;#34;);letx=Some(&
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/print-type-in-rust/</guid>
-      <description>tags Rust    fn type_of&amp;lt;T&amp;gt;(_: &amp;amp;T)-&amp;gt; String {format!</description>
+      <description>If you want to print the type in Rust (similar to %T in Go ), here&amp;rsquo;s a snippet:
+fn type_of&amp;lt;T&amp;gt;(_: &amp;amp;T)-&amp;gt; String {format!</description>
     </item>
     
     <item>
@@ -855,7 +850,7 @@ Option -&amp;gt; Result leterr=anyhow!(&amp;#34;some error&amp;#34;);letx=Some(&
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/python/</guid>
-      <description>url python.org    tags Software Engineering   Python is a programming language with emphasis on code readability.</description>
+      <description>Python   is a programming language with emphasis on code readability.</description>
     </item>
     
     <item>
@@ -864,8 +859,7 @@ Option -&amp;gt; Result leterr=anyhow!(&amp;#34;some error&amp;#34;);letx=Some(&
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/rclone/</guid>
-      <description>url rclone.org    tags SysOps   The Swiss army knife of cloud storage.
-Rclone is a command line program to manage files on cloud storage. It supports lots of cloud providers and encryption.
+      <description>Rclone   is a command line program to manage files on cloud storage. It supports lots of cloud providers and encryption. It&amp;rsquo;s often used by SysOps teams.
 Use cases There is a lot you can do with rclone so this is just a list of things that might be useful to you.
 Encrypted backup Create remote The first thing you want to do is set up a remote (storage), run the following:</description>
     </item>
@@ -876,9 +870,9 @@ Encrypted backup Create remote The first thing you want to do is set up a remote
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/remove-an-element-from-a-slice-go/</guid>
-      <description>source stackoverflow.com    tags Golang   Order matters If you need to retain the order, use this logic:
-func remove(slice []int, s int) []int { return append(slice[:s], slice[s+1:]...) } This is inefficient because you may end up moving all elements, so only do this if you need to keep the order.
-Order is not important If you don&amp;rsquo;t care about the order it is much faster to swap the last element with the one to delete and return a slice without the last element.</description>
+      <description>Since Go slices don&amp;rsquo;t have a remove method or anything similar you need to do it yourself. Stack Overflow has a great thread   on the best ways to achieve this, summarized here:
+Order matters If you need to retain the order, use this logic:
+func remove(slice []int, s int) []int { return append(slice[:s], slice[s+1:]...) } This is inefficient because you may end up moving all elements, so only do this if you need to keep the order.</description>
     </item>
     
     <item>
@@ -887,7 +881,7 @@ Order is not important If you don&amp;rsquo;t care about the order it is much fa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/rust/</guid>
-      <description>url rust-lang.org    tags Software Engineering   A programming language developed by Mozilla with a focus on performance and safety.</description>
+      <description>Rust   is a programming language developed by Mozilla with a focus on performance and safety.</description>
     </item>
     
     <item>
@@ -896,9 +890,10 @@ Order is not important If you don&amp;rsquo;t care about the order it is much fa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/sass/</guid>
-      <description>url sass-lang.com    tags CSS , Web Development   SASS (or SCSS) is a preprocessor for CSS .
+      <description>SASS   (or SCSS) is a preprocessor for CSS .
 SASS vs. SCSS SCSS SCSS uses the file extension .scss and is a superset of CSS (with a few exceptions), which means all valid CSS is valid SCSS as well.
-SASS (The Indented Syntax) This was the original syntax and uses .sass.. It doesn&amp;rsquo;t use curly braces but instead relies on intentation.</description>
+SASS (The Indented Syntax) This was the original syntax and uses .sass.. It doesn&amp;rsquo;t use curly braces but instead relies on intentation.
+Advantages over CSS Nesting Instead of writing this in CSS:</description>
     </item>
     
     <item>
@@ -907,7 +902,7 @@ SASS (The Indented Syntax) This was the original syntax and uses .sass.. It does
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/shelly/</guid>
-      <description>url shelly.cloud    tags Home Assistant , Smart Home   Shelly provides relatively cheap in-wall devices that can control sockets, light switches, garage doors, blinds, etc. Integrates with Home Assistant .</description>
+      <description>Shelly   provides relatively cheap in-wall devices that can control sockets, light switches, garage doors, blinds, etc. Integrates with Home Assistant .</description>
     </item>
     
     <item>
@@ -916,7 +911,7 @@ SASS (The Indented Syntax) This was the original syntax and uses .sass.. It does
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/signal-processing/</guid>
-      <description>tags Electrical Engineering   An electrical engineering subfield, focussed on analysing, modifying and synthesizing signals.</description>
+      <description>An Electrical Engineering subfield, focussed on analysing, modifying and synthesizing signals.</description>
     </item>
     
     <item>
@@ -944,7 +939,7 @@ SASS (The Indented Syntax) This was the original syntax and uses .sass.. It does
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/smart-voting/</guid>
-      <description>tags Voting , Politics   Smart Voting is a tactical voting strategy put forward by the team of Alexej Navalny. The goal is to consolidate the votes to prevent the vote for a party/candidate.</description>
+      <description>Smart Voting is a tactical political voting strategy put forward by the team of Alexej Navalny. The goal is to consolidate the votes to prevent the vote for a party/candidate.</description>
     </item>
     
     <item>
@@ -962,8 +957,9 @@ SASS (The Indented Syntax) This was the original syntax and uses .sass.. It does
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/stacked-cards-with-css/</guid>
-      <description>source css-tricks.com    tags CSS , SASS   We want to be able to stack cards when scrolling down. Check out the website of Corey Ginnivan   for an example.
-Create your cards in CSS as you would otherwise.
+      <description>If you want to implement stacked cards, there&amp;rsquo;s a great guide by CSS-Tricks   on how to achieve this.
+We want to be able to stack cards when scrolling down. Check out the website of Corey Ginnivan   for an example.
+First, create your cards in CSS as you would otherwise.
 Then add the following CSS:
 .card { position: sticky; top: 10px; } This will lead to cards stopping at 10px from the top and the following cards to float over them.</description>
     </item>
@@ -974,8 +970,8 @@ Then add the following CSS:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/sticky-header-scrollto/</guid>
-      <description>source twitter.com    tags CSS    You know that annoying thing when you&amp;rsquo;re scrolled to an anchor and the site&amp;rsquo;s sticky header covers it up? That&amp;rsquo;s fixable in 1 CSS declaration now 🎉
- .heading { scroll-margin-top: 72px; } On November 26, 2020 (when the Tweet was written) this was supported by Chrome, Firefox, Edge and Opera. Safari needs ~scroll-snap-margin-top~ .</description>
+      <description>When you scroll to an anchor and the sticky header covers it up, you can fix it with one line of CSS :
+.heading { scroll-margin-top: 72px; } </description>
     </item>
     
     <item>
@@ -984,7 +980,7 @@ Then add the following CSS:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/subbu-allamarajus-leadership-document-2021-edition/</guid>
-      <description>source m.subbu.org     Subbu Allamaraju is technology leader at the Expedia Group at the time of writing this note. He writes about 3 believs and 6 behaviours for Leadership .
+      <description>Subbu Allamaraju is technology leader at the Expedia Group at the time of writing this note. He writes about 3 believs and 6 behaviours for Leadership on his blog   .
 Beliefs Leadership is about being a better person.  Leadership is much less about what you do and much more about who you are. — John C. Maxwell
   One must learn to lead themselves before one can lead others A leaders insecurities, opinions, bad habits and ego can come in the way of deciding what&amp;rsquo;s right for the team  To create a high performing team, you must help others grow as leaders  You can&amp;rsquo;t create a high-performing team when you neglect team member&amp;rsquo;s leadership development Developing people is a force multiplier-  Leaders must set unarguable goals for the team they lead  It’s necessary for a real leader to articulate what I call unarguable goals and aspirations for the institution that they lead.</description>
     </item>
@@ -1021,6 +1017,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, &amp;#34;Segoe UI&amp;#34
     </item>
     
     <item>
+      <title>Unix</title>
+      <link>https://notes.arne.me/unix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/unix/</guid>
+      <description>Unix is a family of multitasking, multiuser computer operating systems. Originally developed by Ken Thompson, Dennis Ritchie, and others.</description>
+    </item>
+    
+    <item>
       <title>Vim</title>
       <link>https://notes.arne.me/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1046,8 +1051,7 @@ Modes Vim has 6 basic modes:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/wcag/</guid>
-      <description>url w3.org     WCAG are the Web Content Accessibility Guidelines.
-If you&amp;rsquo;re developing a website , please check the quick reference linked above.
+      <description>WCAG are the Web Content Accessibility Guidelines. You should check out the full reference   if you&amp;rsquo;re developing a website .
 Here are the most basic points:
  All non-text content needs to have a text alternative that serves the equivalent purpose. Text needs to have a contrast ratio of at least 4.5:1. All functionality of the content needs to be operable through a keyboard There needs to be a mechanism to bypass blocks of content that are repeatet on multiple web pages Prefer native elements over fancy JS Prefer special html element over div (i.</description>
     </item>

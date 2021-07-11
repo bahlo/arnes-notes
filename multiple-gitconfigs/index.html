@@ -34,13 +34,9 @@
     <h1 class="collapsed-title">Multiple Gitconfigs</h1>
     <div class="content">
       <a href="https://notes.arne.me/multiple-gitconfigs/" alt="Multiple Gitconfigs" class="permalink"><h1>Multiple Gitconfigs</h1></a>
-      <dl>
-<dt>tags</dt>
-<dd><a href="/git/">Git</a>
-</dd>
-</dl>
-<p>You can have multiple <code>.gitconfig</code> files that override each other based on the directory you&rsquo;re in.
-This is especially useful if you use a different Email for work commits.</p>
+      <p>If you use the same computer for both personal and work <a href="/git/">git</a>
+ repositories, you probably want to use a different email address for each.</p>
+<p>One solution for this is having multiple <code>.gitconfig</code> files that override each other based on the directory you&rsquo;re in.</p>
 <div class="highlight"><pre class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[includeIf &#34;gitdir:~/Developer/work/&#34;]</span>
   <span class="na">path</span> <span class="o">=</span> <span class="s">.gitconfig-work</span>
 </code></pre></div>
@@ -232,9 +228,9 @@ This is especially useful if you use a different Email for work commits.</p>
   
 
   
-
-  
     
+  
+
   
 
   
