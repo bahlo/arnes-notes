@@ -371,7 +371,7 @@ They are often programmed in low-level languages like C.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/esphome/</guid>
-      <description>ESPHome   is a system to add ESP8266/ESP32 boards (see Embedded systems ) to your Smart Home using Home Assistant . It supports a multitude of input and output compoennts.</description>
+      <description>ESPHome   is a system to add ESP8266/ESP32 boards (see Embedded systems ) to your Smart Home using Home Assistant . It supports a multitude of input and output components.</description>
     </item>
     
     <item>
