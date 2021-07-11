@@ -1,8 +1,7 @@
-#+title: Luks
+#+TITLE: Luks
 
-- tags :: [[file:linux.org][Linux]]
-
-LUKS (Linux Unified Key Setup) is a full disk encryption specification. It allows you to easily create an encrypted volume.
+LUKS (Linux Unified Key Setup) is a full disk encryption specification for [[file:unix.org][Unix]] systems (originally intended for Linux only).
+It allows you to easily create an encrypted volume.
 
 * Install
 On Ubuntu/Debian, run: ~apt-get install cryptsetup~.

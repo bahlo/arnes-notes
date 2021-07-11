@@ -1,6 +1,3 @@
-#+title: Python
+#+TITLE: Python
 
-- url :: [[https://www.python.org][python.org]]
-- tags :: [[file:software-engineering.org][Software Engineering]]
-
-Python is a programming language with emphasis on code readability.
+[[https://www.python.org][Python]] is a [[file:software-engineering.org][programming]] language with emphasis on code readability.

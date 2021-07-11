@@ -1,24 +1,23 @@
-#+title: Org Mode 101
-#+date: 2021-05-30
+#+TITLE: Org Mode 101
+#+DATE: 2021-05-30
 
-- source :: [[https://orgmode.org/quickstart.html][orgmode.org]]
-- tags :: [[file:org-mode.org][Org Mode]]
+This is a quick reference of the [[file:org-mode.org][Org mode]] syntax, based on [[https://orgmode.org/quickstart.html][the official Quickstart document]].
 
 * Metadata
 At the top of each file is so-called metadata. Most files will at least have ~#+title~. Example:
-#+begin_src org
-#+title:  Org Mode 101
-#+author: Arne Bahlo
-#+date:   2021-05-30
-#+end_src
+#+BEGIN_SRC org
+#+TITLE:  Org Mode 101
+#+AUTHOR: Arne Bahlo
+#+DATE:   2021-05-30
+#+END_SRC
 
 * Outlining
 You create headlines by prefixing a line with a number of stars (~*~):
-#+begin_src org
+#+BEGIN_SRC org
 ,* heading 1
 ,** heading 2
 ,*** heading 3
-#+end_src
+#+END_SRC
 
 * Text formatting
 - ~/italics/~
@@ -34,16 +33,16 @@ You create headlines by prefixing a line with a number of stars (~*~):
 * Lists
 ** Unordered
 Unordered lists can start with ~-~  or ~+~:
-#+begin_src org
+#+BEGIN_SRC org
 - foo
 - bar
-#+end_src
+#+END_SRC
 ** Ordered
 Orderes lists can start with ~1.~, ~1)~, ~A~ or ~A)~:
-#+begin_src org
+#+BEGIN_SRC org
 1. foo
 2. bar
-#+end_src
+#+END_SRC
 
 * Images
 You can embed images by linking to them.
@@ -51,19 +50,19 @@ You can embed images by linking to them.
 * Blocks
 Blocks can be code, quotes or anything else.
 ** Quotes
-#+begin_src org
+#+BEGIN_SRC org
 ,#+begin_quote
 There is nothing permanent except change.
 -- Heraclitus
 ,#+end_quote
-#+end_src
+#+END_SRC
 
 * Tables
 Org mode has a full table editor including cell references and formulars.
 
 Simple example:
-#+begin_src org
+#+BEGIN_SRC org
 | name | age |
 |------+-----|
 | foo  | 42  |
-#+end_src
+#+END_SRC

@@ -1,8 +1,6 @@
-#+title: Node.js Intl and ICU
+#+TITLE: Node.js Intl and ICU
 
-- tags :: [[file:node-js.org][Node.js]]
-
-If you use i18n features like [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl][Intl]], you need ICU (International Components for Unicode).
+If you use i18n features like [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl][Intl]] in your [[file:node-js.org][Node.js]] application, you need ICU (International Components for Unicode).
 Your local ~node~ installation will most likely have the full ICU installed, but it's often missing on servers or containers.
 
 Node will fall back to the locale it has installed, so consider writing a test to make sure your locale is available.

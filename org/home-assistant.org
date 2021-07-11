@@ -1,6 +1,3 @@
 #+title: Home Assistant
 
-- url :: [[https://www.home-assistant.io][home-assistant.io]]
-- tags :: [[file:smart-home.org][Smart Home]], [[file:diy.org][DIY]]
-
-Open source home automation system with a lot of integrations, can run on a Raspberry Pi. Has integrations for [[file:homekit.org][HomeKit]].
+[[https://www.home-assistant.io][Home Assistant]] is an open source [[file:smart-home.org][home automation]] system with a lot of integrations, can run on a Raspberry Pi. Has integrations for [[file:homekit.org][HomeKit]].

@@ -1,8 +1,6 @@
-#+title: .htaccess
+#+TITLE: .htaccess
 
-- tags :: [[file:sysops.org][SysOps]]
-
-A directory-level configuration file, used for URL redirection, access control, and more.
+A directory-level configuration file, used for URL redirection, access control, and more, most commonly used in Apache and managed by [[file:sysops.org][SysOps]].
 
 * Examples
 ** Redirecting a single URL:

@@ -1,7 +1,6 @@
-#+title: How to find a good first Rust project
+#+TITLE: How to find a good first Rust project
 
-- source :: [[https://ferrous-systems.com/blog/rust-test-drive/][ferrous-systems.com]]
-- tags :: [[file:rust.org][Rust]]
+Lotte James have a few tips on how to introduce [[file:rust.org][Rust]] into your workspace on [[https://ferrous-systems.com/blog/rust-test-drive/][the ferrous systems blog]].
 
 Aim to answer three questions
 1. How can we /minimize/ cost or risk to projects and timelines?

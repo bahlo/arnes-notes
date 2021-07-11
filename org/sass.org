@@ -1,9 +1,6 @@
-#+title: SASS
+#+TITLE: SASS
 
-- url :: [[https://sass-lang.com][sass-lang.com]]
-- tags :: [[file:css.org][CSS]], [[file:web-development.org][Web Development]]
-
-SASS (or SCSS) is a preprocessor for [[file:css.org][CSS]].
+[[https://sass-lang.com][SASS]] (or SCSS) is a preprocessor for [[file:css.org][CSS]].
 
 * SASS vs. SCSS
 ** SCSS
@@ -14,7 +11,7 @@ This was the original syntax and uses ~.sass.~. It doesn't use curly braces but 
 * Advantages over CSS
 ** Nesting
 Instead of writing this in CSS:
-#+begin_src css
+#+BEGIN_SRC css
 header a {
   color: red;
 }
@@ -22,10 +19,10 @@ header a {
 header h1 {
   color: blue;
 }
-#+end_src
+#+END_SRC
 
 you can write the following:
-#+begin_src scss
+#+BEGIN_SRC scss
 header {
   a {
     color: red;
@@ -34,7 +31,7 @@ header {
     color: blue;
   }
 }
-#+end_src
+#+END_SRC
 
 This vastly improves the readability of CSS files.
 ** And more

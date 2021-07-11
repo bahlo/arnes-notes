@@ -1,9 +1,8 @@
-#+title: Multiple Gitconfigs
+#+TITLE: Multiple Gitconfigs
 
-- tags :: [[file:git.org][Git]]
+If you use the same computer for both personal and work [[file:git.org][git]] repositories, you probably want to use a different email address for each.
 
-You can have multiple ~.gitconfig~ files that override each other based on the directory you're in.
-This is especially useful if you use a different Email for work commits.
+One solution for this is having multiple ~.gitconfig~ files that override each other based on the directory you're in.
 
 #+BEGIN_SRC ini
 [includeIf "gitdir:~/Developer/work/"]

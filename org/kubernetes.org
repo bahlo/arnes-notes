@@ -1,6 +1,3 @@
 #+TITLE: Kubernetes
 
-- url :: [[https://kubernetes.io][kubernetes.io]]
-- tags :: [[file:sysops.org][SysOps]], [[file:docker.org][Docker]]
-
-Kubernetes (or K8s) is an open-source container orchestrator.
+[[https://kubernetes.io][Kubernetes]] (or K8s) is an open-source container orchestrator. It can deploy [[file:docker.org][Docker]] containers and is often set up by [[file:sysops.org][SysOps]] teams.

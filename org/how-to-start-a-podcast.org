@@ -1,4 +1,4 @@
-#+title: How to start a podcast
+#+TITLE: How to start a podcast
 
 This is an opinionated guide on how to start a podcast.
 

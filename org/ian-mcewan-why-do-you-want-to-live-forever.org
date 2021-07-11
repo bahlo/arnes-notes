@@ -1,11 +1,6 @@
 #+TITLE: Ian McEwan, Why Do You Want to Live Forever?
 
-- source :: [[https://www.zeit.de/gesellschaft/2019-12/ian-mcewan-interviewpodcast-alles-gesagt][zeit.de]]
-- tags :: [[file:podcasts.org][Podcasts]]
-
-#+BEGIN_QUOTE
-In the first English edition of our never-ending podcast "Alles gesagt?" novelist Ian McEwan talks about Brexit and the new art of lying, climate change and his family.
-#+END_QUOTE
+In the first english episode of the =Alles Gesagt?= [[file:podcasts.org][podcast]], Chritoph Amend and Jochen Wegner [[https://www.zeit.de/serie/alles-gesagt][interview the british novelist Ian McEwan]] and talk about Brexit, climate change and his family.
 
 - 17:45 Alternative to democracy: Epistocracy: Only People with a certain level of education are allowed to vote (e.g. only people with a degree).
 - 26:45 Creative Pessimism about Climate Change

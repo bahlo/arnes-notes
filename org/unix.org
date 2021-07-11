@@ -1,0 +1,3 @@
+#+TITLE: Unix
+
+Unix is a family of multitasking, multiuser computer operating systems. Originally developed by Ken Thompson, Dennis Ritchie, and others.

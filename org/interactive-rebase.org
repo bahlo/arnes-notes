@@ -1,26 +1,24 @@
-#+title: Interactive Rebase
+#+TITLE: Interactive Rebase
 
-- tags :: [[file:git.org][Git]]
-
-Interactive rebase is a Git command that supports manipulating your Git history.
+Interactive rebase is a [[file:git.org][Git]] command that supports manipulating your Git history.
 Please note that this requires some understanding of how Git works.
 
 * The problem
 Let's say we have the following Git history (the last 5 commits at the time of tihs writing):
-#+begin_src
+#+BEGIN_SRC
 e5b6bb7 - Add Darkmode in CSS
 b956b7b - Fix formatting on Subset Webfonts
 a0c2551 - Add Eucalyptus Gunii
 21909d5 - Update Subset Webfonts
 4a5dc2e - Parse sitemap.xml for font subsetting
-#+end_src
+#+END_SRC
 
 You see that commit ~b956b7b~ (Fix formatting on Subset) fixes an issue introduced in ~21909d5~ (Update Subset Webfonts). This might be fine in lot's of cases, but let's say we want to clean this up.
 Our preferred outcome would look the same as above, but without ~b956b7b~ (Fix formatting on Subset) .
 
 * How to solve this.
 Running ~git rebase -i 4a5dc2e~ will start the interactive rebase and open the following text in your editor:
-#+begin_src
+#+BEGIN_SRC
 pick 21909d5 Update Subset Webfonts
 pick a0c2551 Add Eucalyptus Gunii
 pick b956b7b Fix formatting on Subset Webfonts
@@ -50,7 +48,7 @@ pick e5b6bb7 Add Darkmode in CSS
 #
 # However, if you remove everything, the rebase will be aborted.
 #
-#+end_src
+#+END_SRC
 
 One thing you might notice is that the commits are in reverse order and the commit we're rebasing /onto/ is missing. You will get used to that.
 
@@ -59,12 +57,12 @@ So now we have a bunch of commands, read the explanation above, I won't repeat i
 What we want is squashing ~b956b7b~ (Fix formatting on Subset Webfonts) into ~21909d5~ (Update Subset Webfonts) but discarding it's message.
 So we first move the whole line 3 up so it's below the first line. Then we change ~pick~ of that line to ~f~ (or ~fixup~). If we now save and close the file, Git will do the rebase and you will be left with the following history:
 
-#+begin_src
+#+BEGIN_SRC
 e5b6bb7 - Add Darkmode in CSS
 a0c2551 - Add Eucalyptus Gunii
 b401354 - Update Subset Webfonts
 4a5dc2e - Parse sitemap.xml for font subsetting
-#+end_src
+#+END_SRC
 
 Success! =Fix formatting on Subset Webfonts= is gone and squased into =Update Subset Webfonts= (which now has a new sha).
 

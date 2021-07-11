@@ -1,6 +1,6 @@
-#+title: Print Type in Rust
+#+TITLE: Print Type in Rust
 
-- tags :: [[file:rust.org][Rust]]
+If you want to print the type in [[file:rust.org][Rust]] (similar to ~%T~ in [[file:golang.org][Go]]), here's a snippet:
 
 #+BEGIN_SRC rust
 fn type_of<T>(_: &T) -> String {

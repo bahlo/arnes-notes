@@ -1,11 +1,9 @@
-#+title: MagTag
-
-- url :: [[https://www.adafruit.com/product/4819][adafruit.com]]
-- tags :: [[file:embedded-systems.org][Embedded systems]]
+#+TITLE: MagTag
 
 [[./images/magtag.jpg]]
 
-The MagTag combines a ESP32-S2 wireless module, a 2.9" grayscale E-Ink display. It's called MagTag because you can attach magnetic feet.
+The [[https://www.adafruit.com/product/4819][MagTag]] is an [[file:embedded-systems.org][embedded device]], which combines a ESP32-S2 wireless module, a 2.9" grayscale E-Ink display.
+It's called MagTag because you can attach magnetic feet.
 
 * Features
 - USB-C

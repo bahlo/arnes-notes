@@ -1,6 +1,6 @@
 #+TITLE: cron
 
-The software utility cron (or cron job) is a time-based job scheduler in Unix-like operating systems (e.g. [[file:linux.org][Linux]]).
+The software utility cron (or cron job) is a time-based job scheduler in [[file:unix.org][Unix]]-like operating systems.
 
 * Crontab
 A crontab file defines the cron jobs of a user or system. You can edit it by running ~crontab -e~.

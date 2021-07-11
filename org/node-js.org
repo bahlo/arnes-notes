@@ -1,5 +1,3 @@
 #+title: Node.js
 
-- tags :: [[file:software-engineering.org][Software Engineering]]
-
-Node.js is an open-source backend JavaScript runtime environment built on the V8 engine.
+Node.js is an open-source backend [[file:javascript.org][JavaScript]] runtime environment built on the V8 engine.

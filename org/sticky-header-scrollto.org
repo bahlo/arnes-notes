@@ -1,17 +1,9 @@
-#+title: Sticky Header ScrollTo
+#+TITLE: Sticky Header ScrollTo
 
-- source :: [[https://twitter.com/joshwcomeau/status/1332015868725891076][twitter.com]]
-- tags :: [[file:css.org][CSS]]
-
-#+BEGIN_QUOTE
-You know that annoying thing when you're scrolled to an anchor and the site's sticky header covers it up?
-That's fixable in 1 CSS declaration now 🎉
-#+END_QUOTE
+When you scroll to an anchor and the sticky header covers it up, you can fix it with one line of [[file:css.org][CSS]]:
 
 #+BEGIN_SRC css
 .heading {
   scroll-margin-top: 72px;
 }
 #+END_SRC
-
-On November 26, 2020 (when the Tweet was written) this was supported by Chrome, Firefox, Edge and Opera. Safari needs ~scroll-snap-margin-top~ .

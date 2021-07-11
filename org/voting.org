@@ -1,1 +1,1 @@
-#+title: Voting
+#+TITLE: Voting

@@ -1,8 +1,6 @@
 #+TITLE: Subbu Allamaraju's Leadership Document — 2021 Edition
 
-- source :: [[https://m.subbu.org/my-leadership-document-2021-edition-132aec22fc0e][m.subbu.org]]
-
-Subbu Allamaraju is technology leader at the Expedia Group at the time of writing this note. He writes about 3 believs and 6 behaviours for [[file:leadership.org][Leadership]].
+Subbu Allamaraju is technology leader at the Expedia Group at the time of writing this note. He writes about 3 believs and 6 behaviours for [[file:leadership.org][Leadership]] on [[https://m.subbu.org/my-leadership-document-2021-edition-132aec22fc0e][his blog]].
 
 * Beliefs
 ** Leadership is about being a better person.

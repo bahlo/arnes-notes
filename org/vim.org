@@ -1,4 +1,4 @@
-#+title: Vim
+#+TITLE: Vim
 
 Vim is a texeditor. The name comes from Vi IMproved as it is a clone (with additions) of vi, a text editor program for Unix. It was release to the public in 1991.
 
