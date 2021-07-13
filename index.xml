@@ -163,7 +163,7 @@ This is loosely based on Automatic Emacs theme switching in OSX dark mode   , wi
       <description>iTerm 2   is a terminal emulator for macOS. It supports dark and light mode, but it won&amp;rsquo;t change the colors automatically.
 But we&amp;rsquo;re lucky! iTerm has great scripting support. See the Scripting Documentation   . We can use that to automatically switch profiles based on the system appearance.
 Here&amp;rsquo;s how:
- Create two profiles and name them Light and Dark. It probably makes sense to create one profile to your liking with a light theme, duplicate it and set the dark theme on the duplicate.</description>
+ Launch iTerm, then in the menubar click Scripts → AutoLaunch → Install Python runtime Create two profiles and name them Light and Dark.</description>
     </item>
     
     <item>

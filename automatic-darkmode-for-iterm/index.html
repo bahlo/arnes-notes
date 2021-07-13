@@ -44,8 +44,9 @@
 . We can use that to automatically switch profiles based on the system appearance.</p>
 <p>Here&rsquo;s how:</p>
 <ol>
+<li>Launch iTerm, then in the menubar click <code>Scripts</code> → <code>AutoLaunch</code> → <code>Install Python runtime</code></li>
 <li>Create two profiles and name them <code>Light</code> and <code>Dark</code>. It probably makes sense to create one profile to your liking with a light theme, duplicate it and set the dark theme on the duplicate.</li>
-<li>Copy the script below into <code>$HOME/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/</code>:</li>
+<li>Copy the script below into <code>$HOME/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/auto_darkmode.py</code>:</li>
 </ol>
 <!--listend-->
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/usr/bin/env python3.7</span>
@@ -86,7 +87,8 @@
 	<span class="n">await</span> <span class="n">set_profile</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
 
 <span class="n">iterm2</span><span class="o">.</span><span class="n">run_forever</span><span class="p">(</span><span class="n">main</span><span class="p">)</span>
-</code></pre></div><p>Similar to <a href="/automatic-darkmode-for-vim/">Automatic darkmode for Vim</a>
+</code></pre></div><p>If you run into issues, try running the script via the menubar <code>Scripts</code> → <code>AutoLaunch</code> → <code>auto_darkmode.py</code></p>
+<p>Similar to <a href="/automatic-darkmode-for-vim/">Automatic darkmode for Vim</a>
 , this will check the system appearance every two seconds and set the profile accordingly.</p>
 
       
