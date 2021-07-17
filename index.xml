@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>Learn Rust</title>
+      <link>https://notes.arne.me/learn-rust/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/learn-rust/</guid>
+      <description>So you want to learn Rust ? Here&amp;rsquo;s a collection of resources that might be of help.
+Things I would try first There is an official Learn Rust   page that lists great resources, including:
+ The Rust Programming Langauge (Book)   , I highly recommend buying the paperback copy if you can afford it rustlings    Rust by Example     </description>
+    </item>
+    
+    <item>
       <title>Evergreen Notes</title>
       <link>https://notes.arne.me/evergreen-notes/</link>
       <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>

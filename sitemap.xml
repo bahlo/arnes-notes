@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://notes.arne.me/learn-rust/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://notes.arne.me/evergreen-notes/</loc>
     <lastmod>2021-07-11T00:00:00+00:00</lastmod>
   </url>
