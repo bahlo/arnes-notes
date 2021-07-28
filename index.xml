@@ -155,6 +155,18 @@ Create a layouts/_default/_markup/render-heading.html and put the following code
     </item>
     
     <item>
+      <title>ANSI Escape Codes</title>
+      <link>https://notes.arne.me/ansi-escape-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/ansi-escape-codes/</guid>
+      <description>When you work in the terminal (e.g. on Unix ), having colors and text formatting often improves the user experience.
+There is a great post on Stack Overflow called List of ANSI color escape sequences   which goes into detail on all supported escape codes.
+Here is a basic selection:
+   Code Usage     &amp;mdash;- &amp;mdash;-   \033[1m Bold   \033[3m Italic   \033[4m Underline   \033[38;2;;;m Set RGB foreground color   \033[48;2;;;m Set RGB background color        There&amp;rsquo;s a list of terminals   that support RGB, most importantly Terminal.</description>
+    </item>
+    
+    <item>
       <title>Automatic darkmode for Emacs</title>
       <link>https://notes.arne.me/automatic-darkmode-for-emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -171,10 +183,10 @@ This is loosely based on Automatic Emacs theme switching in OSX dark mode   , wi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.arne.me/automatic-darkmode-for-iterm/</guid>
-      <description>iTerm 2   is a terminal emulator for macOS. It supports dark and light mode, but it won&amp;rsquo;t change the colors automatically.
+      <description>iTerm2 supports dark and light mode, but it won&amp;rsquo;t change the colors automatically.
 But we&amp;rsquo;re lucky! iTerm has great scripting support. See the Scripting Documentation   . We can use that to automatically switch profiles based on the system appearance.
 Here&amp;rsquo;s how:
- Launch iTerm, then in the menubar click Scripts → AutoLaunch → Install Python runtime Create two profiles and name them Light and Dark.</description>
+ Launch iTerm, then in the menubar click Scripts → AutoLaunch → Install Python runtime Create two profiles and name them Light and Dark. It probably makes sense to create one profile to your liking with a light theme, duplicate it and set the dark theme on the duplicate.</description>
     </item>
     
     <item>
@@ -630,6 +642,15 @@ Load with UF2 Bootloader This is the easiest option. If your MagTag has a black 
       <description>Interactive rebase is a Git command that supports manipulating your Git history. Please note that this requires some understanding of how Git works.
 The problem Let&amp;rsquo;s say we have the following Git history (the last 5 commits at the time of tihs writing):
 e5b6bb7 - Add Darkmode in CSS b956b7b - Fix formatting on Subset Webfonts a0c2551 - Add Eucalyptus Gunii 21909d5 - Update Subset Webfonts 4a5dc2e - Parse sitemap.xml for font subsetting You see that commit b956b7b (Fix formatting on Subset) fixes an issue introduced in 21909d5 (Update Subset Webfonts).</description>
+    </item>
+    
+    <item>
+      <title>iTerm2</title>
+      <link>https://notes.arne.me/iterm2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/iterm2/</guid>
+      <description>iTerm2   is a terminal emulator for macOS .</description>
     </item>
     
     <item>

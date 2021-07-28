@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<title>Hugo – Arnes notes</title>
+<title>ANSI Escape Codes – Arnes notes</title>
 
 
 <meta charset="utf-8">
@@ -31,19 +31,63 @@
 
 <div class="grid">
   <div class="page" data-level="1">
-    <h1 class="collapsed-title">Hugo</h1>
+    <h1 class="collapsed-title">ANSI Escape Codes</h1>
     <div class="content">
-      <a href="https://notes.arne.me/hugo/" alt="Hugo" class="permalink"><h1>Hugo</h1></a>
-      <p><a href="https://gohugo.io" target="_blank">Hugo
+      <a href="https://notes.arne.me/ansi-escape-codes/" alt="ANSI Escape Codes" class="permalink"><h1>ANSI Escape Codes</h1></a>
+      <p>When you work in the terminal (e.g. on <a href="/unix/">Unix</a>
+), having colors and text formatting often improves the user experience.</p>
+<p>There is a great post on Stack Overflow called <a href="https://stackoverflow.com/a/33206814" target="_blank">List of ANSI color escape sequences
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- is a static site generator (see <a href="/web-development/">Web Development</a>
-) written in <a href="/golang/">Golang</a>
-.</p>
+ which goes into detail on all supported escape codes.</p>
+<p>Here is a basic selection:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&mdash;-</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>\033[1m</td>
+<td>Bold</td>
+</tr>
+<tr>
+<td>\033[3m</td>
+<td>Italic</td>
+</tr>
+<tr>
+<td>\033[4m</td>
+<td>Underline</td>
+</tr>
+<tr>
+<td>\033[38;2;<r>;<g>;<b>m</td>
+<td>Set RGB foreground color</td>
+</tr>
+<tr>
+<td>\033[48;2;<r>;<g>;<b>m</td>
+<td>Set RGB background color</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>There&rsquo;s <a href="https://gist.github.com/XVilka/8346728" target="_blank">a list of terminals
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ that support RGB, most importantly Terminal.app and Hyper don&rsquo;t support it while <a href="/iterm2/">iTerm2</a>
+, Alacritty and PuTTY support it (check the link for an exhaustive list).</p>
 
       
       
-      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//hugo.org">Edit this page on GitHub</a></small>
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//ansi-escape-codes.org">Edit this page on GitHub</a></small>
     </div>
     
 
@@ -73,8 +117,6 @@
   
 
   
-    
-  
 
   
 
@@ -200,8 +242,6 @@
 
   
 
-  
-    
   
 
   
@@ -255,8 +295,6 @@
   
 
   
-    
-  
 
   
 
@@ -277,23 +315,8 @@
   
 
   
-
 
 
-  <div class="bl-section">
-    <h4>Links to this note</h4>
-    <div class="backlinks">
-       <ul>
-       
-         <li><a href="/anchored-headings-in-hugo/">Anchored headings in Hugo</a></li>
-       
-         <li><a href="/mark-external-links-in-hugo/">Mark external links in Hugo</a></li>
-       
-         <li><a href="/subset-webfonts/">Subset Webfonts</a></li>
-       
-      </ul>
-    </div>
-  </div>
 
 
     </div>
