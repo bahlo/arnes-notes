@@ -163,7 +163,7 @@ Create a layouts/_default/_markup/render-heading.html and put the following code
       <description>When you work in the terminal (e.g. on Unix ), having colors and text formatting often improves the user experience.
 There is a great post on Stack Overflow called List of ANSI color escape sequences   which goes into detail on all supported escape codes.
 Here is a basic selection:
-   Code Usage     &amp;mdash;- &amp;mdash;-   \033[1m Bold   \033[3m Italic   \033[4m Underline   \033[38;2;;;m Set RGB foreground color   \033[48;2;;;m Set RGB background color        There&amp;rsquo;s a list of terminals   that support RGB, most importantly Terminal.</description>
+   Code Usage     `\033[1m` Bold   `\033[3m` Italic   `\033[4m` Underline   `\033[38;2;;;m` Set RGB foreground color   `\033[48;2;;;m` Set RGB background color    There&amp;rsquo;s a list of terminals   that support RGB, most importantly Terminal.</description>
     </item>
     
     <item>
