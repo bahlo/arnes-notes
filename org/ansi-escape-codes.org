@@ -6,13 +6,12 @@ There is a great post on Stack Overflow called [[https://stackoverflow.com/a/332
 
 Here is a basic selection:
 
-| Code                   | Usage                    |
-| ----                   | ----                     |
-| \033[1m                | Bold                     |
-| \033[3m                | Italic                   |
-| \033[4m                | Underline                |
-| \033[38;2;<r>;<g>;<b>m | Set RGB foreground color |
-| \033[48;2;<r>;<g>;<b>m | Set RGB background color |
-                         |                          |
+| Code                     | Usage                    |
+|--------------------------|--------------------------|
+| `\033[1m`                | Bold                     |
+| `\033[3m`                | Italic                   |
+| `\033[4m`                | Underline                |
+| `\033[38;2;<r>;<g>;<b>m` | Set RGB foreground color |
+| `\033[48;2;<r>;<g>;<b>m` | Set RGB background color |                        |
 
 There's [[https://gist.github.com/XVilka/8346728][a list of terminals]] that support RGB, most importantly Terminal.app and Hyper don't support it while [[file:iterm2.org][iTerm2]], Alacritty and PuTTY support it (check the link for an exhaustive list).
