@@ -1,0 +1,3 @@
+#+TITLE: iTerm2
+
+[[https://iterm2.com][iTerm2]] is a terminal emulator for [[file:macos.org][macOS]].
