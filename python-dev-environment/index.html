@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<title>Node.js Intl and ICU – Arnes notes</title>
+<title>Python Developer Environment – Arnes notes</title>
 
 
 <meta charset="utf-8">
@@ -31,35 +31,40 @@
 
 <div class="grid">
   <div class="page" data-level="1">
-    <h1 class="collapsed-title">Node.js Intl and ICU</h1>
+    <h1 class="collapsed-title">Python Developer Environment</h1>
     <div class="content">
-      <a href="https://notes.arne.me/node-js-intl-and-icu/" alt="Node.js Intl and ICU" class="permalink"><h1>Node.js Intl and ICU</h1></a>
-      <p>If you use i18n features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global%5FObjects/Intl" target="_blank">Intl
+      <a href="https://notes.arne.me/python-dev-environment/" alt="Python Developer Environment" class="permalink"><h1>Python Developer Environment</h1></a>
+      <p>There are a thousand possible approaches to a good developer environment, this is an iditial approach to get started with <a href="/python/">Python</a>
+ if you don&rsquo;t yet know what you like.</p>
+<h2 id="editor-and-plugins">Editor and plugins</h2>
+<p><a href="https://code.visualstudio.com" target="_blank">Visual Studio Code
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- in your <a href="/node-js/">Node.js</a>
- application, you need ICU (International Components for Unicode).
-Your local <code>node</code> installation will most likely have the full ICU installed, but it&rsquo;s often missing on servers or containers.</p>
-<p>Node will fall back to the locale it has installed, so consider writing a test to make sure your locale is available.
-Below are two options on how to get full ICU data.</p>
-<h2 id="compile-node-yourself">Compile node yourself</h2>
-<p>Use the flag <code>--with-intl=full-icu</code> to compile node with full ICU (see <a href="https://nodejs.org/api/intl.html#intl%5Foptions%5Ffor%5Fbuilding%5Fnode%5Fjs" target="_blank">ICU options
+ (or VSCode) is a popular choice and has lots of support. If you care about these things, <a href="https://vscodium.com" target="_blank">VSCodium
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ provides an open-source variant of VS Code.</p>
+<p>Check <a href="https://code.visualstudio.com/docs/languages/python" target="_blank">Python in Visual Studio Code
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ for a guide to install Python and the proper extension.</p>
+<h2 id="linting">Linting</h2>
+<p>Having a linter and autoformatter is a great way to make sure your code is consistent. I recommend <a href="https://github.com/psf/black" target="_blank">Black
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+ (make sure to set <code>python.formatting.provider</code> to <code>black</code>, see <a href="https://code.visualstudio.com/docs/python/editing#%5Fformatting" target="_blank">official documentation
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
 ).</p>
-<h2 id="provide-icu-data-at-runtime">Provide ICU data at runtime</h2>
-<p>Install the package <a href="https://www.npmjs.com/package/full-icu" target="_blank">full-icu
+<h2 id="dependency-management">Dependency management</h2>
+<p>Python dependency management (and publishing) has been a hot mess for a long time, <a href="https://python-poetry.org" target="_blank">Poetry
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- and tell node to use it by either setting the environment variable <code>NODE_ICU_DATA=node_modules/full-icu</code> or passing <code>--icu-data-dir=node_modules/full-icu</code>.
-You can find more detailed information in the official <a href="https://nodejs.org/api/intl.html#intl%5Fproviding%5Ficu%5Fdata%5Fat%5Fruntime" target="_blank">documentation
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-</a>
-.</p>
+ makes it as easy as other modern languages.</p>
 
       
       
-      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//node-js-intl-and-icu.org">Edit this page on GitHub</a></small>
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//python-dev-environment.org">Edit this page on GitHub</a></small>
     </div>
     
 

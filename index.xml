@@ -897,6 +897,17 @@ fn type_of&amp;lt;T&amp;gt;(_: &amp;amp;T)-&amp;gt; String {format!</description
     </item>
     
     <item>
+      <title>Python Developer Environment</title>
+      <link>https://notes.arne.me/python-dev-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/python-dev-environment/</guid>
+      <description>There are a thousand possible approaches to a good developer environment, this is an iditial approach to get started with Python if you don&amp;rsquo;t yet know what you like.
+Editor and plugins Visual Studio Code   (or VSCode) is a popular choice and has lots of support. If you care about these things, VSCodium   provides an open-source variant of VS Code.
+Check Python in Visual Studio Code   for a guide to install Python and the proper extension.</description>
+    </item>
+    
+    <item>
       <title>Rclone</title>
       <link>https://notes.arne.me/rclone/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
