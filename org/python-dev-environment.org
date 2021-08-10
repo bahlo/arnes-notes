@@ -1,0 +1,14 @@
+#+TITLE: Python Developer Environment
+
+There are a thousand possible approaches to a good developer environment, this is an iditial approach to get started with [[file:python.org][Python]] if you don't yet know what you like.
+
+* Editor and plugins
+[[https://code.visualstudio.com][Visual Studio Code]] (or VSCode) is a popular choice and has lots of support. If you care about these things, [[https://vscodium.com][VSCodium]] provides an open-source variant of VS Code.
+
+Check [[https://code.visualstudio.com/docs/languages/python][Python in Visual Studio Code]] for a guide to install Python and the proper extension.
+
+* Linting
+Having a linter and autoformatter is a great way to make sure your code is consistent. I recommend [[https://github.com/psf/black][Black]] (make sure to set ~python.formatting.provider~ to ~black~, see [[https://code.visualstudio.com/docs/python/editing#_formatting][official documentation]]).
+
+* Dependency management
+Python dependency management (and publishing) has been a hot mess for a long time, [[https://python-poetry.org][Poetry]] makes it as easy as other modern languages.
