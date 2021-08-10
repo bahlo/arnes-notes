@@ -3,14 +3,14 @@
 So you want to learn [[file:python.org][Python]]? Here's a collection of resources I found over time that might be of help (although I used different resources back in the day).
 
 * Things I would try first
-- [[https://learnbyexample.github.io/100_page_python_intro/cover.html][100 Page Python Intro]]
+- [[https://learnbyexample.github.io/100_page_python_intro][100 Page Python Intro]]
 - [[https://www.cosmicpython.com/book/preface.html][Cosmic Python]]
-- [[http://beej.us/guide/bgpython/][Beej's Guide to Python Programming]]
+- [[http://beej.us/guide/bgpython/][Beej’s Guide to Python Programming]]
 - [[https://inventwithpython.com/beyond/][Beyond the Basic Stuff with Python]]
 
 * Even more
 - [[https://www.oreilly.com/content/20-python-libraries-you-arent-using-but-should/][20 Python libraries you aren’t using (but should)]]
-- [[https://github.com/RafeKettler/magicmethods][Guide to Python's magic methods]]
+- [[https://github.com/RafeKettler/magicmethods][Guide to Python’s magic methods]]
 - [[https://www.fullstackpython.com][Full Stack Python]]
 - [[https://biopython.org/DIST/docs/tutorial/Tutorial.pdf][Biopython Tutorial and Cookbook]]
 - [[https://www.pycabook.com][Clean Architectures in Python]]
