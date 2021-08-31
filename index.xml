@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Reset Password on Windows</title>
+      <link>https://notes.arne.me/reset-password-on-windows/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/reset-password-on-windows/</guid>
+      <description>So you forgot your Windows passwort? This is how you can fix it:
+Prerequisites  No full disk encryption (BitLocker) No online account (use the Microsoft services to reset the password)  Reset  Download the latest edition of the Offline NT Password &amp;amp; Registry Editor at pogostick.net   (click on Bootdisk and scroll to Download). If you have another Windows computer available, you can do the USB stick version although the site notices that CDs are more reliable Burn/copy the software to a CD/USB stick Make sure your BIOS can boot from the medium (search the for a guide for the specific vendor) Start Windows, click Restart but enter the BIOS on restart.</description>
+    </item>
+    
+    <item>
       <title>Learn Rust</title>
       <link>https://notes.arne.me/learn-rust/</link>
       <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>

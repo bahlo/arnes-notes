@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<title>Kevin Kelly – Arnes notes</title>
+<title>Reset Password on Windows – Arnes notes</title>
 
 
 <meta charset="utf-8">
@@ -31,29 +31,38 @@
 
 <div class="grid">
   <div class="page" data-level="1">
-    <h1 class="collapsed-title">Kevin Kelly</h1>
+    <h1 class="collapsed-title">Reset Password on Windows</h1>
     <div class="content">
-      <a href="https://notes.arne.me/kevin-kelly/" alt="Kevin Kelly" class="permalink"><h1>Kevin Kelly</h1></a>
-      <p>Kevin Kelly is Senior Maverick for <a href="https://www.wired.com/magazine/" target="_blank">Wired
+      <a href="https://notes.arne.me/reset-password-on-windows/" alt="Reset Password on Windows" class="permalink"><h1>Reset Password on Windows</h1></a>
+      <p>So you forgot your Windows passwort? This is how you can fix it:</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>No full disk encryption (BitLocker)</li>
+<li>No online account (use the Microsoft services to reset the password)</li>
+</ul>
+<h2 id="reset">Reset</h2>
+<ol>
+<li>Download the latest edition of the <code>Offline NT Password &amp; Registry Editor</code> at <a href="https://pogostick.net/~pnh/ntpasswd/" target="_blank">pogostick.net
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- magazine, which he also co-founded. On his website <a href="https://kk.org" target="_blank">kk.org
+ (click on <code>Bootdisk</code> and scroll to <code>Download</code>). If you have another Windows computer available, you can do the USB stick version although the site notices that CDs are more reliable</li>
+<li>Burn/copy the software to a CD/USB stick</li>
+<li>Make sure your BIOS can boot from the medium (search the for a guide for the specific vendor)</li>
+<li>Start Windows, click <code>Restart</code> but enter the BIOS on restart. Doing a shutdown actually doesn&rsquo;t really shut down in most cases on modern systems (it&rsquo;s called <a href="https://support.microsoft.com/en-us/windows/shut-down-sleep-or-hibernate-your-pc-2941d165-7d0a-a5e8-c5ad-8c972e8e6eff" target="_blank">hibernation
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- he shares his thoughts in <a href="https://kk.org/thetechnium/" target="_blank">The Technium
+).</li>
+<li>Boot from the medium and follow the instructions to reset the password (<a href="https://pogostick.net/~pnh/ntpasswd/" target="_blank">the walkthrough
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 </a>
- and has sub-pages for <a href="https://kk.org/cooltools/" target="_blank">Cool Tools
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-</a>
- or <a href="https://truefilms.com" target="_blank">True Films
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-</a>
-.</p>
+ is apparently outdated but worked great in my case).
+I recommend clearing the password as that&rsquo;s supposed to be most reliable.</li>
+<li>Boot windows again and login!</li>
+</ol>
 
       
       
-      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//kevin-kelly.org">Edit this page on GitHub</a></small>
+      <small><a href="https://github.com/bahlo/arnes-notes/edit/main/org//reset-password-on-windows.org">Edit this page on GitHub</a></small>
     </div>
     
 
@@ -69,12 +78,8 @@
   
 
   
-    
-  
 
   
-    
-  
 
   
 
@@ -289,21 +294,8 @@
   
 
   
-
 
 
-  <div class="bl-section">
-    <h4>Links to this note</h4>
-    <div class="backlinks">
-       <ul>
-       
-         <li><a href="/68-bits-of-unsolicited-advice/">68 Bits of Unsolicited Advice</a></li>
-       
-         <li><a href="/99-additional-bits-of-unsolicited-advice/">99 Additional Bits of Unsolicited Advice</a></li>
-       
-      </ul>
-    </div>
-  </div>
 
 
     </div>
