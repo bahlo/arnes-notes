@@ -13,6 +13,8 @@ Initial commit
 Co-authored-by: Arne Bahlo <arne@example.org>
 #+END_SRC
 
+If you want to credit multiple people, put them on their own line, each starting with ~Co-authored-by:~.
+
 * Automating
 [[https://pnguyen.io/][David Nguyen]] has built a ZSH script called [[https://github.com/hpcsc/dotfiles/blob/63f194aa553ef83f9edec76991f2265f7962b00e/link/common/zsh/.functions/fzf-functions/fcm][fcm]], which takes a ~.git-co-authors~ file and lets you interactively add an author to the commit.
 
