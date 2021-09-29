@@ -1,0 +1,48 @@
+#+TITLE: Git Co-authored-by
+#+DATE: 2021-09-29
+
+Suppose you're doing some pair-programming with a co-worker. That means only one of you can commit the work you're both doing.
+
+But you can credit the other party by using a [[file:git.org][Git]] feature called =Co-authored-by=. This will show up on GitHub (and probably other clients as well). See [[https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors][GitHubs documentation]] on how it will look like.
+
+* How to
+When writing the commit message, add an empty line and then ~Co-authored-by: Name <email>~, for example:
+#+BEGIN_SRC git-commit
+Initial commit
+
+Co-authored-by: Arne Bahlo <arne@example.org>
+#+END_SRC
+
+* Automating
+[[https://pnguyen.io/][David Nguyen]] has built a ZSH script called [[https://github.com/hpcsc/dotfiles/blob/63f194aa553ef83f9edec76991f2265f7962b00e/link/common/zsh/.functions/fzf-functions/fcm][fcm]], which takes a ~.git-co-authors~ file and lets you interactively add an author to the commit.
+
+I adapted it to take the authors from the current git-directory and did some small improvements:
+#+BEGIN_SRC shell
+#!/bin/zsh
+SELECTED_AUTHORS=$(git shortlog -sne | awk '{$1=""}1' | fzf -m)
+
+MESSAGE="\n\n"
+# convert newline-delimited string to array, zsh way: https://stackoverflow.com/a/2930519
+AUTHORS=("${(f)SELECTED_AUTHORS}")
+for AUTHOR in $AUTHORS[@]; do
+  MESSAGE="${MESSAGE}Co-authored-by: ${AUTHOR}\n"
+done
+
+if [[ "$1" == "-m" ]]; then
+  git commit -m "$2$(echo -e ${MESSAGE})"
+else
+  git commit $@ -t <(echo -e ${MESSAGE})
+fi
+#+END_SRC
+
+Copy this to a file called ~git-co-author-commit~ in a directory called ~zshfunctions~, then load it like this in your ~~/.zshrc~:
+#+BEGIN_SRC shell
+fpath+=/path/to/zshfunctions
+autoload git-commit-co-author
+#+END_SRC
+
+You'll also need [[https://github.com/junegunn/fzf][FZF]] for the fuzzy matching.
+
+You can then run ~git-commit-co-author -v~ (or similar) and it will prompt you for a person in the repository, then open the commit message with ~Co-authored-by~ already added. I recommend creating a shorter alias for it.
+
+Note that when running this with ~-m~, make sure it's the first and only parameter (followed by the message of course).
