@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>Git Co-authored-by</title>
+      <link>https://notes.arne.me/git-co-authored-by/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.arne.me/git-co-authored-by/</guid>
+      <description>Suppose you&amp;rsquo;re doing some pair-programming with a co-worker. That means only one of you can commit the work you&amp;rsquo;re both doing.
+But you can credit the other party by using a Git feature called Co-authored-by. This will show up on GitHub (and probably other clients as well). See GitHubs documentation   on how it will look like.
+How to When writing the commit message, add an empty line and then Co-authored-by: Name &amp;lt;email&amp;gt;, for example:</description>
+    </item>
+    
+    <item>
       <title>Reset Password on Windows</title>
       <link>https://notes.arne.me/reset-password-on-windows/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
