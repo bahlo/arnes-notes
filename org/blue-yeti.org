@@ -1,0 +1,20 @@
+#+TITLE: Blue yeti
+#+DATE: 2021-10-02
+
+The yeti is a USB-microphone by Blue (see [[https://www.bluemic.com/en-us/products/yeti/][official site]]).
+
+It ranks #8 on Marco Arments [[https://marco.org/podcasting-microphones][Podcasting Microphones Mega-Review]], here's what Marco has to say:
+#+BEGIN_QUOTE
+... it’s a great value, and under ideal circumstances — close-up use in a silent, soft room with a pop filter — it can yield excellent sound quality.
+#+END_QUOTE
+
+The thing to look out for is that it picks up a lot of room echo. Buy a pop filter and get super close to it to get the best results (buy boom arm or just stack a few books).
+
+* Podcast with multiple hosts
+If you want to start a [[file:podcasts.org][Podcast]] with multiple hosts but don't want to buy each person a microphone, deal with audio interfaces or multi-track-recording, the yeti might be a good choice.
+
+Use the bi-directional mode (looks like an 8) for a two-host podcast and the omnidirectional mode (looks like an o) for more than that.
+
+Remember that with one mic you only get one track, so if you have more than one host, make sure everyone speaks at a similar volume and is at a similar distance to it. [[https://auphonic.com][Auphonic]] can help as well and is generally recommended.
+
+For everything else, check out [[file:how-to-start-a-podcast.org][How to start a podcast]].
