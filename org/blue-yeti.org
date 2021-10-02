@@ -8,7 +8,7 @@ It ranks #8 on Marco Arments [[https://marco.org/podcasting-microphones][Podcast
 ... it’s a great value, and under ideal circumstances — close-up use in a silent, soft room with a pop filter — it can yield excellent sound quality.
 #+END_QUOTE
 
-The thing to look out for is that it picks up a lot of room echo. Buy a pop filter and get super close to it to get the best results (buy boom arm or just stack a few books).
+The thing to look out for is that it picks up a lot of room echo. Buy a pop filter and get super close to it to get the best results (buy a boom arm or just stack a few books).
 
 * Podcast with multiple hosts
 If you want to start a [[file:podcasts.org][Podcast]] with multiple hosts but don't want to buy each person a microphone, deal with audio interfaces or multi-track-recording, the yeti might be a good choice.
