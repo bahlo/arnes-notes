@@ -1,0 +1,21 @@
+#+TITLE: Lemon-garlic pasta
+#+DATE: 2021-10-02
+
+This is a great recipe, especially for summer. It tastes refreshing and is super quick (around 15 minutes).
+This is based on a [[https://kochkarussell.com/15-minuten-pasta-mit-knoblauch-zitrone-und-parmesan/][German Kocchkarussel recipe]] (if you want to see images, look there).
+
+* Ingredients
+- 350g spaghetti (12oz)
+- 3 cloves of garlic
+- 1 tablespoon of olive oil
+- 1 tablespoon of butter
+- 1 Lemon
+- 50g grated Parmesan (2oz)
+- A bunch of parsley
+- Salt and pepper
+
+* Recipe
+1. Cook spaghetti aldente
+2. In the meantime, mince the garlic cloves. Put on a pan with olive oil and butter and roast them gently on medium heat.
+3. Add the noodles to the pan and [[file:wang-jangle.org][wang jangle]] (aka mix) it. Season with salt and pepper.
+4. Squeeze the lemon into the pan and add the Parmesan and parsley. Wang jangle again and serve with grated lemon peel.
