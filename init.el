@@ -34,6 +34,7 @@
 (setq straight-use-package-by-default t)
 (straight-use-package 'use-package)
 
+(use-package backtrace)
 (use-package ox-hugo
   :straight (:type git :host github :repo "kaushalmodi/ox-hugo"))
 
