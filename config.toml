@@ -1,6 +1,6 @@
 baseURL = "https://notes.arne.me/"
 languageCode = "en-us"
-title = "Arnes notes"
+title = "Arne’s notes"
 pygmentsUseClasses = true
 
 [params]
