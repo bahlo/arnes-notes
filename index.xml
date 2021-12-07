@@ -480,7 +480,7 @@ Permanent skills Permanent were as essential 100 years ago as they are today, an
       <guid>https://notes.arne.me/fix-git-lfs-error/</guid>
       <description>At some point you might get this error on any Git operation when working with LFS:
 remote: GitLab: LFS objects are missing. Ensure LFS is properly set up or try a manual &amp;#34;git lfs push --all&amp;#34;. If git lfs push --all doesn&amp;rsquo;t work, try this:
-git lfs fetch --all upstream # or whatever branch you want to update from </description>
+git lfs fetch --all upstream # or whatever remote you want to update from </description>
     </item>
     
     <item>
