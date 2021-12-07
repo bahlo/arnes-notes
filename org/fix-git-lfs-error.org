@@ -8,5 +8,5 @@ remote: GitLab: LFS objects are missing. Ensure LFS is properly set up or try a 
 
 If ~git lfs push --all~ doesn't work, try this:
 #+BEGIN_SRC sh
-git lfs fetch --all upstream # or whatever branch you want to update from
+git lfs fetch --all upstream # or whatever remote you want to update from
 #+END_SRC
